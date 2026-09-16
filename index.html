@@ -45,6 +45,8 @@
         .header p {
             font-size: 1.1em;
             opacity: 0.9;
+            /* без этого подзаголовок получает выравнивание по ширине от общего правила для p */
+            text-align: center;
         }
 
         .lang-switch {
@@ -172,6 +174,90 @@
             font-size: 1.2em;
         }
 
+
+        /* Переключатель раздела: политика или журнал изменений */
+        .page-nav {
+            display: inline-flex;
+            gap: 4px;
+            margin-top: 22px;
+            padding: 4px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 14px;
+        }
+
+        .nav-btn {
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .nav-btn.active {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Журнал изменений */
+        .release + .release {
+            margin-top: 34px;
+            padding-top: 30px;
+            border-top: 1px solid #ececf3;
+        }
+
+        .release-head {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .release-version {
+            color: #667eea;
+            font-size: 1.7em;
+            font-weight: 700;
+        }
+
+        .release-date {
+            color: #8a8a99;
+            font-size: 0.95em;
+        }
+
+        .release-list {
+            list-style: none;
+            margin: 16px 0 0;
+        }
+
+        .release-list li {
+            position: relative;
+            margin: 10px 0;
+            padding-left: 26px;
+            text-align: left;
+        }
+
+        .release-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #764ba2;
+        }
+
+        .changelog-note {
+            margin-top: 36px;
+            color: #8a8a99;
+            font-size: 0.92em;
+            text-align: center;
+        }
+
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 2em;
@@ -196,7 +282,7 @@
     <div class="container">
         <div class="header">
             <h1>📝 Paper Notes</h1>
-            <p>Privacy Policy</p>
+            <p id="page-subtitle">Privacy Policy</p>
             <div class="lang-switch">
                 <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
                 <button class="lang-btn" onclick="switchLanguage('uk')">Українська</button>
@@ -207,8 +293,14 @@
                 <button class="lang-btn" onclick="switchLanguage('de')">Deutsch</button>
                 <button class="lang-btn" onclick="switchLanguage('pl')">Polski</button>
             </div>
+
+            <div class="page-nav">
+                <button id="nav-privacy" class="nav-btn active" onclick="showView('privacy')">Privacy Policy</button>
+                <button id="nav-changelog" class="nav-btn" onclick="showView('changelog')">What is new</button>
+            </div>
         </div>
 
+        <div id="policy-view">
         <!-- English Version -->
         <div id="en-content" class="content language-content active">
             <p><strong>Last Updated:</strong> August 2026</p>
@@ -1633,6 +1725,11 @@
             </ul>
         </div>
 
+        </div>
+
+        <!-- Changelog: собирается из данных внизу страницы -->
+        <div id="changelog-view" class="content" style="display: none;"></div>
+
         <div class="footer">
             <p><strong>Paper Notes</strong> - Your privacy is our priority</p>
             <p>Core Features Free Forever · Optional Subscription for New Extras</p>
@@ -1643,24 +1740,339 @@
     </div>
 
     <script>
-        function switchLanguage(lang) {
-            // Hide all content
+        /**
+         * Журнал изменений. Одна запись — один выпуск: чтобы добавить новый,
+         * допишите объект в начало массива и переведите строки.
+         * Пустая дата означает «ещё не вышло» — подпись даты тогда не рисуется.
+         */
+        const CHANGELOG = [
+            {
+                version: '3.4.4',
+                date: '2026-09-16',
+                items: {
+                    en: [
+                        'Note widget: keep a chosen note on the home screen, formatting included.',
+                        'Pictures from the note now show up in the widget, right where they sit in the text.',
+                        'Notes sorting is remembered between launches.',
+                        'Tapping a widget opens the app the first time.',
+                        'Color stripe on cards in grid and masonry views — switch it on in display settings.',
+                        'Alphabetical folder sorting — a button in the Folders tab header.',
+                        'View settings — layout, sorting and display — gathered under one button in the header.',
+                        'Sorting by title: numbers in titles are compared as numbers — “2.” now comes before “10.”.',
+                    ],
+                    uk: [
+                        'Віджет нотатки: обрана нотатка на домашньому екрані разом з оформленням.',
+                        'Картинки з нотатки тепер видно у віджеті — на своїх місцях у тексті.',
+                        'Сортування нотаток запамʼятовується між запусками.',
+                        'Натискання на віджет відкриває застосунок з першого разу.',
+                        'Кольорова смужка на картках у сітці та кладці — вмикається в налаштуваннях відображення.',
+                        'Сортування папок за абеткою — кнопка в шапці вкладки «Папки».',
+                        'Налаштування вигляду — вигляд, сортування та відображення — зібрані в одну кнопку в шапці.',
+                        'Сортування за назвою: числа в назвах порівнюються як числа — «2.» тепер раніше за «10.».',
+                    ],
+                    ru: [
+                        'Виджет заметки: выбранная заметка на домашнем экране вместе с оформлением.',
+                        'Картинки из заметки теперь видны в виджете — на своих местах в тексте.',
+                        'Сортировка заметок запоминается между запусками.',
+                        'Нажатие на виджет открывает приложение с первого раза.',
+                        'Цветная полоска на карточках в сетке и кладке — включается в настройках отображения.',
+                        'Сортировка папок по алфавиту — кнопка в шапке вкладки «Папки».',
+                        'Настройки вида — вид, сортировка и отображение — собраны в одну кнопку в шапке.',
+                        'Сортировка по названию: числа в названиях сравниваются как числа — «2.» теперь раньше «10.».',
+                    ],
+                    fr: [
+                        'Widget de note : gardez une note choisie sur lʼécran dʼaccueil, mise en forme comprise.',
+                        'Les images de la note apparaissent dans le widget, à leur place dans le texte.',
+                        'Le tri des notes est conservé dʼun lancement à lʼautre.',
+                        'Un appui sur un widget ouvre lʼapplication du premier coup.',
+                        'Bande de couleur sur les cartes en grille et en mosaïque — à activer dans les réglages dʼaffichage.',
+                        'Tri alphabétique des dossiers — un bouton dans lʼen-tête de lʼonglet « Dossiers ».',
+                        "Réglages d'affichage — vue, tri et affichage — réunis sous un seul bouton dans l'en-tête.",
+                        'Tri par titre : les nombres dans le titre sont comparés comme des nombres — « 2. » passe désormais avant « 10. ».',
+                    ],
+                    es: [
+                        'Widget de nota: mantén una nota elegida en la pantalla de inicio, con su formato.',
+                        'Las imágenes de la nota se ven en el widget, en su lugar dentro del texto.',
+                        'El orden de las notas se recuerda entre aperturas.',
+                        'Tocar un widget abre la aplicación a la primera.',
+                        'Franja de color en las tarjetas en cuadrícula y mosaico: se activa en los ajustes de visualización.',
+                        'Orden alfabético de las carpetas: un botón en la cabecera de la pestaña «Carpetas».',
+                        'Ajustes de vista — vista, orden y visualización — reunidos en un solo botón de la cabecera.',
+                        'Orden por título: los números del título se comparan como números: «2.» ahora va antes de «10.».',
+                    ],
+                    fi: [
+                        'Muistiinpanowidget: pidä valittu muistiinpano aloitusnäytöllä muotoiluineen.',
+                        'Muistiinpanon kuvat näkyvät widgetissä omilla paikoillaan tekstissä.',
+                        'Muistiinpanojen järjestys muistetaan käynnistysten välillä.',
+                        'Widgetin napautus avaa sovelluksen ensimmäisellä kerralla.',
+                        'Värillinen raita korteissa ruudukossa ja mosaiikissa — kytketään päälle näyttöasetuksista.',
+                        'Kansioiden aakkosjärjestys — painike Kansiot-välilehden yläpalkissa.',
+                        'Näkymän asetukset — näkymä, lajittelu ja näyttö — koottu yhden painikkeen alle yläpalkkiin.',
+                        'Lajittelu nimen mukaan: nimen numerot vertaillaan numeroina — ”2.” tulee nyt ennen ”10.”.',
+                    ],
+                    de: [
+                        'Notiz-Widget: eine ausgewählte Notiz samt Formatierung auf dem Startbildschirm.',
+                        'Bilder aus der Notiz erscheinen jetzt im Widget – an ihrer Stelle im Text.',
+                        'Die Sortierung der Notizen bleibt über Neustarts hinweg erhalten.',
+                        'Ein Tippen auf ein Widget öffnet die App beim ersten Mal.',
+                        'Farbstreifen auf Karten im Raster und im Mosaik — in den Anzeigeeinstellungen einschaltbar.',
+                        'Alphabetisches Sortieren der Ordner — eine Schaltfläche in der Kopfzeile des Tabs „Ordner“.',
+                        'Ansichtseinstellungen — Ansicht, Sortierung und Anzeige — unter einer Schaltfläche in der Kopfzeile vereint.',
+                        'Sortierung nach Titel: Zahlen im Titel werden als Zahlen verglichen — „2.“ steht jetzt vor „10.“.',
+                    ],
+                    pl: [
+                        'Widżet notatki: wybrana notatka na ekranie głównym wraz z formatowaniem.',
+                        'Obrazy z notatki są teraz widoczne w widżecie – w swoich miejscach w tekście.',
+                        'Sortowanie notatek jest zapamiętywane między uruchomieniami.',
+                        'Dotknięcie widżetu otwiera aplikację za pierwszym razem.',
+                        'Kolorowy pasek na kartach w siatce i mozaice — włączany w ustawieniach wyświetlania.',
+                        'Sortowanie folderów alfabetycznie — przycisk w nagłówku karty „Foldery”.',
+                        'Ustawienia widoku — widok, sortowanie i wyświetlanie — zebrane pod jednym przyciskiem w nagłówku.',
+                        'Sortowanie według tytułu: liczby w tytule są porównywane jak liczby — „2.” jest teraz przed „10.”.',
+                    ],
+                },
+            },
+            {
+                version: '3.4.3',
+                date: '2026-09-01',
+                items: {
+                    en: [
+                        'Image viewer: tap a picture in a note to open it full screen.',
+                        'Fixes for folder widgets and card menus.',
+                    ],
+                    uk: [
+                        'Перегляд картинок: натисніть на зображення в нотатці, щоб відкрити його на весь екран.',
+                        'Полагодили віджети папок і меню карток.',
+                    ],
+                    ru: [
+                        'Просмотр картинок: нажмите на изображение в заметке, чтобы открыть его во весь экран.',
+                        'Починили виджеты папок и меню карточек.',
+                    ],
+                    fr: [
+                        'Visionneuse dʼimages : appuyez sur une image dans une note pour lʼouvrir en plein écran.',
+                        'Corrections des widgets de dossiers et des menus de cartes.',
+                    ],
+                    es: [
+                        'Visor de imágenes: toca una imagen en una nota para abrirla a pantalla completa.',
+                        'Correcciones en los widgets de carpetas y en los menús de las tarjetas.',
+                    ],
+                    fi: [
+                        'Kuvien katselu: napauta muistiinpanon kuvaa, niin se avautuu koko näytölle.',
+                        'Korjauksia kansiowidgetteihin ja korttien valikoihin.',
+                    ],
+                    de: [
+                        'Bildansicht: Tippe auf ein Bild in einer Notiz, um es im Vollbild zu öffnen.',
+                        'Korrekturen an Ordner-Widgets und Kartenmenüs.',
+                    ],
+                    pl: [
+                        'Podgląd obrazów: dotknij obrazu w notatce, aby otworzyć go na pełnym ekranie.',
+                        'Poprawki w widżetach folderów i menu kart.',
+                    ],
+                },
+            },
+            {
+                version: '3.4.2',
+                date: '2026-08-26',
+                items: {
+                    en: ['Task fixes and interface polish.'],
+                    uk: ['Правки в задачах і дрібниці оформлення.'],
+                    ru: ['Правки в задачах и мелочи оформления.'],
+                    fr: ['Corrections dans les tâches et retouches de lʼinterface.'],
+                    es: ['Correcciones en las tareas y ajustes de la interfaz.'],
+                    fi: ['Korjauksia tehtäviin ja käyttöliittymän viimeistelyä.'],
+                    de: ['Korrekturen bei Aufgaben und Feinschliff an der Oberfläche.'],
+                    pl: ['Poprawki w zadaniach i dopracowanie interfejsu.'],
+                },
+            },
+            {
+                version: '3.4.1',
+                date: '2026-08-19',
+                items: {
+                    en: [
+                        'Tasks: a new section with priorities, reminders and repeats.',
+                        'Select several notes or lists at once to move or delete them together.',
+                        'Details for notes and lists: counts and dates at a glance.',
+                    ],
+                    uk: [
+                        'Задачі: новий розділ з пріоритетами, нагадуваннями та повторами.',
+                        'Виділення кількох нотаток і списків одразу: перенесення та видалення групою.',
+                        'Подробиці про нотатку і список: кількість і дати.',
+                    ],
+                    ru: [
+                        'Задачи: новый раздел с приоритетами, напоминаниями и повторами.',
+                        'Выделение нескольких заметок и списков сразу: перенос и удаление группой.',
+                        'Подробности о заметке и списке: количество и даты.',
+                    ],
+                    fr: [
+                        'Tâches : une nouvelle section avec priorités, rappels et répétitions.',
+                        'Sélectionnez plusieurs notes ou listes à la fois pour les déplacer ou les supprimer.',
+                        'Détails des notes et des listes : nombres et dates.',
+                    ],
+                    es: [
+                        'Tareas: una sección nueva con prioridades, recordatorios y repeticiones.',
+                        'Selecciona varias notas o listas a la vez para moverlas o eliminarlas juntas.',
+                        'Detalles de notas y listas: cantidades y fechas.',
+                    ],
+                    fi: [
+                        'Tehtävät: uusi osio prioriteeteilla, muistutuksilla ja toistoilla.',
+                        'Valitse useita muistiinpanoja tai listoja kerralla ja siirrä tai poista ne yhdessä.',
+                        'Muistiinpanojen ja listojen tiedot: määrät ja päivämäärät.',
+                    ],
+                    de: [
+                        'Aufgaben: ein neuer Bereich mit Prioritäten, Erinnerungen und Wiederholungen.',
+                        'Mehrere Notizen oder Listen auf einmal auswählen, verschieben oder löschen.',
+                        'Details zu Notizen und Listen: Anzahl und Datum.',
+                    ],
+                    pl: [
+                        'Zadania: nowa sekcja z priorytetami, przypomnieniami i powtórzeniami.',
+                        'Zaznaczaj wiele notatek lub list naraz, aby przenieść je lub usunąć razem.',
+                        'Szczegóły notatek i list: liczby i daty.',
+                    ],
+                },
+            },
+        ];
+
+        /** Подписи самой страницы. */
+        const UI = {
+            en: { privacy: 'Privacy Policy', changelog: 'What is new', note: 'The app shows only the newest entry — the full history lives here.' },
+            uk: { privacy: 'Політика конфіденційності', changelog: 'Що нового', note: 'У застосунку видно лише останній запис — уся історія тут.' },
+            ru: { privacy: 'Политика конфиденциальности', changelog: 'Что нового', note: 'В приложении видна только последняя запись — вся история здесь.' },
+            fr: { privacy: 'Politique de confidentialité', changelog: 'Nouveautés', note: 'Lʼapplication nʼaffiche que la dernière entrée — lʼhistorique complet est ici.' },
+            es: { privacy: 'Política de privacidad', changelog: 'Novedades', note: 'La aplicación solo muestra la última entrada: el historial completo está aquí.' },
+            fi: { privacy: 'Tietosuojakäytäntö', changelog: 'Mitä uutta', note: 'Sovellus näyttää vain uusimman merkinnän — koko historia on täällä.' },
+            de: { privacy: 'Datenschutzerklärung', changelog: 'Was ist neu', note: 'Die App zeigt nur den neuesten Eintrag – die vollständige Historie steht hier.' },
+            pl: { privacy: 'Polityka prywatności', changelog: 'Co nowego', note: 'Aplikacja pokazuje tylko najnowszy wpis — pełna historia jest tutaj.' },
+        };
+
+        const FALLBACK_LANG = 'en';
+        let currentLang = FALLBACK_LANG;
+        let currentView = 'privacy';
+
+        const escapeHtml = text =>
+            String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+        /** Дата выпуска словами на языке страницы; без даты подпись не рисуется. */
+        const formatDate = value => {
+            if (!value) {
+                return '';
+            }
+            const parsed = new Date(value + 'T00:00:00');
+            if (isNaN(parsed.getTime())) {
+                return value;
+            }
+            try {
+                return parsed.toLocaleDateString(currentLang, {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                });
+            } catch (e) {
+                return value;
+            }
+        };
+
+        const renderChangelog = () => {
+            const ui = UI[currentLang] || UI[FALLBACK_LANG];
+            const releases = CHANGELOG.map(release => {
+                const items = release.items[currentLang] || release.items[FALLBACK_LANG] || [];
+                const date = formatDate(release.date);
+                return [
+                    '<div class="release" id="v' + release.version.replace(/\./g, '-') + '">',
+                    '<div class="release-head">',
+                    '<span class="release-version">' + escapeHtml(release.version) + '</span>',
+                    date ? '<span class="release-date">' + escapeHtml(date) + '</span>' : '',
+                    '</div>',
+                    '<ul class="release-list">',
+                    items.map(item => '<li>' + escapeHtml(item) + '</li>').join(''),
+                    '</ul>',
+                    '</div>',
+                ].join('');
+            }).join('');
+
+            document.getElementById('changelog-view').innerHTML =
+                '<h2>' + escapeHtml(ui.changelog) + '</h2>' +
+                releases +
+                '<p class="changelog-note">' + escapeHtml(ui.note) + '</p>';
+        };
+
+        const applyLabels = () => {
+            const ui = UI[currentLang] || UI[FALLBACK_LANG];
+            document.getElementById('nav-privacy').textContent = ui.privacy;
+            document.getElementById('nav-changelog').textContent = ui.changelog;
+            document.getElementById('page-subtitle').textContent =
+                currentView === 'changelog' ? ui.changelog : ui.privacy;
+        };
+
+        function showView(view, skipHash) {
+            currentView = view === 'changelog' ? 'changelog' : 'privacy';
+            const changelog = currentView === 'changelog';
+
+            document.getElementById('policy-view').style.display = changelog ? 'none' : '';
+            document.getElementById('changelog-view').style.display = changelog ? '' : 'none';
+            document.getElementById('nav-privacy').classList.toggle('active', !changelog);
+            document.getElementById('nav-changelog').classList.toggle('active', changelog);
+
+            applyLabels();
+
+            if (!skipHash) {
+                // Адрес с хешем — то, что приложение открывает кнопкой «Все изменения».
+                const hash = changelog ? '#changelog/' + currentLang : '#privacy';
+                if (window.location.hash !== hash) {
+                    window.location.hash = hash;
+                }
+            }
+        }
+
+        function switchLanguage(lang, skipHash) {
+            if (!UI[lang]) {
+                lang = FALLBACK_LANG;
+            }
+            currentLang = lang;
+
             document.querySelectorAll('.language-content').forEach(content => {
                 content.classList.remove('active');
             });
-            
-            // Show selected language content
-            document.getElementById(lang + '-content').classList.add('active');
-            
-            // Update button states
+            const content = document.getElementById(lang + '-content');
+            if (content) {
+                content.classList.add('active');
+            }
+
             document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
+                const onclick = btn.getAttribute('onclick') || '';
+                btn.classList.toggle('active', onclick.indexOf("'" + lang + "'") !== -1);
             });
-            event.target.classList.add('active');
-            
-            // Update page language attribute
+
             document.documentElement.lang = lang;
+            applyLabels();
+            renderChangelog();
+
+            if (!skipHash && currentView === 'changelog') {
+                const hash = '#changelog/' + lang;
+                if (window.location.hash !== hash) {
+                    window.location.hash = hash;
+                }
+            }
         }
+
+        /**
+         * Адрес вида `#changelog` или `#changelog/ru`. Язык в хеше нужен
+         * приложению: оно открывает журнал на том языке, на котором работает.
+         */
+        const applyHash = () => {
+            const parts = (window.location.hash || '').replace('#', '').split('/');
+            const view = parts[0] === 'changelog' ? 'changelog' : 'privacy';
+            const lang = parts[1];
+
+            if (lang && UI[lang] && lang !== currentLang) {
+                switchLanguage(lang, true);
+            }
+            showView(view, true);
+        };
+
+        window.addEventListener('hashchange', applyHash);
+
+        switchLanguage(FALLBACK_LANG, true);
+        applyHash();
     </script>
 </body>
 </html>
