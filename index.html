@@ -303,7 +303,7 @@
         <div id="policy-view">
         <!-- English Version -->
         <div id="en-content" class="content language-content active">
-            <p><strong>Last Updated:</strong> 13 November 2026</p>
+            <p><strong>Last Updated:</strong> 22 November 2026</p>
 
             <h2>🔒 Introduction</h2>
             <p>Paper Notes ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
@@ -325,7 +325,7 @@
             <ul>
                 <li>Payments are processed by <strong>Google Play Billing</strong> (or the applicable app store). We do <strong>not</strong> receive or store your payment card details.</li>
                 <li>The app may check your subscription status via the store APIs to unlock features. Status may be cached locally on your device.</li>
-                <li>We do not use subscription or purchase data for advertising or behavior tracking.</li>
+                <li>We do not use subscription or purchase data for advertising or behavior tracking. Anonymous usage statistics only record whether a purchase was completed, cancelled or failed — without amounts and without any link to you.</li>
                 <li>You can manage or cancel a subscription in your Google Play (or store) account settings.</li>
                 <li>Optional one-time donations, if offered, are also processed by the store and do not grant access to personal note content on our servers.</li>
             </ul>
@@ -350,10 +350,10 @@
 
             <h3>What We Don't Collect:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>No analytics of our own</strong> and no tracking (the only exception: technical diagnostics from Google’s document scanner, described below)</li>
+                <li><span class="emoji">✅</span> <strong>No tracking of you personally</strong>: our only analytics is <a href="#analytics">anonymous usage statistics</a> without any content, and you can turn it off. Besides that, only technical diagnostics from Google’s document scanner, described below</li>
                 <li><span class="emoji">✅</span> <strong>No advertising networks</strong></li>
                 <li><span class="emoji">✅</span> <strong>No personal data</strong> stored on our servers</li>
-                <li><span class="emoji">✅</span> The developer receives <strong>no usage statistics</strong> and does not track your behavior</li>
+                <li><span class="emoji">✅</span> The developer <strong>never receives your content</strong> — no texts, names, amounts or contacts — and cannot link statistics to you</li>
             </ul>
 
             <h2>💾 Data Storage</h2>
@@ -367,7 +367,7 @@
             </ul>
 
             <h2>☁️ What Data Leaves Your Device</h2>
-            <p>Everything you create is stored on your device. It leaves the device only if you turn on backup or sync: then a copy is saved to <strong>your own Google Drive</strong>. Paper Notes has no servers of its own, and nothing is passed to third parties.</p>
+            <p>Everything you create is stored on your device. It leaves the device only if you turn on backup or sync: then a copy is saved to <strong>your own Google Drive</strong>. Paper Notes has no servers of its own, and your content is not passed to third parties. Apart from that, the app sends <a href="#analytics">anonymous usage statistics</a> without any content (you can turn them off) — see below.</p>
             <p><strong>Images from the internet.</strong> If you paste part of a web page into a note or share it to Paper Notes, the app downloads its images from the original website to your device — when you paste or share them and when you open the note — so they stay visible without internet. The website receives an ordinary request, as when the image is viewed in a browser; no cookies are sent, and the images are not passed on anywhere else.</p>
             <p><strong>Budget.</strong> Amounts, categories, limits and notes you enter in the Budget section are stored on your device and, if you turn on backup or sync, in the copy in your own Google Drive. The developer never receives them: the app does not connect to banks or accounts, and budget data is not passed to anyone.</p>
             <p><strong>Document scanner and text from photo.</strong> The document scanner is provided by Google Play services (Google ML Kit Document Scanner). The camera images are processed on your device, and the finished pages are saved in your note like any other picture or file (they reach the copy in your Google Drive only if backup or sync is on). To run the scanner, the Google Play services module sends Google technical diagnostics: device information (manufacturer, model, Android version), the app’s package name and version, a per-installation identifier, performance metrics, error codes and event types. Your images and text are not included. Google encrypts this data in transit (HTTPS) and, according to Google, does not transfer it to third parties; it is handled under the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>. Text from photo is recognised entirely on your device, even offline. Recognition models for some languages (German, French, Spanish, Italian, Finnish, Polish) are downloaded once from GitHub the first time you use them; the app sends nothing there except the usual download request.</p>
@@ -384,10 +384,44 @@
                 <li>a random device identifier — used only to merge sync data between your devices, not for tracking</li>
             </ul>
             <ul>
-                <li>✅ All of this is optional: without Google sign-in nothing leaves your device</li>
+                <li>✅ All of this is optional: without Google sign-in your content does not leave your device</li>
                 <li>✅ Data is encrypted in transit (HTTPS)</li>
-                <li>✅ No advertising and no crash reporting; no analytics of our own — only the technical diagnostics of Google’s document scanner described above</li>
+                <li>✅ No advertising and no crash reporting. Our only analytics is <a href="#analytics">anonymous usage statistics</a> without content, which you can turn off; besides that, only the technical diagnostics of Google’s document scanner described above</li>
             </ul>
+
+            <h2 id="analytics">📈 Anonymous Usage Statistics</h2>
+            <p>To understand which parts of the app are useful and where people get stuck, Paper Notes sends anonymous usage statistics. They never contain the content of your notes or anything you have typed. Statistics are on by default, and you can turn them off at any time.</p>
+            <p><strong>Service.</strong> Statistics are collected by <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). The data is processed and stored in the EU (Germany). Aptabase acts as a processor on behalf of the developer; see the <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabase Privacy Policy</a>.</p>
+            <h3>What is sent</h3>
+            <ul>
+                <li>which sections and screens are opened</li>
+                <li>which features are used — for example the document scanner, text from photo, PDF and printing, version history, sync, backups and templates — and how it ended: done, cancelled or an error (without the error text)</li>
+                <li>that the Plus window was shown, and the result of a purchase (without amounts)</li>
+                <li>steps of the first introduction to the app and milestones of a new installation, such as “first item created” or “came back after a week” — only the fact of the milestone, without dates</li>
+                <li>a mark “active today” or “active this week”</li>
+                <li>the app language and the device language (each as one code from a fixed list)</li>
+                <li>the Plus type (none, monthly or lifetime) and whether sync is turned on</li>
+                <li>the approximate age of the installation: first week, first month, up to six months, or longer</li>
+                <li>on which screen the app was minimised; whether a notification was tapped; whether “What’s new” was shown</li>
+                <li>technical details: app version and build number, operating system name and version, whether it is a debug build, SDK version. The device model is not sent</li>
+            </ul>
+            <p><strong>IP address.</strong> Like any internet request, statistics reach the Aptabase server from your IP address. Aptabase uses it to determine the country and region and to count daily visitors (a hash of the IP address and User-Agent with a salt that changes every 24 hours and is deleted within 48 hours). The IP address itself is not stored.</p>
+            <h3>What is never sent</h3>
+            <ul>
+                <li>texts of notes, lists, tasks, events and cards</li>
+                <li>names of anything: folders, lists, pipelines, templates, categories</li>
+                <li>amounts and currencies</li>
+                <li>names, phone numbers, email addresses and postal addresses of contacts</li>
+                <li>file names and sizes</li>
+                <li>search queries</li>
+                <li>identifiers and dates of records</li>
+                <li>error texts</li>
+                <li>the email address of your Google account</li>
+                <li>the advertising ID and hardware identifiers</li>
+            </ul>
+            <p><strong>No permanent identifier.</strong> The session identifier is random, kept only in memory, and changes every time the app restarts and after an hour of inactivity. The device stores only the on/off switch, the dates of the last activity mark and a counter for the daily limit.</p>
+            <p><strong>Retention.</strong> Aptabase keeps statistics for up to 5 years. Data of a specific person cannot be deleted, because it is not linked to anyone.</p>
+            <p><strong>How to turn it off.</strong> In the app: Settings → Privacy → “Send anonymous statistics”. Turning it off stops sending immediately and erases events that have not been sent yet. No cookies, no advertising.</p>
 
             <h2>🔑 Permissions</h2>
             <p>The app may request the following permissions:</p>
@@ -421,6 +455,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (document scanner)</span>
+                <span class="badge">Aptabase (anonymous statistics)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Google Services:</strong></p>
             <ul>
@@ -428,6 +463,10 @@
                 <li><strong>Google Drive API:</strong> Optional. Used for backup and sync of your data to your Google Drive. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
                 <li><strong>Google Play Billing:</strong> Used for optional subscriptions and donations. Payment details are handled by Google according to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We only receive purchase/subscription status needed to unlock features or hide donation prompts.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Used only when you scan a document (Plus). Runs in Google Play services; images are processed on the device. The module sends Google technical diagnostics (device and app information, a per-installation identifier, performance metrics, error codes) — not your images or text. See the <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+            </ul>
+            <p><strong>Other services:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Anonymous usage statistics without any content (see <a href="#analytics">Anonymous Usage Statistics</a>). Data is processed and stored in the EU (Germany); Aptabase acts as a processor on behalf of the developer. Can be turned off in Settings → Privacy. See the <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabase Privacy Policy</a>.</li>
             </ul>
             <p><strong>What We Don't Use:</strong></p>
             <div>
@@ -458,7 +497,7 @@
                 <li>Posting the new Privacy Policy on this page</li>
                 <li>Updating the "Last Updated" date at the top</li>
                 <li>Showing a notice in the app for significant changes</li>
-                <li>Requesting new consent if we start collecting data</li>
+                <li>Requesting your consent if we start collecting personal data</li>
             </ul>
 
             <h2>⚖️ Your Rights</h2>
@@ -468,7 +507,7 @@
                 <li><strong>Data Control:</strong> You control local data on your device; optional Google Drive copies are controlled via your Google account</li>
                 <li><strong>Data Portability:</strong> You can export a backup from the app; if connected, you can also manage backups in Google Drive</li>
                 <li><strong>Data Deletion:</strong> Delete data in the app, uninstall the app, and/or remove optional Google Drive backup files</li>
-                <li><strong>No Tracking:</strong> We don't track your usage or behavior</li>
+                <li><strong>No Tracking:</strong> We don't track you personally. Only <a href="#analytics">anonymous usage statistics</a> without content are collected, and you can turn them off in Settings → Privacy</li>
                 <li><strong>Google Access:</strong> If you connected Google, you can revoke app access in your Google account settings at any time</li>
             </ul>
 
@@ -481,6 +520,7 @@
                 <li><strong>Copies in Google Drive:</strong> open Google Drive, find the folder <strong>“Paper Notes Backups”</strong> and delete it, then empty the Drive bin. Uninstalling the app does not remove these copies — they stay in your Drive until you delete them.</li>
                 <li><strong>Google access:</strong> in your Google account settings → Security → Third-party connections, remove access for Paper Notes.</li>
             </ol>
+            <p><strong>Anonymous statistics.</strong> You can turn off <a href="#analytics">anonymous usage statistics</a> in Settings → Privacy. Statistics already sent are kept by Aptabase for up to 5 years and cannot be deleted for a specific person, because they are not linked to anyone.</p>
             <p>Deleted data cannot be restored. Questions about deletion: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Contact Us</h2>
@@ -514,7 +554,7 @@
 
         <!-- Ukrainian Version -->
         <div id="uk-content" class="content language-content">
-            <p><strong>Останнє оновлення:</strong> 13 листопада 2026</p>
+            <p><strong>Останнє оновлення:</strong> 22 листопада 2026</p>
 
             <h2>🔒 Вступ</h2>
             <p>Paper Notes ("ми", "наш" або "додаток") прагне захистити вашу конфіденційність. Ця Політика конфіденційності пояснює, як ми обробляємо вашу інформацію під час використання нашого мобільного додатку.</p>
@@ -536,7 +576,7 @@
             <ul>
                 <li>Оплата обробляється через <strong>Google Play Billing</strong> (або відповідний магазин додатків). Ми <strong>не</strong> отримуємо і не зберігаємо дані вашої платіжної картки.</li>
                 <li>Додаток може перевіряти статус підписки через API магазину, щоб відкрити функції. Статус може кешуватися локально на вашому пристрої.</li>
-                <li>Ми не використовуємо дані підписки чи покупок для реклами або відстеження поведінки.</li>
+                <li>Ми не використовуємо дані підписки чи покупок для реклами або відстеження поведінки. Анонімна статистика фіксує лише, чи покупку завершено, скасовано або сталася помилка, — без сум і без прив’язки до вас.</li>
                 <li>Керувати або скасувати підписку можна в налаштуваннях облікового запису Google Play (або магазину).</li>
                 <li>Опційні разові донати, якщо вони доступні, також обробляються магазином і не дають нам доступу до ваших нотаток на наших серверах.</li>
             </ul>
@@ -561,10 +601,10 @@
 
             <h3>Що ми не збираємо:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Без власної аналітики</strong> та відстеження (єдиний виняток — технічна діагностика сканера документів Google, про неї нижче)</li>
+                <li><span class="emoji">✅</span> <strong>Без стеження за вами особисто</strong>: єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без жодного вмісту, і її можна вимкнути. Крім неї — лише технічна діагностика сканера документів Google, про неї нижче</li>
                 <li><span class="emoji">✅</span> <strong>Без рекламних мереж</strong></li>
                 <li><span class="emoji">✅</span> <strong>Без персональних даних</strong> на наших серверах</li>
-                <li><span class="emoji">✅</span> Розробник <strong>не отримує статистики використання</strong> й не відстежує вашу поведінку</li>
+                <li><span class="emoji">✅</span> Розробник <strong>ніколи не отримує ваш вміст</strong> — тексти, назви, суми чи контакти — і не може пов’язати статистику з вами</li>
             </ul>
 
             <h2>💾 Зберігання даних</h2>
@@ -578,7 +618,7 @@
             </ul>
 
             <h2>☁️ Які дані залишають пристрій</h2>
-            <p>Усе, що ви створюєте, зберігається на вашому пристрої. Дані залишають його лише тоді, коли ви вмикаєте резервне копіювання або синхронізацію: тоді копія зберігається у <strong>вашому власному Google Диску</strong>. У Paper Notes немає власних серверів, і третім особам нічого не передається.</p>
+            <p>Усе, що ви створюєте, зберігається на вашому пристрої. Дані залишають його лише тоді, коли ви вмикаєте резервне копіювання або синхронізацію: тоді копія зберігається у <strong>вашому власному Google Диску</strong>. У Paper Notes немає власних серверів, і ваш вміст третім особам не передається. Окрім цього, застосунок надсилає <a href="#analytics">анонімну статистику використання</a> без жодного вмісту (її можна вимкнути) — про неї нижче.</p>
             <p><strong>Картинки з інтернету.</strong> Якщо вставити в нотатку частину вебсторінки або поділитися нею з Paper Notes, застосунок завантажує її картинки з вихідного сайту на ваш пристрій — під час вставлення чи надсилання і під час відкриття нотатки, — щоб вони були видні без інтернету. Сайт отримує звичайний запит, як під час перегляду картинки в браузері; файли cookie не надсилаються, і більше картинки нікуди не передаються.</p>
             <p><strong>Бюджет.</strong> Суми, категорії, ліміти й нотатки, які ви вносите в розділі «Бюджет», зберігаються на вашому пристрої, а якщо ввімкнено резервне копіювання чи синхронізацію, — у копії у вашому Google Диску. Розробник їх не отримує: застосунок не підключається до банків і рахунків і нікому не передає дані бюджету.</p>
             <p><strong>Сканер документів і текст із фото.</strong> Сканер документів працює в сервісах Google Play (Google ML Kit Document Scanner). Знімки обробляються на вашому пристрої, а готові сторінки зберігаються в нотатці як звичайні картинки або файл (у копію у вашому Google Диску вони потрапляють, лише якщо ввімкнено резервне копіювання чи синхронізацію). Для роботи сканера модуль сервісів Google Play передає Google технічну діагностику: відомості про пристрій (виробник, модель, версія Android), назву пакета й версію застосунку, ідентифікатор встановлення, показники продуктивності, коди помилок і типи подій. Ваших знімків і тексту в ній немає. Google шифрує ці дані під час передавання (HTTPS) і, за його словами, не передає їх третім особам; вони обробляються згідно з <a href="https://policies.google.com/privacy" target="_blank">Політикою конфіденційності Google</a>. Текст із фото розпізнається повністю на пристрої, зокрема без інтернету. Моделі розпізнавання для частини мов (німецька, французька, іспанська, італійська, фінська, польська) один раз завантажуються з GitHub під час першого використання; застосунок нічого туди не надсилає, крім звичайного запиту на завантаження.</p>
@@ -595,10 +635,44 @@
                 <li>випадковий ідентифікатор пристрою — лише для обʼєднання синхронізації між вашими пристроями, не для стеження</li>
             </ul>
             <ul>
-                <li>✅ Усе це необовʼязково: без входу в Google дані не залишають пристрій</li>
+                <li>✅ Усе це необовʼязково: без входу в Google ваш вміст не залишає пристрій</li>
                 <li>✅ Під час передавання дані шифруються (HTTPS)</li>
-                <li>✅ Немає реклами та звітів про збої; власної аналітики немає — лише технічна діагностика сканера Google, описана вище</li>
+                <li>✅ Немає реклами та звітів про збої. Єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без вмісту, яку можна вимкнути; крім неї — лише технічна діагностика сканера Google, описана вище</li>
             </ul>
+
+            <h2 id="analytics-uk">📈 Анонімна статистика використання</h2>
+            <p>Щоб розуміти, які частини застосунку корисні і де люди застрягають, Paper Notes надсилає анонімну статистику використання. У ній ніколи немає вмісту ваших нотаток чи будь-чого, що ви вводили. Статистика ввімкнена за замовчуванням, і її можна вимкнути будь-коли.</p>
+            <p><strong>Сервіс.</strong> Статистику збирає <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Дані обробляються й зберігаються в ЄС (Німеччина). Aptabase діє як обробник за дорученням розробника; докладніше — <a href="https://aptabase.com/legal/privacy" target="_blank">Політика конфіденційності Aptabase</a>.</p>
+            <h3>Що надсилається</h3>
+            <ul>
+                <li>які розділи та екрани відкривають</li>
+                <li>якими функціями користуються — наприклад, сканер документів, текст із фото, PDF і друк, історія версій, синхронізація, резервні копії, шаблони — і чим це завершилося: готово, скасовано чи помилка (без тексту помилки)</li>
+                <li>що було показано вікно Plus, і результат покупки (без сум)</li>
+                <li>кроки першого знайомства із застосунком і віхи нового встановлення, наприклад «створено перший запис» чи «повернувся через тиждень», — лише сам факт віхи, без дат</li>
+                <li>позначка «активний сьогодні» або «активний цього тижня»</li>
+                <li>мова інтерфейсу й мова пристрою (кожна — одним кодом із фіксованого списку)</li>
+                <li>тип Plus (немає, місячна чи назавжди) і чи ввімкнено синхронізацію</li>
+                <li>приблизний вік встановлення: перший тиждень, перший місяць, до пів року або довше</li>
+                <li>на якому екрані застосунок згорнули; чи натиснули сповіщення; чи було показано «Що нового»</li>
+                <li>технічні відомості: версія застосунку й номер збірки, назва та версія ОС, ознака налагоджувальної збірки, версія SDK. Модель пристрою не надсилається</li>
+            </ul>
+            <p><strong>IP-адреса.</strong> Як і будь-який запит в інтернеті, статистика надходить на сервер Aptabase з вашої IP-адреси. Aptabase використовує її, щоб визначити країну й регіон і порахувати кількість відвідувачів за день (хеш IP-адреси та User-Agent із сіллю, яка змінюється кожні 24 години й видаляється протягом 48 годин). Саму IP-адресу не зберігають.</p>
+            <h3>Що ніколи не надсилається</h3>
+            <ul>
+                <li>тексти нотаток, списків, завдань, подій і карток</li>
+                <li>назви будь-чого: папок, списків, воронок, шаблонів, категорій</li>
+                <li>суми й валюти</li>
+                <li>імена, телефони, адреси електронної пошти й поштові адреси контактів</li>
+                <li>імена та розміри файлів</li>
+                <li>пошукові запити</li>
+                <li>ідентифікатори й дати записів</li>
+                <li>тексти помилок</li>
+                <li>адреса електронної пошти вашого облікового запису Google</li>
+                <li>рекламний ідентифікатор і апаратні ідентифікатори</li>
+            </ul>
+            <p><strong>Без постійного ідентифікатора.</strong> Ідентифікатор сеансу випадковий, зберігається лише в пам’яті й змінюється під час кожного перезапуску застосунку та після години бездіяльності. На пристрої зберігаються лише перемикач, дати останньої позначки активності й лічильник денного ліміту.</p>
+            <p><strong>Зберігання.</strong> Aptabase зберігає статистику до 5 років. Видалити дані конкретної людини неможливо, бо вони ні до кого не прив’язані.</p>
+            <p><strong>Як вимкнути.</strong> У застосунку: «Налаштування» → «Конфіденційність» → «Надсилати анонімну статистику». Після вимкнення надсилання одразу припиняється, а ще не надіслані події стираються. Без файлів cookie і без реклами.</p>
 
             <h2>🔑 Дозволи</h2>
             <p>Додаток може запитувати наступні дозволи:</p>
@@ -632,6 +706,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (сканер документів)</span>
+                <span class="badge">Aptabase (анонімна статистика)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Сервіси Google:</strong></p>
             <ul>
@@ -639,6 +714,10 @@
                 <li><strong>Google Drive API:</strong> Опційно. Використовується для бекапу та синхронізації ваших даних у Google Drive. Підлягає <a href="https://policies.google.com/privacy" target="_blank">Політиці конфіденційності Google</a>.</li>
                 <li><strong>Google Play Billing:</strong> Використовується для опційних підписок і донатів. Платіжні дані обробляє Google відповідно до <a href="https://policies.google.com/privacy" target="_blank">Політики конфіденційності Google</a>. Ми отримуємо лише статус покупки/підписки, потрібний для відкриття функцій або приховування пропозицій донату.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Лише коли ви скануєте документ (Plus). Працює в сервісах Google Play, знімки обробляються на пристрої. Модуль передає Google технічну діагностику (відомості про пристрій і застосунок, ідентифікатор встановлення, показники продуктивності, коди помилок) — без ваших знімків і тексту. Докладніше — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">розкриття даних ML Kit</a> і <a href="https://policies.google.com/privacy" target="_blank">Політика конфіденційності Google</a>.</li>
+            </ul>
+            <p><strong>Інші сервіси:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Анонімна статистика використання без жодного вмісту (див. <a href="#analytics">«Анонімна статистика використання»</a>). Дані обробляються й зберігаються в ЄС (Німеччина); Aptabase діє як обробник за дорученням розробника. Вимикається в «Налаштування» → «Конфіденційність». Докладніше — <a href="https://aptabase.com/legal/privacy" target="_blank">Політика конфіденційності Aptabase</a>.</li>
             </ul>
             <p><strong>Що ми не використовуємо:</strong></p>
             <div>
@@ -669,7 +748,7 @@
                 <li>Розміщенням нової Політики конфіденційності на цій сторінці</li>
                 <li>Оновленням дати "Останнє оновлення" вгорі</li>
                 <li>Показом повідомлення в додатку для значних змін</li>
-                <li>Запитом нової згоди, якщо ми почнемо збирати дані</li>
+                <li>Запитом вашої згоди, якщо ми почнемо збирати персональні дані</li>
             </ul>
 
             <h2>⚖️ Ваші права</h2>
@@ -679,7 +758,7 @@
                 <li><strong>Контроль даних:</strong> Локальні дані — на вашому пристрої; опційні копії в Google Drive — через налаштування Google аккаунту</li>
                 <li><strong>Портативність даних:</strong> Можете експортувати резервну копію з додатку; за підключення — також керувати бекапами в Google Drive</li>
                 <li><strong>Видалення даних:</strong> Видаліть дані в додатку, видаліть додаток і/або опційні файли бекапу в Google Drive</li>
-                <li><strong>Без відстеження:</strong> Ми не відстежуємо ваше використання або поведінку</li>
+                <li><strong>Без відстеження:</strong> Ми не стежимо за вами особисто. Збирається лише <a href="#analytics">анонімна статистика використання</a> без вмісту, і її можна вимкнути в «Налаштування» → «Конфіденційність»</li>
                 <li><strong>Доступ Google:</strong> Якщо підключали Google, можете відкликати доступ у налаштуваннях Google аккаунту в будь-який час</li>
             </ul>
 
@@ -692,6 +771,7 @@
                 <li><strong>Копії в Google Диску:</strong> відкрийте Google Диск, знайдіть папку <strong>«Paper Notes Backups»</strong> і видаліть її, потім очистіть кошик Диска. Видалення застосунку ці копії не прибирає — вони лишаються у вашому Диску, доки ви їх не видалите.</li>
                 <li><strong>Доступ Google:</strong> у налаштуваннях облікового запису Google → «Безпека» → «Сторонні підключення» скасуйте доступ для Paper Notes.</li>
             </ol>
+            <p><strong>Анонімна статистика.</strong> <a href="#analytics">Анонімну статистику використання</a> можна вимкнути в «Налаштування» → «Конфіденційність». Уже надіслана статистика зберігається в Aptabase до 5 років, і видалити її для конкретної людини неможливо, бо вона ні до кого не прив’язана.</p>
             <p>Видалені дані відновити неможливо. Питання щодо видалення: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Зв'яжіться з нами</h2>
@@ -725,7 +805,7 @@
 
         <!-- Russian Version -->
         <div id="ru-content" class="content language-content">
-            <p><strong>Последнее обновление:</strong> 13 ноября 2026</p>
+            <p><strong>Последнее обновление:</strong> 22 ноября 2026</p>
 
             <h2>🔒 Введение</h2>
             <p>Paper Notes ("мы", "наше" или "приложение") стремится защитить вашу конфиденциальность. Эта Политика конфиденциальности объясняет, как мы обрабатываем вашу информацию при использовании нашего мобильного приложения.</p>
@@ -747,7 +827,7 @@
             <ul>
                 <li>Оплата обрабатывается через <strong>Google Play Billing</strong> (или соответствующий магазин приложений). Мы <strong>не</strong> получаем и не храним данные вашей платёжной карты.</li>
                 <li>Приложение может проверять статус подписки через API магазина, чтобы открыть функции. Статус может кэшироваться локально на вашем устройстве.</li>
-                <li>Мы не используем данные подписки или покупок для рекламы или отслеживания поведения.</li>
+                <li>Мы не используем данные подписки или покупок для рекламы или отслеживания поведения. Анонимная статистика отмечает только, завершена ли покупка, отменена или произошла ошибка, — без сумм и без привязки к вам.</li>
                 <li>Управлять или отменить подписку можно в настройках аккаунта Google Play (или магазина).</li>
                 <li>Опциональные разовые донаты, если они доступны, также обрабатываются магазином и не дают нам доступа к вашим заметкам на наших серверах.</li>
             </ul>
@@ -772,10 +852,10 @@
 
             <h3>Что мы не собираем:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Без своей аналитики</strong> и отслеживания (единственное исключение — техническая диагностика сканера документов Google, о ней ниже)</li>
+                <li><span class="emoji">✅</span> <strong>Без слежки за вами лично</strong>: наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без какого-либо содержимого, и её можно выключить. Кроме неё — только техническая диагностика сканера документов Google, о ней ниже</li>
                 <li><span class="emoji">✅</span> <strong>Без рекламных сетей</strong></li>
                 <li><span class="emoji">✅</span> <strong>Без персональных данных</strong> на наших серверах</li>
-                <li><span class="emoji">✅</span> Разработчик <strong>не получает статистику использования</strong> и не отслеживает ваше поведение</li>
+                <li><span class="emoji">✅</span> Разработчик <strong>никогда не получает ваше содержимое</strong> — тексты, названия, суммы или контакты — и не может связать статистику с вами</li>
             </ul>
 
             <h2>💾 Хранение данных</h2>
@@ -789,7 +869,7 @@
             </ul>
 
             <h2>☁️ Какие данные покидают устройство</h2>
-            <p>Всё, что вы создаёте, хранится на вашем устройстве. Данные покидают его, только если вы включили резервное копирование или синхронизацию: тогда копия сохраняется в <strong>вашем собственном Google Диске</strong>. У Paper Notes нет своих серверов, и третьим лицам ничего не передаётся.</p>
+            <p>Всё, что вы создаёте, хранится на вашем устройстве. Данные покидают его, только если вы включили резервное копирование или синхронизацию: тогда копия сохраняется в <strong>вашем собственном Google Диске</strong>. У Paper Notes нет своих серверов, и ваше содержимое третьим лицам не передаётся. Кроме этого, приложение отправляет <a href="#analytics">анонимную статистику использования</a> без какого-либо содержимого (её можно выключить) — о ней ниже.</p>
             <p><strong>Картинки из интернета.</strong> Если вставить в заметку часть веб-страницы или поделиться ею с Paper Notes, приложение скачивает её картинки с исходного сайта на ваше устройство — при вставке или отправке и при открытии заметки, — чтобы они были видны без интернета. Сайт получает обычный запрос, как при просмотре картинки в браузере; куки не отправляются, и больше картинки никуда не передаются.</p>
             <p><strong>Бюджет.</strong> Суммы, категории, лимиты и заметки, которые вы вносите в разделе «Бюджет», хранятся на вашем устройстве, а если включено резервное копирование или синхронизация, — в копии в вашем Google Диске. Разработчик их не получает: приложение не подключается к банкам и счетам и никому не передаёт данные бюджета.</p>
             <p><strong>Сканер документов и текст с фото.</strong> Сканер документов работает в сервисах Google Play (Google ML Kit Document Scanner). Снимки обрабатываются на вашем устройстве, а готовые страницы сохраняются в заметке как обычные картинки или файл (в копию в вашем Google Диске они попадают, только если включено резервное копирование или синхронизация). Для работы сканера модуль сервисов Google Play передаёт Google техническую диагностику: сведения об устройстве (производитель, модель, версия Android), имя пакета и версию приложения, идентификатор установки, показатели производительности, коды ошибок и типы событий. Ваших снимков и текста в ней нет. Google шифрует эти данные при передаче (HTTPS) и, по его словам, не передаёт их третьим лицам; они обрабатываются по <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Текст с фото распознаётся полностью на устройстве, в том числе без интернета. Модели распознавания для части языков (немецкий, французский, испанский, итальянский, финский, польский) один раз загружаются с GitHub при первом использовании; приложение ничего туда не отправляет, кроме обычного запроса на загрузку.</p>
@@ -806,10 +886,44 @@
                 <li>случайный идентификатор устройства — только для слияния синхронизации между вашими устройствами, не для слежки</li>
             </ul>
             <ul>
-                <li>✅ Всё это необязательно: без входа в Google данные не покидают устройство</li>
+                <li>✅ Всё это необязательно: без входа в Google ваше содержимое не покидает устройство</li>
                 <li>✅ При передаче данные шифруются (HTTPS)</li>
-                <li>✅ Нет рекламы и отчётов о сбоях; своей аналитики нет — только техническая диагностика сканера Google, описанная выше</li>
+                <li>✅ Нет рекламы и отчётов о сбоях. Наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без содержимого, которую можно выключить; кроме неё — только техническая диагностика сканера Google, описанная выше</li>
             </ul>
+
+            <h2 id="analytics-ru">📈 Анонимная статистика использования</h2>
+            <p>Чтобы понимать, какие части приложения полезны и где люди застревают, Paper Notes отправляет анонимную статистику использования. В ней никогда нет содержимого ваших заметок и вообще ничего из того, что вы вводили. Статистика включена по умолчанию, и её можно выключить в любой момент.</p>
+            <p><strong>Сервис.</strong> Статистику собирает <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Данные обрабатываются и хранятся в ЕС (Германия). Aptabase действует как обработчик по поручению разработчика; подробнее — <a href="https://aptabase.com/legal/privacy" target="_blank">Политика конфиденциальности Aptabase</a>.</p>
+            <h3>Что отправляется</h3>
+            <ul>
+                <li>какие разделы и экраны открывают</li>
+                <li>какими функциями пользуются — например, сканер документов, текст с фото, PDF и печать, история версий, синхронизация, резервные копии, шаблоны — и чем это закончилось: готово, отменено или ошибка (без текста ошибки)</li>
+                <li>что было показано окно Plus, и результат покупки (без сумм)</li>
+                <li>шаги первого знакомства с приложением и вехи новой установки, например «создана первая запись» или «вернулся через неделю», — только сам факт вехи, без дат</li>
+                <li>отметка «активен сегодня» или «активен на этой неделе»</li>
+                <li>язык интерфейса и язык устройства (каждый — одним кодом из фиксированного списка)</li>
+                <li>тип Plus (нет, месячная или навсегда) и включена ли синхронизация</li>
+                <li>примерный возраст установки: первая неделя, первый месяц, до полугода или больше</li>
+                <li>на каком экране приложение свернули; нажато ли уведомление; показано ли «Что нового»</li>
+                <li>технические сведения: версия приложения и номер сборки, название и версия ОС, признак отладочной сборки, версия SDK. Модель устройства не отправляется</li>
+            </ul>
+            <p><strong>IP-адрес.</strong> Как и любой запрос в интернете, статистика приходит на сервер Aptabase с вашего IP-адреса. Aptabase использует его, чтобы определить страну и регион и посчитать число посетителей за день (хеш IP-адреса и User-Agent с солью, которая меняется каждые 24 часа и удаляется в течение 48 часов). Сам IP-адрес не сохраняется.</p>
+            <h3>Что никогда не отправляется</h3>
+            <ul>
+                <li>тексты заметок, списков, задач, событий и карточек</li>
+                <li>названия чего-либо: папок, списков, воронок, шаблонов, категорий</li>
+                <li>суммы и валюты</li>
+                <li>имена, телефоны, адреса электронной почты и почтовые адреса контактов</li>
+                <li>имена и размеры файлов</li>
+                <li>поисковые запросы</li>
+                <li>идентификаторы и даты записей</li>
+                <li>тексты ошибок</li>
+                <li>адрес электронной почты вашего аккаунта Google</li>
+                <li>рекламный идентификатор и аппаратные идентификаторы</li>
+            </ul>
+            <p><strong>Без постоянного идентификатора.</strong> Идентификатор сессии случайный, хранится только в памяти и меняется при каждом перезапуске приложения и после часа бездействия. На устройстве хранятся лишь выключатель, даты последней отметки активности и счётчик дневного лимита.</p>
+            <p><strong>Хранение.</strong> Aptabase хранит статистику до 5 лет. Удалить данные конкретного человека нельзя, потому что они ни к кому не привязаны.</p>
+            <p><strong>Как выключить.</strong> В приложении: «Настройки» → «Конфиденциальность» → «Отправлять анонимную статистику». После выключения отправка сразу прекращается, а ещё не отправленные события стираются. Без куки и без рекламы.</p>
 
             <h2>🔑 Разрешения</h2>
             <p>Приложение может запрашивать следующие разрешения:</p>
@@ -843,6 +957,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (сканер документов)</span>
+                <span class="badge">Aptabase (анонимная статистика)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Сервисы Google:</strong></p>
             <ul>
@@ -850,6 +965,10 @@
                 <li><strong>Google Drive API:</strong> Опционально. Используется для бекапа и синхронизации ваших данных в Google Drive. Подлежит <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>.</li>
                 <li><strong>Google Play Billing:</strong> Используется для опциональных подписок и донатов. Платёжные данные обрабатывает Google согласно <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Мы получаем только статус покупки/подписки, нужный для открытия функций или скрытия предложений доната.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Только когда вы сканируете документ (Plus). Работает в сервисах Google Play, снимки обрабатываются на устройстве. Модуль передаёт Google техническую диагностику (сведения об устройстве и приложении, идентификатор установки, показатели производительности, коды ошибок) — без ваших снимков и текста. Подробнее — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">раскрытие данных ML Kit</a> и <a href="https://policies.google.com/privacy" target="_blank">Политика конфиденциальности Google</a>.</li>
+            </ul>
+            <p><strong>Другие сервисы:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Анонимная статистика использования без какого-либо содержимого (см. <a href="#analytics">«Анонимная статистика использования»</a>). Данные обрабатываются и хранятся в ЕС (Германия); Aptabase действует как обработчик по поручению разработчика. Выключается в «Настройки» → «Конфиденциальность». Подробнее — <a href="https://aptabase.com/legal/privacy" target="_blank">Политика конфиденциальности Aptabase</a>.</li>
             </ul>
             <p><strong>Что мы не используем:</strong></p>
             <div>
@@ -880,7 +999,7 @@
                 <li>Размещением новой Политики конфиденциальности на этой странице</li>
                 <li>Обновлением даты "Последнее обновление" вверху</li>
                 <li>Показом уведомления в приложении для значительных изменений</li>
-                <li>Запросом нового согласия, если мы начнем собирать данные</li>
+                <li>Запросом вашего согласия, если мы начнём собирать персональные данные</li>
             </ul>
 
             <h2>⚖️ Ваши права</h2>
@@ -890,7 +1009,7 @@
                 <li><strong>Контроль данных:</strong> Локальные данные — на вашем устройстве; опциональные копии в Google Drive — через настройки Google аккаунта</li>
                 <li><strong>Портативность данных:</strong> Можно экспортировать резервную копию из приложения; при подключении — также управлять бекапами в Google Drive</li>
                 <li><strong>Удаление данных:</strong> Удалите данные в приложении, удалите приложение и/или опциональные файлы бекапа в Google Drive</li>
-                <li><strong>Без отслеживания:</strong> Мы не отслеживаем ваше использование или поведение</li>
+                <li><strong>Без отслеживания:</strong> Мы не следим за вами лично. Собирается только <a href="#analytics">анонимная статистика использования</a> без содержимого, и её можно выключить в «Настройки» → «Конфиденциальность»</li>
                 <li><strong>Доступ Google:</strong> Если подключали Google, можете отозвать доступ в настройках Google аккаунта в любое время</li>
             </ul>
 
@@ -903,6 +1022,7 @@
                 <li><strong>Копии в Google Диске:</strong> откройте Google Диск, найдите папку <strong>«Paper Notes Backups»</strong> и удалите её, затем очистите корзину Диска. Удаление приложения эти копии не убирает — они остаются в вашем Диске, пока вы их не удалите.</li>
                 <li><strong>Доступ Google:</strong> в настройках аккаунта Google → «Безопасность» → «Сторонние подключения» отзовите доступ для Paper Notes.</li>
             </ol>
+            <p><strong>Анонимная статистика.</strong> <a href="#analytics">Анонимную статистику использования</a> можно выключить в «Настройки» → «Конфиденциальность». Уже отправленная статистика хранится у Aptabase до 5 лет, и удалить её для конкретного человека нельзя, потому что она ни к кому не привязана.</p>
             <p>Удалённые данные восстановить нельзя. Вопросы по удалению: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Свяжитесь с нами</h2>
@@ -936,7 +1056,7 @@
 
         <!-- French Version -->
         <div id="fr-content" class="content language-content">
-            <p><strong>Dernière mise à jour :</strong> 13 novembre 2026</p>
+            <p><strong>Dernière mise à jour :</strong> 22 novembre 2026</p>
 
             <h2>🔒 Introduction</h2>
             <p>Paper Notes ("nous", "notre" ou "l'application") s'engage à protéger votre vie privée. Cette Politique de confidentialité explique comment nous traitons vos informations lorsque vous utilisez notre application mobile.</p>
@@ -958,7 +1078,7 @@
             <ul>
                 <li>Les paiements sont traités par <strong>Google Play Billing</strong> (ou le magasin d'applications applicable). Nous ne recevons <strong>pas</strong> et ne stockons pas les détails de votre carte de paiement.</li>
                 <li>L'application peut vérifier le statut de votre abonnement via les API du magasin pour débloquer des fonctionnalités. Ce statut peut être mis en cache localement sur votre appareil.</li>
-                <li>Nous n'utilisons pas les données d'abonnement ou d'achat à des fins publicitaires ou de suivi du comportement.</li>
+                <li>Nous n'utilisons pas les données d'abonnement ou d'achat à des fins publicitaires ou de suivi du comportement. Les statistiques d’utilisation anonymes indiquent seulement si un achat a abouti, a été annulé ou a échoué — sans montants et sans lien avec vous.</li>
                 <li>Vous pouvez gérer ou annuler un abonnement dans les paramètres de votre compte Google Play (ou du magasin).</li>
                 <li>Les dons ponctuels optionnels, s'ils sont proposés, sont également traités par le magasin et ne nous donnent pas accès au contenu de vos notes sur nos serveurs.</li>
             </ul>
@@ -983,10 +1103,10 @@
 
             <h3>Ce que nous ne collectons pas :</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Aucune analyse de notre part</strong> ni suivi (seule exception : les diagnostics techniques du scanner de documents de Google, décrits plus bas)</li>
+                <li><span class="emoji">✅</span> <strong>Aucun suivi personnel</strong> : notre seule analyse, ce sont des <a href="#analytics">statistiques d’utilisation anonymes</a> sans aucun contenu, que vous pouvez désactiver. En dehors de cela, seulement les diagnostics techniques du scanner de documents de Google, décrits plus bas</li>
                 <li><span class="emoji">✅</span> <strong>Aucun réseau publicitaire</strong></li>
                 <li><span class="emoji">✅</span> <strong>Aucune donnée personnelle</strong> stockée sur nos serveurs</li>
-                <li><span class="emoji">✅</span> Le développeur <strong>ne reçoit aucune statistique d’utilisation</strong> et ne suit pas votre comportement</li>
+                <li><span class="emoji">✅</span> Le développeur <strong>ne reçoit jamais votre contenu</strong> — ni textes, ni noms, ni montants, ni contacts — et ne peut pas relier les statistiques à vous</li>
             </ul>
 
             <h2>💾 Stockage des données</h2>
@@ -1000,7 +1120,7 @@
             </ul>
 
             <h2>☁️ Quelles données quittent votre appareil</h2>
-            <p>Tout ce que vous créez est stocké sur votre appareil. Les données ne le quittent que si vous activez la sauvegarde ou la synchronisation : une copie est alors enregistrée dans <strong>votre propre Google Drive</strong>. Paper Notes n’a pas de serveurs propres et rien n’est transmis à des tiers.</p>
+            <p>Tout ce que vous créez est stocké sur votre appareil. Les données ne le quittent que si vous activez la sauvegarde ou la synchronisation : une copie est alors enregistrée dans <strong>votre propre Google Drive</strong>. Paper Notes n’a pas de serveurs propres et votre contenu n’est pas transmis à des tiers. Par ailleurs, l’application envoie des <a href="#analytics">statistiques d’utilisation anonymes</a> sans aucun contenu (vous pouvez les désactiver) — voir ci-dessous.</p>
             <p><strong>Images d’internet.</strong> Si vous collez une partie d’une page web dans une note ou la partagez avec Paper Notes, l’application télécharge ses images depuis le site d’origine sur votre appareil — au moment du collage ou du partage et à l’ouverture de la note — pour qu’elles restent visibles sans internet. Le site reçoit une requête ordinaire, comme lorsqu’on affiche l’image dans un navigateur ; aucun cookie n’est envoyé et les images ne sont transmises nulle part ailleurs.</p>
             <p><strong>Budget.</strong> Les montants, catégories, plafonds et notes que vous saisissez dans la section « Budget » sont stockés sur votre appareil et, si la sauvegarde ou la synchronisation est activée, dans la copie de votre propre Google Drive. Le développeur ne les reçoit jamais : l’application ne se connecte à aucune banque ni à aucun compte et ne transmet les données du budget à personne.</p>
             <p><strong>Scanner de documents et texte de la photo.</strong> Le scanner de documents est fourni par les services Google Play (Google ML Kit Document Scanner). Les prises de vue sont traitées sur votre appareil, et les pages obtenues sont enregistrées dans la note comme des images ou un fichier ordinaires (elles n’entrent dans la copie de votre Google Drive que si la sauvegarde ou la synchronisation est activée). Pour faire fonctionner le scanner, le module des services Google Play envoie à Google des diagnostics techniques : informations sur l’appareil (fabricant, modèle, version d’Android), nom du paquet et version de l’application, un identifiant d’installation, des mesures de performances, des codes d’erreur et des types d’événements. Ils ne contiennent ni vos images ni votre texte. Google chiffre ces données en transit (HTTPS) et, selon Google, ne les transfère pas à des tiers ; elles sont traitées conformément aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>. Le texte de la photo est reconnu entièrement sur votre appareil, même sans Internet. Les modèles de reconnaissance de certaines langues (allemand, français, espagnol, italien, finnois, polonais) sont téléchargés une fois depuis GitHub lors de la première utilisation ; l’application n’y envoie rien d’autre que la requête de téléchargement habituelle.</p>
@@ -1017,10 +1137,44 @@
                 <li>un identifiant d’appareil aléatoire, utilisé uniquement pour fusionner la synchronisation entre vos appareils, pas pour vous suivre</li>
             </ul>
             <ul>
-                <li>✅ Tout cela est facultatif : sans connexion Google, rien ne quitte votre appareil</li>
+                <li>✅ Tout cela est facultatif : sans connexion Google, votre contenu ne quitte pas votre appareil</li>
                 <li>✅ Les données sont chiffrées pendant le transfert (HTTPS)</li>
-                <li>✅ Pas de publicité ni de rapports de plantage ; aucune analyse de notre part — seulement les diagnostics techniques du scanner de Google décrits ci-dessus</li>
+                <li>✅ Pas de publicité ni de rapports de plantage. Notre seule analyse : des <a href="#analytics">statistiques d’utilisation anonymes</a> sans contenu, que vous pouvez désactiver ; en dehors de cela, seulement les diagnostics techniques du scanner de Google décrits ci-dessus</li>
             </ul>
+
+            <h2 id="analytics-fr">📈 Statistiques d’utilisation anonymes</h2>
+            <p>Pour comprendre quelles parties de l’application sont utiles et où les gens se bloquent, Paper Notes envoie des statistiques d’utilisation anonymes. Elles ne contiennent jamais le contenu de vos notes ni rien de ce que vous avez saisi. Elles sont activées par défaut, et vous pouvez les désactiver à tout moment.</p>
+            <p><strong>Service.</strong> Les statistiques sont collectées par <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Les données sont traitées et stockées dans l’UE (Allemagne). Aptabase agit en tant que sous-traitant pour le compte du développeur ; voir la <a href="https://aptabase.com/legal/privacy" target="_blank">politique de confidentialité d’Aptabase</a>.</p>
+            <h3>Ce qui est envoyé</h3>
+            <ul>
+                <li>les sections et les écrans ouverts</li>
+                <li>les fonctions utilisées — par exemple le scanner de documents, le texte depuis une photo, le PDF et l’impression, l’historique des versions, la synchronisation, les sauvegardes et les modèles — et leur issue : terminé, annulé ou erreur (sans le texte de l’erreur)</li>
+                <li>l’affichage de la fenêtre Plus et le résultat d’un achat (sans montants)</li>
+                <li>les étapes de la première découverte de l’application et les jalons d’une nouvelle installation, par exemple « premier élément créé » ou « revenu au bout d’une semaine » — uniquement le fait que le jalon est atteint, sans dates</li>
+                <li>une marque « actif aujourd’hui » ou « actif cette semaine »</li>
+                <li>la langue de l’interface et la langue de l’appareil (chacune sous forme d’un code issu d’une liste fixe)</li>
+                <li>le type de Plus (aucun, mensuel ou à vie) et si la synchronisation est activée</li>
+                <li>l’ancienneté approximative de l’installation : première semaine, premier mois, jusqu’à six mois, ou plus</li>
+                <li>l’écran sur lequel l’application a été réduite ; si une notification a été touchée ; si « Nouveautés » a été affiché</li>
+                <li>des informations techniques : version et numéro de build de l’application, nom et version du système d’exploitation, indication d’une version de débogage, version du SDK. Le modèle de l’appareil n’est pas envoyé</li>
+            </ul>
+            <p><strong>Adresse IP.</strong> Comme toute requête sur Internet, les statistiques parviennent au serveur d’Aptabase depuis votre adresse IP. Aptabase l’utilise pour déterminer le pays et la région et pour compter les visiteurs quotidiens (un hachage de l’adresse IP et du User-Agent avec un sel qui change toutes les 24 heures et est supprimé dans les 48 heures). L’adresse IP elle-même n’est pas conservée.</p>
+            <h3>Ce qui n’est jamais envoyé</h3>
+            <ul>
+                <li>les textes des notes, listes, tâches, événements et fiches</li>
+                <li>les noms de quoi que ce soit : dossiers, listes, entonnoirs, modèles, catégories</li>
+                <li>les montants et les devises</li>
+                <li>les noms, numéros de téléphone, adresses e-mail et adresses postales des contacts</li>
+                <li>les noms et tailles des fichiers</li>
+                <li>les recherches</li>
+                <li>les identifiants et les dates des éléments</li>
+                <li>les textes d’erreur</li>
+                <li>l’adresse e-mail de votre compte Google</li>
+                <li>l’identifiant publicitaire et les identifiants matériels</li>
+            </ul>
+            <p><strong>Pas d’identifiant permanent.</strong> L’identifiant de session est aléatoire, gardé uniquement en mémoire, et change à chaque redémarrage de l’application et après une heure d’inactivité. L’appareil ne conserve que l’interrupteur, les dates de la dernière marque d’activité et un compteur pour la limite quotidienne.</p>
+            <p><strong>Conservation.</strong> Aptabase conserve les statistiques jusqu’à 5 ans. Les données d’une personne précise ne peuvent pas être supprimées, car elles ne sont liées à personne.</p>
+            <p><strong>Comment les désactiver.</strong> Dans l’application : Paramètres → Confidentialité → « Envoyer des statistiques anonymes ». La désactivation arrête immédiatement l’envoi et efface les événements pas encore envoyés. Pas de cookies, pas de publicité.</p>
 
             <h2>🔑 Autorisations</h2>
             <p>L'application peut demander les autorisations suivantes :</p>
@@ -1054,6 +1208,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (scanner de documents)</span>
+                <span class="badge">Aptabase (statistiques anonymes)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Services Google :</strong></p>
             <ul>
@@ -1061,6 +1216,10 @@
                 <li><strong>Google Drive API :</strong> Optionnel. Utilisé pour la sauvegarde et la synchronisation de vos données vers votre Google Drive. Soumis à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
                 <li><strong>Google Play Billing :</strong> Utilisé pour les abonnements et dons optionnels. Les détails de paiement sont gérés par Google conformément à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>. Nous ne recevons que le statut d'achat/abonnement nécessaire pour débloquer des fonctionnalités ou masquer les invitations au don.</li>
                 <li><strong>Google ML Kit Document Scanner :</strong> Utilisé uniquement lorsque vous numérisez un document (Plus). Fonctionne dans les services Google Play ; les prises de vue sont traitées sur l’appareil. Le module envoie à Google des diagnostics techniques (informations sur l’appareil et l’application, identifiant d’installation, mesures de performances, codes d’erreur), sans vos images ni votre texte. Voir la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgation des données ML Kit</a> et les <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>.</li>
+            </ul>
+            <p><strong>Autres services :</strong></p>
+            <ul>
+                <li><strong>Aptabase :</strong> Statistiques d’utilisation anonymes, sans aucun contenu (voir <a href="#analytics">« Statistiques d’utilisation anonymes »</a>). Les données sont traitées et stockées dans l’UE (Allemagne) ; Aptabase agit en tant que sous-traitant pour le compte du développeur. Désactivables dans Paramètres → Confidentialité. Voir la <a href="https://aptabase.com/legal/privacy" target="_blank">politique de confidentialité d’Aptabase</a>.</li>
             </ul>
             <p><strong>Ce que nous n'utilisons pas :</strong></p>
             <div>
@@ -1091,7 +1250,7 @@
                 <li>Publication de la nouvelle Politique de confidentialité sur cette page</li>
                 <li>Mise à jour de la date "Dernière mise à jour" en haut</li>
                 <li>Affichage d'un avis dans l'application pour les changements importants</li>
-                <li>Demande d'un nouveau consentement si nous commençons à collecter des données</li>
+                <li>Demande de votre consentement si nous commençons à collecter des données personnelles</li>
             </ul>
 
             <h2>⚖️ Vos droits</h2>
@@ -1101,7 +1260,7 @@
                 <li><strong>Contrôle des données :</strong> Vous contrôlez les données locales sur votre appareil ; les copies Google Drive optionnelles sont contrôlées via votre compte Google</li>
                 <li><strong>Portabilité des données :</strong> Vous pouvez exporter une sauvegarde depuis l'application ; si connecté, vous pouvez également gérer les sauvegardes dans Google Drive</li>
                 <li><strong>Suppression des données :</strong> Supprimez les données dans l'application, désinstallez l'application et/ou supprimez les fichiers de sauvegarde Google Drive optionnels</li>
-                <li><strong>Pas de suivi :</strong> Nous ne suivons pas votre utilisation ou votre comportement</li>
+                <li><strong>Pas de suivi :</strong> Nous ne vous suivons pas personnellement. Seules des <a href="#analytics">statistiques d’utilisation anonymes</a> sans contenu sont collectées, et vous pouvez les désactiver dans Paramètres → Confidentialité</li>
                 <li><strong>Accès Google :</strong> Si vous avez connecté Google, vous pouvez révoquer l'accès de l'application dans les paramètres de votre compte Google à tout moment</li>
             </ul>
 
@@ -1114,6 +1273,7 @@
                 <li><strong>Copies dans Google Drive :</strong> ouvrez Google Drive, trouvez le dossier <strong>« Paper Notes Backups »</strong> et supprimez-le, puis videz la corbeille de Drive. La désinstallation ne supprime pas ces copies : elles restent dans votre Drive jusqu’à ce que vous les supprimiez.</li>
                 <li><strong>Accès Google :</strong> dans les paramètres de votre compte Google → Sécurité → Connexions tierces, retirez l’accès de Paper Notes.</li>
             </ol>
+            <p><strong>Statistiques anonymes.</strong> Vous pouvez désactiver les <a href="#analytics">statistiques d’utilisation anonymes</a> dans Paramètres → Confidentialité. Les statistiques déjà envoyées sont conservées par Aptabase jusqu’à 5 ans et ne peuvent pas être supprimées pour une personne précise, car elles ne sont liées à personne.</p>
             <p>Les données supprimées ne peuvent pas être restaurées. Questions sur la suppression : <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Nous contacter</h2>
@@ -1147,7 +1307,7 @@
 
         <!-- Spanish Version -->
         <div id="es-content" class="content language-content">
-            <p><strong>Última actualización:</strong> 13 de noviembre de 2026</p>
+            <p><strong>Última actualización:</strong> 22 de noviembre de 2026</p>
 
             <h2>🔒 Introducción</h2>
             <p>Paper Notes ("nosotros", "nuestro" o "la aplicación") se compromete a proteger su privacidad. Esta Política de privacidad explica cómo manejamos su información cuando utiliza nuestra aplicación móvil.</p>
@@ -1169,7 +1329,7 @@
             <ul>
                 <li>Los pagos se procesan mediante <strong>Google Play Billing</strong> (o la tienda de aplicaciones correspondiente). <strong>No</strong> recibimos ni almacenamos los datos de su tarjeta de pago.</li>
                 <li>La aplicación puede comprobar el estado de su suscripción a través de las API de la tienda para desbloquear funciones. El estado puede almacenarse en caché localmente en su dispositivo.</li>
-                <li>No utilizamos datos de suscripción o compra para publicidad o seguimiento del comportamiento.</li>
+                <li>No utilizamos datos de suscripción o compra para publicidad o seguimiento del comportamiento. Las estadísticas de uso anónimas solo registran si una compra se completó, se canceló o falló, sin importes y sin vincularse con usted.</li>
                 <li>Puede gestionar o cancelar una suscripción en la configuración de su cuenta de Google Play (o de la tienda).</li>
                 <li>Las donaciones únicas opcionales, si se ofrecen, también las procesa la tienda y no nos dan acceso al contenido de sus notas en nuestros servidores.</li>
             </ul>
@@ -1194,10 +1354,10 @@
 
             <h3>Lo que no recopilamos:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Sin análisis propios</strong> ni seguimiento (única excepción: los diagnósticos técnicos del escáner de documentos de Google, descritos más abajo)</li>
+                <li><span class="emoji">✅</span> <strong>Sin seguimiento personal</strong>: nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin ningún contenido, que puede desactivar. Aparte de eso, solo los diagnósticos técnicos del escáner de documentos de Google, descritos más abajo</li>
                 <li><span class="emoji">✅</span> <strong>Sin redes publicitarias</strong></li>
                 <li><span class="emoji">✅</span> <strong>Sin datos personales</strong> almacenados en nuestros servidores</li>
-                <li><span class="emoji">✅</span> El desarrollador <strong>no recibe estadísticas de uso</strong> ni hace seguimiento de su comportamiento</li>
+                <li><span class="emoji">✅</span> El desarrollador <strong>nunca recibe su contenido</strong> —ni textos, ni nombres, ni importes, ni contactos— y no puede vincular las estadísticas con usted</li>
             </ul>
 
             <h2>💾 Almacenamiento de datos</h2>
@@ -1211,7 +1371,7 @@
             </ul>
 
             <h2>☁️ Qué datos salen de su dispositivo</h2>
-            <p>Todo lo que crea se guarda en su dispositivo. Los datos solo salen de él si activa la copia de seguridad o la sincronización: entonces se guarda una copia en <strong>su propio Google Drive</strong>. Paper Notes no tiene servidores propios y no se transmite nada a terceros.</p>
+            <p>Todo lo que crea se guarda en su dispositivo. Los datos solo salen de él si activa la copia de seguridad o la sincronización: entonces se guarda una copia en <strong>su propio Google Drive</strong>. Paper Notes no tiene servidores propios y su contenido no se transmite a terceros. Además, la aplicación envía <a href="#analytics">estadísticas de uso anónimas</a> sin ningún contenido (puede desactivarlas); más información abajo.</p>
             <p><strong>Imágenes de internet.</strong> Si pega en una nota parte de una página web o la comparte con Paper Notes, la app descarga sus imágenes desde el sitio original a su dispositivo —al pegarlas o compartirlas y al abrir la nota— para que se vean sin internet. El sitio recibe una solicitud normal, como cuando la imagen se ve en un navegador; no se envían cookies y las imágenes no se transmiten a ningún otro lugar.</p>
             <p><strong>Presupuesto.</strong> Los importes, categorías, límites y notas que introduce en la sección «Presupuesto» se guardan en su dispositivo y, si activa la copia de seguridad o la sincronización, en la copia de su propio Google Drive. El desarrollador nunca los recibe: la app no se conecta a bancos ni a cuentas y no transmite los datos del presupuesto a nadie.</p>
             <p><strong>Escáner de documentos y texto de la foto.</strong> El escáner de documentos lo proporcionan los servicios de Google Play (Google ML Kit Document Scanner). Las capturas se procesan en su dispositivo y las páginas resultantes se guardan en la nota como imágenes o un archivo normales (solo entran en la copia de su Google Drive si la copia de seguridad o la sincronización están activadas). Para que el escáner funcione, el módulo de los servicios de Google Play envía a Google diagnósticos técnicos: información del dispositivo (fabricante, modelo, versión de Android), nombre del paquete y versión de la app, un identificador de instalación, métricas de rendimiento, códigos de error y tipos de eventos. No incluyen sus imágenes ni su texto. Google cifra estos datos en tránsito (HTTPS) y, según Google, no los transfiere a terceros; se tratan conforme a la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. El texto de la foto se reconoce íntegramente en su dispositivo, incluso sin internet. Los modelos de reconocimiento de algunos idiomas (alemán, francés, español, italiano, finés, polaco) se descargan una vez desde GitHub la primera vez que se usan; la app no envía allí nada más que la solicitud de descarga habitual.</p>
@@ -1228,10 +1388,44 @@
                 <li>un identificador de dispositivo aleatorio, que solo sirve para combinar la sincronización entre sus dispositivos, no para rastrearle</li>
             </ul>
             <ul>
-                <li>✅ Todo esto es opcional: sin iniciar sesión en Google, nada sale de su dispositivo</li>
+                <li>✅ Todo esto es opcional: sin iniciar sesión en Google, su contenido no sale de su dispositivo</li>
                 <li>✅ Los datos se cifran durante la transferencia (HTTPS)</li>
-                <li>✅ Sin publicidad ni informes de fallos; sin analítica propia: solo los diagnósticos técnicos del escáner de Google descritos arriba</li>
+                <li>✅ Sin publicidad ni informes de fallos. Nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin contenido, que puede desactivar; aparte de eso, solo los diagnósticos técnicos del escáner de Google descritos arriba</li>
             </ul>
+
+            <h2 id="analytics-es">📈 Estadísticas de uso anónimas</h2>
+            <p>Para entender qué partes de la aplicación son útiles y dónde se atasca la gente, Paper Notes envía estadísticas de uso anónimas. Nunca incluyen el contenido de sus notas ni nada de lo que haya escrito. Están activadas de forma predeterminada y puede desactivarlas en cualquier momento.</p>
+            <p><strong>Servicio.</strong> Las estadísticas las recopila <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Los datos se procesan y almacenan en la UE (Alemania). Aptabase actúa como encargado del tratamiento por cuenta del desarrollador; consulte la <a href="https://aptabase.com/legal/privacy" target="_blank">Política de privacidad de Aptabase</a>.</p>
+            <h3>Qué se envía</h3>
+            <ul>
+                <li>qué secciones y pantallas se abren</li>
+                <li>qué funciones se usan —por ejemplo, el escáner de documentos, texto desde foto, PDF e impresión, historial de versiones, sincronización, copias de seguridad y plantillas— y cómo terminó: completado, cancelado o error (sin el texto del error)</li>
+                <li>que se mostró la ventana de Plus y el resultado de una compra (sin importes)</li>
+                <li>los pasos de la primera presentación de la aplicación y los hitos de una nueva instalación, como «primer elemento creado» o «volvió al cabo de una semana»: solo el hecho del hito, sin fechas</li>
+                <li>una marca de «activo hoy» o «activo esta semana»</li>
+                <li>el idioma de la interfaz y el idioma del dispositivo (cada uno como un código de una lista fija)</li>
+                <li>el tipo de Plus (ninguno, mensual o de por vida) y si la sincronización está activada</li>
+                <li>la antigüedad aproximada de la instalación: primera semana, primer mes, hasta seis meses o más</li>
+                <li>en qué pantalla se minimizó la aplicación; si se tocó una notificación; si se mostró «Novedades»</li>
+                <li>datos técnicos: versión y número de compilación de la aplicación, nombre y versión del sistema operativo, si es una compilación de depuración, versión del SDK. No se envía el modelo del dispositivo</li>
+            </ul>
+            <p><strong>Dirección IP.</strong> Como cualquier solicitud en internet, las estadísticas llegan al servidor de Aptabase desde su dirección IP. Aptabase la usa para determinar el país y la región y para contar los visitantes diarios (un hash de la dirección IP y del User-Agent con una sal que cambia cada 24 horas y se elimina en un plazo de 48 horas). La dirección IP en sí no se guarda.</p>
+            <h3>Qué no se envía nunca</h3>
+            <ul>
+                <li>textos de notas, listas, tareas, eventos y tarjetas</li>
+                <li>nombres de cualquier cosa: carpetas, listas, embudos, plantillas, categorías</li>
+                <li>importes y monedas</li>
+                <li>nombres, teléfonos, correos electrónicos y direcciones de los contactos</li>
+                <li>nombres y tamaños de archivos</li>
+                <li>búsquedas</li>
+                <li>identificadores y fechas de los elementos</li>
+                <li>textos de error</li>
+                <li>el correo electrónico de su cuenta de Google</li>
+                <li>el ID de publicidad y los identificadores de hardware</li>
+            </ul>
+            <p><strong>Sin identificador permanente.</strong> El identificador de sesión es aleatorio, se guarda solo en memoria y cambia cada vez que se reinicia la aplicación y tras una hora de inactividad. En el dispositivo solo se guardan el interruptor, las fechas de la última marca de actividad y un contador del límite diario.</p>
+            <p><strong>Conservación.</strong> Aptabase conserva las estadísticas hasta 5 años. Los datos de una persona concreta no se pueden eliminar, porque no están vinculados a nadie.</p>
+            <p><strong>Cómo desactivarlas.</strong> En la aplicación: Ajustes → Privacidad → «Enviar estadísticas anónimas». Al desactivarlas, el envío se detiene de inmediato y se borran los eventos aún no enviados. Sin cookies y sin publicidad.</p>
 
             <h2>🔑 Permisos</h2>
             <p>La aplicación puede solicitar los siguientes permisos:</p>
@@ -1265,6 +1459,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (escáner de documentos)</span>
+                <span class="badge">Aptabase (estadísticas anónimas)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Servicios de Google:</strong></p>
             <ul>
@@ -1272,6 +1467,10 @@
                 <li><strong>Google Drive API:</strong> Opcional. Se utiliza para la copia de seguridad y sincronización de sus datos en su Google Drive. Sujeto a la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
                 <li><strong>Google Play Billing:</strong> Se utiliza para suscripciones y donaciones opcionales. Los datos de pago los gestiona Google según la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. Solo recibimos el estado de compra/suscripción necesario para desbloquear funciones u ocultar invitaciones a donar.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Solo cuando escanea un documento (Plus). Funciona en los servicios de Google Play; las capturas se procesan en el dispositivo. El módulo envía a Google diagnósticos técnicos (información del dispositivo y de la app, identificador de instalación, métricas de rendimiento, códigos de error), sin sus imágenes ni su texto. Consulte la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgación de datos de ML Kit</a> y la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
+            </ul>
+            <p><strong>Otros servicios:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Estadísticas de uso anónimas, sin ningún contenido (consulte <a href="#analytics">«Estadísticas de uso anónimas»</a>). Los datos se procesan y almacenan en la UE (Alemania); Aptabase actúa como encargado del tratamiento por cuenta del desarrollador. Se pueden desactivar en Ajustes → Privacidad. Consulte la <a href="https://aptabase.com/legal/privacy" target="_blank">Política de privacidad de Aptabase</a>.</li>
             </ul>
             <p><strong>Lo que no utilizamos:</strong></p>
             <div>
@@ -1302,7 +1501,7 @@
                 <li>Publicación de la nueva Política de privacidad en esta página</li>
                 <li>Actualización de la fecha "Última actualización" en la parte superior</li>
                 <li>Mostrar un aviso en la aplicación para cambios significativos</li>
-                <li>Solicitar nuevo consentimiento si comenzamos a recopilar datos</li>
+                <li>Solicitar su consentimiento si comenzamos a recopilar datos personales</li>
             </ul>
 
             <h2>⚖️ Sus derechos</h2>
@@ -1312,7 +1511,7 @@
                 <li><strong>Control de datos:</strong> Usted controla los datos locales en su dispositivo; las copias opcionales de Google Drive se controlan a través de su cuenta de Google</li>
                 <li><strong>Portabilidad de datos:</strong> Puede exportar una copia de seguridad desde la aplicación; si está conectado, también puede gestionar las copias de seguridad en Google Drive</li>
                 <li><strong>Eliminación de datos:</strong> Elimine datos en la aplicación, desinstale la aplicación y/o elimine archivos de copia de seguridad opcionales de Google Drive</li>
-                <li><strong>Sin seguimiento:</strong> No rastreamos su uso o comportamiento</li>
+                <li><strong>Sin seguimiento:</strong> No le seguimos personalmente. Solo se recopilan <a href="#analytics">estadísticas de uso anónimas</a> sin contenido, y puede desactivarlas en Ajustes → Privacidad</li>
                 <li><strong>Acceso de Google:</strong> Si conectó Google, puede revocar el acceso de la aplicación en la configuración de su cuenta de Google en cualquier momento</li>
             </ul>
 
@@ -1325,6 +1524,7 @@
                 <li><strong>Copias en Google Drive:</strong> abra Google Drive, busque la carpeta <strong>«Paper Notes Backups»</strong> y elimínela; después vacíe la papelera de Drive. Desinstalar la app no borra estas copias: permanecen en su Drive hasta que usted las elimine.</li>
                 <li><strong>Acceso de Google:</strong> en la configuración de su cuenta de Google → Seguridad → Conexiones de terceros, quite el acceso de Paper Notes.</li>
             </ol>
+            <p><strong>Estadísticas anónimas.</strong> Puede desactivar las <a href="#analytics">estadísticas de uso anónimas</a> en Ajustes → Privacidad. Las estadísticas ya enviadas se conservan en Aptabase hasta 5 años y no se pueden eliminar para una persona concreta, porque no están vinculadas a nadie.</p>
             <p>Los datos eliminados no se pueden recuperar. Preguntas sobre la eliminación: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Contáctenos</h2>
@@ -1358,7 +1558,7 @@
 
         <!-- Finnish Version -->
         <div id="fi-content" class="content language-content">
-            <p><strong>Viimeksi päivitetty:</strong> 13. marraskuuta 2026</p>
+            <p><strong>Viimeksi päivitetty:</strong> 22. marraskuuta 2026</p>
 
             <h2>🔒 Johdanto</h2>
             <p>Paper Notes ("me", "meidän" tai "sovellus") on sitoutunut suojaamaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten käsittelemme tietojasi, kun käytät mobiilisovellustamme.</p>
@@ -1380,7 +1580,7 @@
             <ul>
                 <li>Maksut käsittelee <strong>Google Play Billing</strong> (tai sovellettava sovelluskauppa). Emme vastaanota emmekä tallenna maksukorttitietojasi.</li>
                 <li>Sovellus voi tarkistaa tilauksen tilan kaupan API:en kautta ominaisuuksien avaamiseksi. Tila voidaan tallentaa välimuistiin paikallisesti laitteellesi.</li>
-                <li>Emme käytä tilaus- tai ostotietoja mainontaan tai käyttäytymisen seurantaan.</li>
+                <li>Emme käytä tilaus- tai ostotietoja mainontaan tai käyttäytymisen seurantaan. Anonyymeihin käyttötilastoihin kirjataan vain, onnistuiko osto, peruttiinko se vai tapahtuiko virhe – ilman summia ja ilman yhteyttä sinuun.</li>
                 <li>Voit hallita tai peruuttaa tilauksen Google Play (tai kaupan) -tilisi asetuksissa.</li>
                 <li>Valinnaiset kertalahjoitukset, jos tarjolla, käsitellään myös kaupan kautta eivätkä anna meille pääsyä muistiinpanoihisi palvelimillamme.</li>
             </ul>
@@ -1405,10 +1605,10 @@
 
             <h3>Mitä emme kerää:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Ei omaa analytiikkaa</strong> tai seurantaa (ainoa poikkeus: Googlen asiakirjaskannerin tekninen diagnostiikka, josta alla)</li>
+                <li><span class="emoji">✅</span> <strong>Ei sinuun kohdistuvaa seurantaa</strong>: ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman mitään sisältöä, ja voit poistaa ne käytöstä. Sen lisäksi vain Googlen asiakirjaskannerin tekninen diagnostiikka, josta alla</li>
                 <li><span class="emoji">✅</span> <strong>Ei mainosverkostoja</strong></li>
                 <li><span class="emoji">✅</span> <strong>Ei henkilötietoja</strong> palvelimillamme</li>
-                <li><span class="emoji">✅</span> Kehittäjä <strong>ei saa käyttötilastoja</strong> eikä seuraa käyttäytymistäsi</li>
+                <li><span class="emoji">✅</span> Kehittäjä <strong>ei koskaan saa sisältöäsi</strong> – tekstejä, nimiä, summia tai yhteystietoja – eikä voi yhdistää tilastoja sinuun</li>
             </ul>
 
             <h2>💾 Tietojen tallennus</h2>
@@ -1422,7 +1622,7 @@
             </ul>
 
             <h2>☁️ Mitkä tiedot lähtevät laitteelta</h2>
-            <p>Kaikki luomasi tallennetaan laitteellesi. Tiedot lähtevät laitteelta vain, jos otat varmuuskopioinnin tai synkronoinnin käyttöön: silloin kopio tallennetaan <strong>omaan Google Driveesi</strong>. Paper Notesilla ei ole omia palvelimia, eikä mitään luovuteta kolmansille osapuolille.</p>
+            <p>Kaikki luomasi tallennetaan laitteellesi. Tiedot lähtevät laitteelta vain, jos otat varmuuskopioinnin tai synkronoinnin käyttöön: silloin kopio tallennetaan <strong>omaan Google Driveesi</strong>. Paper Notesilla ei ole omia palvelimia, eikä sisältöäsi luovuteta kolmansille osapuolille. Lisäksi sovellus lähettää <a href="#analytics">anonyymejä käyttötilastoja</a> ilman mitään sisältöä (voit poistaa ne käytöstä) – niistä alla.</p>
             <p><strong>Kuvat internetistä.</strong> Jos liität muistiinpanoon osan verkkosivusta tai jaat sen Paper Notesiin, sovellus lataa sivun kuvat alkuperäiseltä sivustolta laitteellesi – liitettäessä tai jaettaessa ja muistiinpanoa avattaessa – jotta ne näkyvät ilman internetyhteyttä. Sivusto saa tavallisen pyynnön, kuten kun kuvaa katsotaan selaimessa; evästeitä ei lähetetä, eikä kuvia välitetä minnekään muualle.</p>
             <p><strong>Budjetti.</strong> Budjetti-osioon kirjaamasi summat, luokat, rajat ja muistiinpanot tallennetaan laitteellesi ja, jos varmuuskopiointi tai synkronointi on käytössä, kopioon omassa Google Drivessasi. Kehittäjä ei saa niitä: sovellus ei yhdistä pankkeihin eikä tileihin eikä luovuta budjetin tietoja kenellekään.</p>
             <p><strong>Asiakirjaskanneri ja teksti kuvasta.</strong> Asiakirjaskannerin tarjoavat Google Play -palvelut (Google ML Kit Document Scanner). Kuvat käsitellään laitteellasi, ja valmiit sivut tallennetaan muistiinpanoon tavallisina kuvina tai tiedostona (Google Driven kopioon ne päätyvät vain, jos varmuuskopiointi tai synkronointi on käytössä). Jotta skanneri toimii, Google Play -palveluiden moduuli lähettää Googlelle teknistä diagnostiikkaa: laitteen tiedot (valmistaja, malli, Android-versio), sovelluksen paketin nimen ja version, asennuskohtaisen tunnisteen, suorituskykymittarit, virhekoodit ja tapahtumatyypit. Kuviasi tai tekstiäsi niissä ei ole. Google salaa nämä tiedot siirron aikana (HTTPS) eikä Googlen mukaan siirrä niitä kolmansille osapuolille; niitä käsitellään <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytännön</a> mukaisesti. Teksti kuvasta tunnistetaan kokonaan laitteellasi, myös ilman internetyhteyttä. Joidenkin kielten (saksa, ranska, espanja, italia, suomi, puola) tunnistusmallit ladataan kerran GitHubista ensimmäisellä käyttökerralla; sovellus ei lähetä sinne mitään muuta kuin tavallisen latauspyynnön.</p>
@@ -1439,10 +1639,44 @@
                 <li>satunnainen laitetunniste – vain synkronoinnin yhdistämiseen laitteidesi välillä, ei seurantaan</li>
             </ul>
             <ul>
-                <li>✅ Kaikki tämä on valinnaista: ilman Google-kirjautumista mikään ei lähde laitteelta</li>
+                <li>✅ Kaikki tämä on valinnaista: ilman Google-kirjautumista sisältösi ei lähde laitteelta</li>
                 <li>✅ Tiedot salataan siirron aikana (HTTPS)</li>
-                <li>✅ Ei mainontaa eikä kaatumisraportteja; ei omaa analytiikkaa – vain edellä kuvattu Googlen skannerin tekninen diagnostiikka</li>
+                <li>✅ Ei mainontaa eikä kaatumisraportteja. Ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman sisältöä, ja ne voi poistaa käytöstä; sen lisäksi vain edellä kuvattu Googlen skannerin tekninen diagnostiikka</li>
             </ul>
+
+            <h2 id="analytics-fi">📈 Anonyymit käyttötilastot</h2>
+            <p>Jotta ymmärtäisimme, mitkä sovelluksen osat ovat hyödyllisiä ja missä käyttäjät jäävät jumiin, Paper Notes lähettää anonyymejä käyttötilastoja. Niissä ei koskaan ole muistiinpanojesi sisältöä eikä mitään, mitä olet kirjoittanut. Tilastot ovat oletuksena käytössä, ja voit poistaa ne käytöstä milloin tahansa.</p>
+            <p><strong>Palvelu.</strong> Tilastot kerää <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Tiedot käsitellään ja tallennetaan EU:ssa (Saksassa). Aptabase toimii kehittäjän lukuun henkilötietojen käsittelijänä; katso <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabasen tietosuojakäytäntö</a>.</p>
+            <h3>Mitä lähetetään</h3>
+            <ul>
+                <li>mitä osioita ja näkymiä avataan</li>
+                <li>mitä toimintoja käytetään – esimerkiksi asiakirjaskanneri, teksti kuvasta, PDF ja tulostus, versiohistoria, synkronointi, varmuuskopiot ja mallit – ja miten se päättyi: valmis, peruttu tai virhe (ilman virheen tekstiä)</li>
+                <li>että Plus-ikkuna näytettiin, ja oston tulos (ilman summia)</li>
+                <li>sovellukseen tutustumisen vaiheet ja uuden asennuksen virstanpylväät, kuten ”ensimmäinen merkintä luotu” tai ”palasi viikon kuluttua” – vain tieto virstanpylvään saavuttamisesta, ilman päivämääriä</li>
+                <li>merkintä ”aktiivinen tänään” tai ”aktiivinen tällä viikolla”</li>
+                <li>käyttöliittymän kieli ja laitteen kieli (kumpikin yhtenä koodina kiinteästä luettelosta)</li>
+                <li>Plus-tyyppi (ei Plussaa, kuukausitilaus tai pysyvä) ja onko synkronointi käytössä</li>
+                <li>asennuksen likimääräinen ikä: ensimmäinen viikko, ensimmäinen kuukausi, enintään puoli vuotta tai pidempään</li>
+                <li>missä näkymässä sovellus pienennettiin; napautettiinko ilmoitusta; näytettiinkö ”Mitä uutta”</li>
+                <li>tekniset tiedot: sovelluksen versio ja koontiversion numero, käyttöjärjestelmän nimi ja versio, tieto virheenkorjausversiosta, SDK:n versio. Laitteen mallia ei lähetetä</li>
+            </ul>
+            <p><strong>IP-osoite.</strong> Kuten mikä tahansa internetpyyntö, tilastot saapuvat Aptabasen palvelimelle IP-osoitteestasi. Aptabase käyttää sitä maan ja alueen määrittämiseen sekä päivittäisten kävijöiden laskemiseen (IP-osoitteen ja User-Agentin tiiviste suolalla, joka vaihtuu 24 tunnin välein ja poistetaan 48 tunnin kuluessa). Itse IP-osoitetta ei tallenneta.</p>
+            <h3>Mitä ei koskaan lähetetä</h3>
+            <ul>
+                <li>muistiinpanojen, listojen, tehtävien, tapahtumien ja korttien tekstit</li>
+                <li>minkään nimiä: kansioiden, listojen, suppiloiden, mallien, luokkien</li>
+                <li>summat ja valuutat</li>
+                <li>yhteystietojen nimet, puhelinnumerot, sähköpostiosoitteet ja postiosoitteet</li>
+                <li>tiedostojen nimet ja koot</li>
+                <li>hakusanat</li>
+                <li>merkintöjen tunnisteet ja päivämäärät</li>
+                <li>virheiden tekstit</li>
+                <li>Google-tilisi sähköpostiosoite</li>
+                <li>mainostunnus ja laitteistotunnisteet</li>
+            </ul>
+            <p><strong>Ei pysyvää tunnistetta.</strong> Istuntotunniste on satunnainen, säilyy vain muistissa ja vaihtuu aina, kun sovellus käynnistetään uudelleen, sekä tunnin käyttämättömyyden jälkeen. Laitteelle tallennetaan vain valitsin, viimeisimmän aktiivisuusmerkinnän päivämäärät ja päivärajan laskuri.</p>
+            <p><strong>Säilytys.</strong> Aptabase säilyttää tilastoja enintään 5 vuotta. Tietyn henkilön tietoja ei voi poistaa, koska niitä ei ole liitetty keneenkään.</p>
+            <p><strong>Miten tilastot poistetaan käytöstä.</strong> Sovelluksessa: Asetukset → Yksityisyys → ”Lähetä anonyymejä tilastoja”. Käytöstä poistaminen lopettaa lähettämisen heti ja poistaa vielä lähettämättömät tapahtumat. Ei evästeitä eikä mainontaa.</p>
 
             <h2>🔑 Käyttöoikeudet</h2>
             <p>Sovellus voi pyytää seuraavia käyttöoikeuksia:</p>
@@ -1476,6 +1710,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (asiakirjaskanneri)</span>
+                <span class="badge">Aptabase (anonyymit tilastot)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Googlen palvelut:</strong></p>
             <ul>
@@ -1483,6 +1718,10 @@
                 <li><strong>Google Drive API:</strong> Valinnainen. Käytetään tietojesi varmuuskopiointiin ja synkronointiin Google Driveesi. <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytäntö</a> koskee.</li>
                 <li><strong>Google Play Billing:</strong> Valinnaiset tilaukset ja lahjoitukset. Maksutiedot käsittelee Google <a href="https://policies.google.com/privacy" target="_blank">tietosuojakäytäntönsä</a> mukaisesti. Saamme vain osto-/tilaustilan, jota tarvitaan ominaisuuksien avaamiseen tai lahjoituskehotteiden piilottamiseen.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Vain kun skannaat asiakirjan (Plus). Toimii Google Play -palveluissa; kuvat käsitellään laitteella. Moduuli lähettää Googlelle teknistä diagnostiikkaa (laitteen ja sovelluksen tiedot, asennuskohtainen tunniste, suorituskykymittarit, virhekoodit) ilman kuviasi tai tekstiäsi. Lisätietoja: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kitin tietojen ilmoitus</a> ja <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytäntö</a>.</li>
+            </ul>
+            <p><strong>Muut palvelut:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Anonyymit käyttötilastot ilman mitään sisältöä (katso <a href="#analytics">”Anonyymit käyttötilastot”</a>). Tiedot käsitellään ja tallennetaan EU:ssa (Saksassa); Aptabase toimii kehittäjän lukuun henkilötietojen käsittelijänä. Voit poistaa tilastot käytöstä kohdassa Asetukset → Yksityisyys. Katso <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabasen tietosuojakäytäntö</a>.</li>
             </ul>
             <p><strong>Mitä emme käytä:</strong></p>
             <div>
@@ -1513,7 +1752,7 @@
                 <li>Julkaisemalla uuden tietosuojakäytännön tälle sivulle</li>
                 <li>Päivittämällä "Viimeksi päivitetty" -päivämäärän yläosassa</li>
                 <li>Näyttämällä ilmoituksen sovelluksessa merkittävistä muutoksista</li>
-                <li>Pyytämällä uutta suostumusta, jos alamme kerätä tietoja</li>
+                <li>Pyytämällä suostumustasi, jos alamme kerätä henkilötietoja</li>
             </ul>
 
             <h2>⚖️ Oikeutesi</h2>
@@ -1523,7 +1762,7 @@
                 <li><strong>Tietojen hallinta:</strong> Hallitset paikallisia tietoja laitteellasi; valinnaiset Google Drive -kopiot hallitaan Google-tilisi kautta</li>
                 <li><strong>Tietojen siirrettävyys:</strong> Voit viedä varmuuskopion sovelluksesta; jos olet yhdistänyt Googlen, voit myös hallita varmuuskopioita Google Drivessä</li>
                 <li><strong>Tietojen poistaminen:</strong> Poista tiedot sovelluksesta, poista sovellus ja/tai poista valinnaiset Google Drive -varmuuskopiotiedostot</li>
-                <li><strong>Ei seurantaa:</strong> Emme seuraa käyttöäsi tai käyttäytymistäsi</li>
+                <li><strong>Ei seurantaa:</strong> Emme seuraa sinua henkilökohtaisesti. Keräämme vain <a href="#analytics">anonyymejä käyttötilastoja</a> ilman sisältöä, ja voit poistaa ne käytöstä kohdassa Asetukset → Yksityisyys</li>
                 <li><strong>Googlen käyttö:</strong> Jos yhdistit Googlen, voit peruuttaa sovelluksen käyttöoikeuden Google-tilisi asetuksista milloin tahansa</li>
             </ul>
 
@@ -1536,6 +1775,7 @@
                 <li><strong>Kopiot Google Drivessa:</strong> avaa Google Drive, etsi kansio <strong>”Paper Notes Backups”</strong> ja poista se, tyhjennä sitten Driven roskakori. Sovelluksen poistaminen ei poista näitä kopioita – ne säilyvät Drivessasi, kunnes poistat ne.</li>
                 <li><strong>Googlen käyttöoikeus:</strong> Google-tilisi asetuksissa → Tietoturva → Kolmannen osapuolen yhteydet poista Paper Notesin käyttöoikeus.</li>
             </ol>
+            <p><strong>Anonyymit tilastot.</strong> Voit poistaa <a href="#analytics">anonyymit käyttötilastot</a> käytöstä kohdassa Asetukset → Yksityisyys. Jo lähetettyjä tilastoja Aptabase säilyttää enintään 5 vuotta, eikä niitä voi poistaa tietyn henkilön osalta, koska niitä ei ole liitetty keneenkään.</p>
             <p>Poistettuja tietoja ei voi palauttaa. Kysymykset poistamisesta: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Ota yhteyttä</h2>
@@ -1569,7 +1809,7 @@
 
         <!-- German Version -->
         <div id="de-content" class="content language-content">
-            <p><strong>Zuletzt aktualisiert:</strong> 13. November 2026</p>
+            <p><strong>Zuletzt aktualisiert:</strong> 22. November 2026</p>
 
             <h2>🔒 Einführung</h2>
             <p>Paper Notes ("wir", "unser" oder "die App") verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir mit Ihren Informationen umgehen, wenn Sie unsere mobile Anwendung nutzen.</p>
@@ -1591,7 +1831,7 @@
             <ul>
                 <li>Zahlungen werden über <strong>Google Play Billing</strong> (oder den jeweiligen App-Store) abgewickelt. Wir erhalten und speichern <strong>keine</strong> Zahlungskartendaten.</li>
                 <li>Die App kann Ihren Abonnementstatus über Store-APIs prüfen, um Funktionen freizuschalten. Der Status kann lokal auf Ihrem Gerät zwischengespeichert werden.</li>
-                <li>Wir verwenden Abonnement- oder Kaufdaten nicht für Werbung oder Verhaltens-Tracking.</li>
+                <li>Wir verwenden Abonnement- oder Kaufdaten nicht für Werbung oder Verhaltens-Tracking. Die anonyme Nutzungsstatistik vermerkt nur, ob ein Kauf abgeschlossen, abgebrochen oder fehlgeschlagen ist – ohne Beträge und ohne Bezug zu Ihnen.</li>
                 <li>Sie können ein Abonnement in den Einstellungen Ihres Google-Play- (oder Store-) Kontos verwalten oder kündigen.</li>
                 <li>Optionale Einmalspenden, falls angeboten, werden ebenfalls über den Store abgewickelt und geben uns keinen Zugriff auf Ihre Notizen auf unseren Servern.</li>
             </ul>
@@ -1616,10 +1856,10 @@
 
             <h3>Was wir nicht erfassen:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Keine eigenen Analysen</strong> oder Tracking (einzige Ausnahme: technische Diagnosedaten des Dokumentenscanners von Google, siehe unten)</li>
+                <li><span class="emoji">✅</span> <strong>Kein Tracking Ihrer Person</strong>: Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne jeglichen Inhalt, die Sie ausschalten können. Daneben nur technische Diagnosedaten des Dokumentenscanners von Google, siehe unten</li>
                 <li><span class="emoji">✅</span> <strong>Keine Werbenetzwerke</strong></li>
                 <li><span class="emoji">✅</span> <strong>Keine persönlichen Daten</strong> auf unseren Servern</li>
-                <li><span class="emoji">✅</span> Der Entwickler <strong>erhält keine Nutzungsstatistiken</strong> und verfolgt Ihr Verhalten nicht</li>
+                <li><span class="emoji">✅</span> Der Entwickler <strong>erhält nie Ihre Inhalte</strong> – keine Texte, Namen, Beträge oder Kontakte – und kann die Statistik nicht mit Ihnen verknüpfen</li>
             </ul>
 
             <h2>💾 Datenspeicherung</h2>
@@ -1633,7 +1873,7 @@
             </ul>
 
             <h2>☁️ Welche Daten Ihr Gerät verlassen</h2>
-            <p>Alles, was Sie erstellen, wird auf Ihrem Gerät gespeichert. Daten verlassen es nur, wenn Sie Sicherung oder Synchronisierung einschalten: Dann wird eine Kopie in <strong>Ihrem eigenen Google Drive</strong> gespeichert. Paper Notes hat keine eigenen Server, und nichts wird an Dritte weitergegeben.</p>
+            <p>Alles, was Sie erstellen, wird auf Ihrem Gerät gespeichert. Daten verlassen es nur, wenn Sie Sicherung oder Synchronisierung einschalten: Dann wird eine Kopie in <strong>Ihrem eigenen Google Drive</strong> gespeichert. Paper Notes hat keine eigenen Server, und Ihre Inhalte werden nicht an Dritte weitergegeben. Außerdem sendet die App eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne jeglichen Inhalt (Sie können sie ausschalten) – siehe unten.</p>
             <p><strong>Bilder aus dem Internet.</strong> Wenn Sie einen Teil einer Webseite in eine Notiz einfügen oder mit Paper Notes teilen, lädt die App deren Bilder von der ursprünglichen Website auf Ihr Gerät – beim Einfügen oder Teilen und beim Öffnen der Notiz –, damit sie auch ohne Internet sichtbar bleiben. Die Website erhält eine gewöhnliche Anfrage, wie beim Anzeigen des Bildes im Browser; es werden keine Cookies gesendet, und die Bilder werden nirgendwohin weitergegeben.</p>
             <p><strong>Budget.</strong> Beträge, Kategorien, Limits und Notizen, die Sie im Bereich „Budget“ eintragen, werden auf Ihrem Gerät gespeichert und – wenn Sicherung oder Synchronisierung eingeschaltet ist – in der Kopie in Ihrem eigenen Google Drive. Der Entwickler erhält sie nicht: Die App verbindet sich mit keiner Bank und keinem Konto und gibt Budgetdaten an niemanden weiter.</p>
             <p><strong>Dokumentenscanner und Text aus Foto.</strong> Der Dokumentenscanner wird von den Google Play-Diensten bereitgestellt (Google ML Kit Document Scanner). Die Aufnahmen werden auf Ihrem Gerät verarbeitet, und die fertigen Seiten werden in der Notiz wie gewöhnliche Bilder oder als Datei gespeichert (in die Kopie in Ihrem Google Drive gelangen sie nur, wenn Sicherung oder Synchronisierung eingeschaltet ist). Damit der Scanner funktioniert, sendet das Modul der Google Play-Dienste technische Diagnosedaten an Google: Geräteinformationen (Hersteller, Modell, Android-Version), Paketname und Version der App, eine Installationskennung, Leistungswerte, Fehlercodes und Ereignistypen. Ihre Bilder und Texte sind nicht enthalten. Google verschlüsselt diese Daten bei der Übertragung (HTTPS) und gibt sie nach eigenen Angaben nicht an Dritte weiter; sie werden gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a> verarbeitet. Text aus Fotos wird vollständig auf Ihrem Gerät erkannt, auch ohne Internet. Erkennungsmodelle für einige Sprachen (Deutsch, Französisch, Spanisch, Italienisch, Finnisch, Polnisch) werden bei der ersten Verwendung einmal von GitHub geladen; die App sendet dorthin nichts außer der üblichen Download-Anfrage.</p>
@@ -1650,10 +1890,44 @@
                 <li>eine zufällige Gerätekennung – nur zum Zusammenführen der Synchronisierung zwischen Ihren Geräten, nicht zum Tracking</li>
             </ul>
             <ul>
-                <li>✅ All das ist optional: Ohne Google-Anmeldung verlässt nichts Ihr Gerät</li>
+                <li>✅ All das ist optional: Ohne Google-Anmeldung verlassen Ihre Inhalte Ihr Gerät nicht</li>
                 <li>✅ Daten werden bei der Übertragung verschlüsselt (HTTPS)</li>
-                <li>✅ Keine Werbung und keine Absturzberichte; keine eigenen Analysen – nur die oben beschriebenen technischen Diagnosedaten des Google-Scanners</li>
+                <li>✅ Keine Werbung und keine Absturzberichte. Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne Inhalte, die Sie ausschalten können; daneben nur die oben beschriebenen technischen Diagnosedaten des Google-Scanners</li>
             </ul>
+
+            <h2 id="analytics-de">📈 Anonyme Nutzungsstatistik</h2>
+            <p>Um zu verstehen, welche Teile der App nützlich sind und wo Menschen hängen bleiben, sendet Paper Notes eine anonyme Nutzungsstatistik. Sie enthält nie den Inhalt Ihrer Notizen oder irgendetwas, das Sie eingegeben haben. Die Statistik ist standardmäßig eingeschaltet, und Sie können sie jederzeit ausschalten.</p>
+            <p><strong>Dienst.</strong> Die Statistik wird von <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>) erfasst. Die Daten werden in der EU (Deutschland) verarbeitet und gespeichert. Aptabase handelt als Auftragsverarbeiter im Auftrag des Entwicklers; siehe die <a href="https://aptabase.com/legal/privacy" target="_blank">Datenschutzerklärung von Aptabase</a>.</p>
+            <h3>Was gesendet wird</h3>
+            <ul>
+                <li>welche Bereiche und Bildschirme geöffnet werden</li>
+                <li>welche Funktionen genutzt werden – zum Beispiel Dokumentenscanner, Text aus Foto, PDF und Drucken, Versionsverlauf, Synchronisierung, Sicherungen und Vorlagen – und wie es ausging: erledigt, abgebrochen oder Fehler (ohne Fehlertext)</li>
+                <li>dass das Plus-Fenster angezeigt wurde, und das Ergebnis eines Kaufs (ohne Beträge)</li>
+                <li>Schritte der ersten Einführung in die App und Meilensteine einer neuen Installation, etwa „erster Eintrag erstellt“ oder „nach einer Woche zurückgekehrt“ – nur die Tatsache des Meilensteins, ohne Datum</li>
+                <li>eine Markierung „heute aktiv“ oder „diese Woche aktiv“</li>
+                <li>die Sprache der App und die Sprache des Geräts (jeweils als ein Code aus einer festen Liste)</li>
+                <li>die Plus-Art (kein Plus, monatlich oder dauerhaft) und ob die Synchronisierung eingeschaltet ist</li>
+                <li>das ungefähre Alter der Installation: erste Woche, erster Monat, bis zu einem halben Jahr oder länger</li>
+                <li>auf welchem Bildschirm die App minimiert wurde; ob eine Benachrichtigung angetippt wurde; ob „Was ist neu“ angezeigt wurde</li>
+                <li>technische Angaben: App-Version und Build-Nummer, Name und Version des Betriebssystems, Kennzeichen eines Debug-Builds, SDK-Version. Das Gerätemodell wird nicht gesendet</li>
+            </ul>
+            <p><strong>IP-Adresse.</strong> Wie jede Anfrage im Internet erreicht die Statistik den Server von Aptabase von Ihrer IP-Adresse aus. Aptabase nutzt sie, um Land und Region zu bestimmen und die täglichen Besucher zu zählen (ein Hash aus IP-Adresse und User-Agent mit einem Salt, das alle 24 Stunden wechselt und innerhalb von 48 Stunden gelöscht wird). Die IP-Adresse selbst wird nicht gespeichert.</p>
+            <h3>Was nie gesendet wird</h3>
+            <ul>
+                <li>Texte von Notizen, Listen, Aufgaben, Terminen und Karten</li>
+                <li>Namen von irgendetwas: Ordnern, Listen, Trichtern, Vorlagen, Kategorien</li>
+                <li>Beträge und Währungen</li>
+                <li>Namen, Telefonnummern, E-Mail-Adressen und Anschriften von Kontakten</li>
+                <li>Dateinamen und -größen</li>
+                <li>Suchanfragen</li>
+                <li>Kennungen und Daten von Einträgen</li>
+                <li>Fehlertexte</li>
+                <li>die E-Mail-Adresse Ihres Google-Kontos</li>
+                <li>die Werbe-ID und Hardware-Kennungen</li>
+            </ul>
+            <p><strong>Keine dauerhafte Kennung.</strong> Die Sitzungskennung ist zufällig, liegt nur im Arbeitsspeicher und wechselt bei jedem Neustart der App und nach einer Stunde Inaktivität. Auf dem Gerät werden nur der Schalter, die Daten der letzten Aktivitätsmarkierung und ein Zähler für das Tageslimit gespeichert.</p>
+            <p><strong>Speicherdauer.</strong> Aptabase speichert die Statistik bis zu 5 Jahre. Daten einer bestimmten Person lassen sich nicht löschen, weil sie mit niemandem verknüpft sind.</p>
+            <p><strong>So schalten Sie sie aus.</strong> In der App: Einstellungen → Datenschutz → „Anonyme Statistik senden“. Das Ausschalten stoppt das Senden sofort und löscht noch nicht gesendete Ereignisse. Keine Cookies, keine Werbung.</p>
 
             <h2>🔑 Berechtigungen</h2>
             <p>Die App kann die folgenden Berechtigungen anfordern:</p>
@@ -1687,6 +1961,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (Dokumentenscanner)</span>
+                <span class="badge">Aptabase (anonyme Statistik)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Google-Dienste:</strong></p>
             <ul>
@@ -1694,6 +1969,10 @@
                 <li><strong>Google Drive API:</strong> Optional. Wird für Backup und Synchronisierung Ihrer Daten in Ihr Google Drive verwendet. Unterliegt der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a>.</li>
                 <li><strong>Google Play Billing:</strong> Optionale Abonnements und Spenden. Zahlungsdaten werden von Google gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a> verarbeitet. Wir erhalten nur den Kauf-/Abonnementstatus, der zum Freischalten von Funktionen oder zum Ausblenden von Spendenhinweisen nötig ist.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Nur wenn Sie ein Dokument scannen (Plus). Läuft in den Google Play-Diensten; Aufnahmen werden auf dem Gerät verarbeitet. Das Modul sendet technische Diagnosedaten an Google (Geräte- und App-Informationen, Installationskennung, Leistungswerte, Fehlercodes) – ohne Ihre Bilder und Texte. Siehe <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit-Datenoffenlegung</a> und <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.</li>
+            </ul>
+            <p><strong>Weitere Dienste:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Anonyme Nutzungsstatistik ohne jeglichen Inhalt (siehe <a href="#analytics">„Anonyme Nutzungsstatistik“</a>). Die Daten werden in der EU (Deutschland) verarbeitet und gespeichert; Aptabase handelt als Auftragsverarbeiter im Auftrag des Entwicklers. Abschaltbar unter Einstellungen → Datenschutz. Siehe die <a href="https://aptabase.com/legal/privacy" target="_blank">Datenschutzerklärung von Aptabase</a>.</li>
             </ul>
             <p><strong>Was wir nicht nutzen:</strong></p>
             <div>
@@ -1724,7 +2003,7 @@
                 <li>Veröffentlichung der neuen Datenschutzrichtlinie auf dieser Seite</li>
                 <li>Aktualisierung des Datums "Zuletzt aktualisiert" oben</li>
                 <li>Anzeige eines Hinweises in der App bei wesentlichen Änderungen</li>
-                <li>Anforderung einer neuen Zustimmung, wenn wir mit der Datenerfassung beginnen</li>
+                <li>Einholung Ihrer Zustimmung, wenn wir mit der Erfassung personenbezogener Daten beginnen</li>
             </ul>
 
             <h2>⚖️ Ihre Rechte</h2>
@@ -1734,7 +2013,7 @@
                 <li><strong>Datenkontrolle:</strong> Sie kontrollieren lokale Daten auf Ihrem Gerät; optionale Google-Drive-Kopien werden über Ihr Google-Konto gesteuert</li>
                 <li><strong>Datenportabilität:</strong> Sie können ein Backup aus der App exportieren; bei Verbindung können Sie Backups auch in Google Drive verwalten</li>
                 <li><strong>Datenlöschung:</strong> Löschen Sie Daten in der App, deinstallieren Sie die App und/oder entfernen Sie optionale Google-Drive-Backup-Dateien</li>
-                <li><strong>Kein Tracking:</strong> Wir verfolgen Ihre Nutzung oder Ihr Verhalten nicht</li>
+                <li><strong>Kein Tracking:</strong> Wir verfolgen Sie nicht persönlich. Erfasst wird nur eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne Inhalte, die Sie unter Einstellungen → Datenschutz ausschalten können</li>
                 <li><strong>Google-Zugriff:</strong> Wenn Sie Google verbunden haben, können Sie den App-Zugriff jederzeit in Ihren Google-Kontoeinstellungen widerrufen</li>
             </ul>
 
@@ -1747,6 +2026,7 @@
                 <li><strong>Kopien in Google Drive:</strong> Öffnen Sie Google Drive, suchen Sie den Ordner <strong>„Paper Notes Backups“</strong>, löschen Sie ihn und leeren Sie anschließend den Drive-Papierkorb. Das Deinstallieren der App entfernt diese Kopien nicht – sie bleiben in Ihrem Drive, bis Sie sie löschen.</li>
                 <li><strong>Google-Zugriff:</strong> In den Einstellungen Ihres Google-Kontos → Sicherheit → Verbindungen mit Drittanbietern den Zugriff für Paper Notes entfernen.</li>
             </ol>
+            <p><strong>Anonyme Statistik.</strong> Die <a href="#analytics">anonyme Nutzungsstatistik</a> können Sie unter Einstellungen → Datenschutz ausschalten. Bereits gesendete Statistik speichert Aptabase bis zu 5 Jahre; für eine bestimmte Person lässt sie sich nicht löschen, weil sie mit niemandem verknüpft ist.</p>
             <p>Gelöschte Daten lassen sich nicht wiederherstellen. Fragen zur Löschung: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Kontaktieren Sie uns</h2>
@@ -1780,7 +2060,7 @@
 
         <!-- Polish Version -->
         <div id="pl-content" class="content language-content">
-            <p><strong>Ostatnia aktualizacja:</strong> 13 listopada 2026</p>
+            <p><strong>Ostatnia aktualizacja:</strong> 22 listopada 2026</p>
 
             <h2>🔒 Wprowadzenie</h2>
             <p>Paper Notes ("my", "nasz" lub "aplikacja") zobowiązuje się chronić Twoją prywatność. Niniejsza Polityka prywatności wyjaśnia, jak przetwarzamy Twoje informacje podczas korzystania z naszej aplikacji mobilnej.</p>
@@ -1802,7 +2082,7 @@
             <ul>
                 <li>Płatności są przetwarzane przez <strong>Google Play Billing</strong> (lub odpowiedni sklep z aplikacjami). <strong>Nie</strong> otrzymujemy ani nie przechowujemy danych Twojej karty płatniczej.</li>
                 <li>Aplikacja może sprawdzać status subskrypcji przez API sklepu, aby odblokować funkcje. Status może być buforowany lokalnie na Twoim urządzeniu.</li>
-                <li>Nie używamy danych subskrypcji ani zakupów do reklam ani śledzenia zachowania.</li>
+                <li>Nie używamy danych subskrypcji ani zakupów do reklam ani śledzenia zachowania. Anonimowe statystyki użycia odnotowują tylko, czy zakup się udał, został anulowany, czy wystąpił błąd — bez kwot i bez powiązania z Tobą.</li>
                 <li>Możesz zarządzać subskrypcją lub ją anulować w ustawieniach konta Google Play (lub sklepu).</li>
                 <li>Opcjonalne jednorazowe donacje, jeśli są dostępne, również są przetwarzane przez sklep i nie dają nam dostępu do treści Twoich notatek na naszych serwerach.</li>
             </ul>
@@ -1827,10 +2107,10 @@
 
             <h3>Czego nie zbieramy:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Bez własnej analityki</strong> ani śledzenia (jedyny wyjątek: techniczna diagnostyka skanera dokumentów Google, opisana niżej)</li>
+                <li><span class="emoji">✅</span> <strong>Bez śledzenia Ciebie</strong>: nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez żadnych treści, które możesz wyłączyć. Poza tym tylko techniczna diagnostyka skanera dokumentów Google, opisana niżej</li>
                 <li><span class="emoji">✅</span> <strong>Bez sieci reklamowych</strong></li>
                 <li><span class="emoji">✅</span> <strong>Bez danych osobowych</strong> na naszych serwerach</li>
-                <li><span class="emoji">✅</span> Deweloper <strong>nie otrzymuje statystyk użycia</strong> i nie śledzi Twojego zachowania</li>
+                <li><span class="emoji">✅</span> Deweloper <strong>nigdy nie otrzymuje Twoich treści</strong> — tekstów, nazw, kwot ani kontaktów — i nie może powiązać statystyk z Tobą</li>
             </ul>
 
             <h2>💾 Przechowywanie danych</h2>
@@ -1844,7 +2124,7 @@
             </ul>
 
             <h2>☁️ Jakie dane opuszczają urządzenie</h2>
-            <p>Wszystko, co tworzysz, jest przechowywane na Twoim urządzeniu. Dane opuszczają je tylko wtedy, gdy włączysz kopię zapasową lub synchronizację: wtedy kopia trafia na <strong>Twój własny Dysk Google</strong>. Paper Notes nie ma własnych serwerów i niczego nie przekazuje podmiotom trzecim.</p>
+            <p>Wszystko, co tworzysz, jest przechowywane na Twoim urządzeniu. Dane opuszczają je tylko wtedy, gdy włączysz kopię zapasową lub synchronizację: wtedy kopia trafia na <strong>Twój własny Dysk Google</strong>. Paper Notes nie ma własnych serwerów i nie przekazuje Twoich treści podmiotom trzecim. Poza tym aplikacja wysyła <a href="#analytics">anonimowe statystyki użycia</a> bez żadnych treści (możesz je wyłączyć) — więcej niżej.</p>
             <p><strong>Obrazy z internetu.</strong> Jeśli wkleisz do notatki fragment strony internetowej lub udostępnisz go w Paper Notes, aplikacja pobiera jego obrazy z oryginalnej witryny na Twoje urządzenie — przy wklejaniu lub udostępnianiu i przy otwieraniu notatki — aby były widoczne bez internetu. Witryna otrzymuje zwykłe zapytanie, jak przy wyświetlaniu obrazu w przeglądarce; pliki cookie nie są wysyłane, a obrazy nie są nigdzie dalej przekazywane.</p>
             <p><strong>Budżet.</strong> Kwoty, kategorie, limity i notatki, które wpisujesz w sekcji „Budżet”, są przechowywane na Twoim urządzeniu, a jeśli włączysz kopię zapasową lub synchronizację — w kopii na Twoim Dysku Google. Deweloper ich nie otrzymuje: aplikacja nie łączy się z bankami ani kontami i nikomu nie przekazuje danych budżetu.</p>
             <p><strong>Skaner dokumentów i tekst ze zdjęcia.</strong> Skaner dokumentów działa w Usługach Google Play (Google ML Kit Document Scanner). Zdjęcia są przetwarzane na Twoim urządzeniu, a gotowe strony zapisują się w notatce jak zwykłe obrazy lub plik (do kopii na Twoim Dysku Google trafiają tylko wtedy, gdy włączona jest kopia zapasowa lub synchronizacja). Aby skaner działał, moduł Usług Google Play przesyła do Google techniczną diagnostykę: informacje o urządzeniu (producent, model, wersja Androida), nazwę pakietu i wersję aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów i typy zdarzeń. Nie ma w niej Twoich zdjęć ani tekstu. Google szyfruje te dane podczas przesyłania (HTTPS) i, według Google, nie przekazuje ich stronom trzecim; są przetwarzane zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Tekst ze zdjęcia jest rozpoznawany w całości na Twoim urządzeniu, także bez internetu. Modele rozpoznawania dla części języków (niemiecki, francuski, hiszpański, włoski, fiński, polski) są pobierane jednorazowo z GitHuba przy pierwszym użyciu; aplikacja nie wysyła tam nic poza zwykłym żądaniem pobrania.</p>
@@ -1861,10 +2141,44 @@
                 <li>losowy identyfikator urządzenia — wyłącznie do scalania synchronizacji między Twoimi urządzeniami, nie do śledzenia</li>
             </ul>
             <ul>
-                <li>✅ Wszystko to jest opcjonalne: bez logowania do Google nic nie opuszcza urządzenia</li>
+                <li>✅ Wszystko to jest opcjonalne: bez logowania do Google Twoje treści nie opuszczają urządzenia</li>
                 <li>✅ Dane są szyfrowane podczas przesyłania (HTTPS)</li>
-                <li>✅ Brak reklam i raportów o awariach; brak własnej analityki — tylko opisana wyżej techniczna diagnostyka skanera Google</li>
+                <li>✅ Brak reklam i raportów o awariach. Nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez treści, które możesz wyłączyć; poza tym tylko opisana wyżej techniczna diagnostyka skanera Google</li>
             </ul>
+
+            <h2 id="analytics-pl">📈 Anonimowe statystyki użycia</h2>
+            <p>Aby zrozumieć, które części aplikacji są przydatne i gdzie użytkownicy się zatrzymują, Paper Notes wysyła anonimowe statystyki użycia. Nigdy nie zawierają treści Twoich notatek ani niczego, co wpisałeś. Statystyki są domyślnie włączone i możesz je wyłączyć w każdej chwili.</p>
+            <p><strong>Usługa.</strong> Statystyki zbiera <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Dane są przetwarzane i przechowywane w UE (Niemcy). Aptabase działa jako podmiot przetwarzający w imieniu dewelopera; zobacz <a href="https://aptabase.com/legal/privacy" target="_blank">Politykę prywatności Aptabase</a>.</p>
+            <h3>Co jest wysyłane</h3>
+            <ul>
+                <li>które sekcje i ekrany są otwierane</li>
+                <li>z jakich funkcji się korzysta — na przykład skaner dokumentów, tekst ze zdjęcia, PDF i drukowanie, historia wersji, synchronizacja, kopie zapasowe i szablony — i jak to się skończyło: gotowe, anulowane lub błąd (bez treści błędu)</li>
+                <li>że pokazano okno Plus, oraz wynik zakupu (bez kwot)</li>
+                <li>kroki pierwszego zapoznania się z aplikacją i etapy nowej instalacji, np. „utworzono pierwszy wpis” albo „powrót po tygodniu” — tylko sam fakt osiągnięcia etapu, bez dat</li>
+                <li>znacznik „aktywny dzisiaj” lub „aktywny w tym tygodniu”</li>
+                <li>język interfejsu i język urządzenia (każdy jako jeden kod z ustalonej listy)</li>
+                <li>rodzaj Plus (brak, miesięczny lub dożywotni) i czy synchronizacja jest włączona</li>
+                <li>przybliżony wiek instalacji: pierwszy tydzień, pierwszy miesiąc, do pół roku lub dłużej</li>
+                <li>na którym ekranie zminimalizowano aplikację; czy dotknięto powiadomienia; czy pokazano „Co nowego”</li>
+                <li>dane techniczne: wersja aplikacji i numer kompilacji, nazwa i wersja systemu operacyjnego, oznaczenie wersji debugowej, wersja SDK. Model urządzenia nie jest wysyłany</li>
+            </ul>
+            <p><strong>Adres IP.</strong> Jak każde zapytanie w internecie, statystyki trafiają na serwer Aptabase z Twojego adresu IP. Aptabase używa go, aby ustalić kraj i region oraz policzyć dziennych odwiedzających (skrót adresu IP i User-Agenta z solą, która zmienia się co 24 godziny i jest usuwana w ciągu 48 godzin). Sam adres IP nie jest zapisywany.</p>
+            <h3>Co nigdy nie jest wysyłane</h3>
+            <ul>
+                <li>treści notatek, list, zadań, wydarzeń i kart</li>
+                <li>nazwy czegokolwiek: folderów, list, lejków, szablonów, kategorii</li>
+                <li>kwoty i waluty</li>
+                <li>imiona i nazwiska, numery telefonów, adresy e-mail i adresy pocztowe kontaktów</li>
+                <li>nazwy i rozmiary plików</li>
+                <li>zapytania wyszukiwania</li>
+                <li>identyfikatory i daty wpisów</li>
+                <li>treści błędów</li>
+                <li>adres e-mail Twojego konta Google</li>
+                <li>identyfikator reklamowy i identyfikatory sprzętowe</li>
+            </ul>
+            <p><strong>Bez stałego identyfikatora.</strong> Identyfikator sesji jest losowy, przechowywany tylko w pamięci i zmienia się przy każdym ponownym uruchomieniu aplikacji oraz po godzinie bezczynności. Na urządzeniu zapisywane są tylko przełącznik, daty ostatniego znacznika aktywności i licznik dziennego limitu.</p>
+            <p><strong>Przechowywanie.</strong> Aptabase przechowuje statystyki do 5 lat. Danych konkretnej osoby nie da się usunąć, ponieważ nie są z nikim powiązane.</p>
+            <p><strong>Jak wyłączyć.</strong> W aplikacji: Ustawienia → Prywatność → „Wysyłaj anonimowe statystyki”. Wyłączenie natychmiast zatrzymuje wysyłanie i usuwa jeszcze niewysłane zdarzenia. Bez plików cookie i bez reklam.</p>
 
             <h2>🔑 Uprawnienia</h2>
             <p>Aplikacja może żądać następujących uprawnień:</p>
@@ -1898,6 +2212,7 @@
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
                 <span class="badge">Google ML Kit (skaner dokumentów)</span>
+                <span class="badge">Aptabase (anonimowe statystyki)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Usługi Google:</strong></p>
             <ul>
@@ -1905,6 +2220,10 @@
                 <li><strong>Google Drive API:</strong> Opcjonalny. Używany do kopii zapasowej i synchronizacji danych na Twoim Google Drive. Podlega <a href="https://policies.google.com/privacy" target="_blank">Polityce prywatności Google</a>.</li>
                 <li><strong>Google Play Billing:</strong> Opcjonalne subskrypcje i donacje. Dane płatności obsługuje Google zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Otrzymujemy tylko status zakupu/subskrypcji potrzebny do odblokowania funkcji lub ukrycia propozycji donacji.</li>
                 <li><strong>Google ML Kit Document Scanner:</strong> Tylko gdy skanujesz dokument (Plus). Działa w Usługach Google Play; zdjęcia są przetwarzane na urządzeniu. Moduł przesyła do Google techniczną diagnostykę (informacje o urządzeniu i aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów) — bez Twoich zdjęć i tekstu. Więcej: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ujawnianie danych ML Kit</a> i <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności Google</a>.</li>
+            </ul>
+            <p><strong>Inne usługi:</strong></p>
+            <ul>
+                <li><strong>Aptabase:</strong> Anonimowe statystyki użycia bez żadnych treści (zobacz <a href="#analytics">„Anonimowe statystyki użycia”</a>). Dane są przetwarzane i przechowywane w UE (Niemcy); Aptabase działa jako podmiot przetwarzający w imieniu dewelopera. Można je wyłączyć w Ustawieniach → Prywatność. Zobacz <a href="https://aptabase.com/legal/privacy" target="_blank">Politykę prywatności Aptabase</a>.</li>
             </ul>
             <p><strong>Czego nie używamy:</strong></p>
             <div>
@@ -1935,7 +2254,7 @@
                 <li>Opublikowanie nowej Polityki prywatności na tej stronie</li>
                 <li>Aktualizację daty "Ostatnia aktualizacja" u góry</li>
                 <li>Wyświetlenie powiadomienia w aplikacji o istotnych zmianach</li>
-                <li>Poproszenie o nową zgodę, jeśli zaczniemy zbierać dane</li>
+                <li>Poproszenie o Twoją zgodę, jeśli zaczniemy zbierać dane osobowe</li>
             </ul>
 
             <h2>⚖️ Twoje prawa</h2>
@@ -1945,7 +2264,7 @@
                 <li><strong>Kontrola danych:</strong> Kontrolujesz dane lokalne na urządzeniu; opcjonalne kopie w Google Drive zarządzasz przez konto Google</li>
                 <li><strong>Przenośność danych:</strong> Możesz wyeksportować kopię zapasową z aplikacji; po połączeniu możesz też zarządzać kopiami w Google Drive</li>
                 <li><strong>Usuwanie danych:</strong> Usuń dane w aplikacji, odinstaluj aplikację i/lub usuń opcjonalne pliki kopii zapasowej Google Drive</li>
-                <li><strong>Bez śledzenia:</strong> Nie śledzimy Twojego użytkowania ani zachowania</li>
+                <li><strong>Bez śledzenia:</strong> Nie śledzimy Ciebie osobiście. Zbierane są tylko <a href="#analytics">anonimowe statystyki użycia</a> bez treści, które możesz wyłączyć w Ustawieniach → Prywatność</li>
                 <li><strong>Dostęp Google:</strong> Jeśli połączyłeś Google, możesz w dowolnym momencie cofnąć dostęp aplikacji w ustawieniach konta Google</li>
             </ul>
 
@@ -1958,6 +2277,7 @@
                 <li><strong>Kopie na Dysku Google:</strong> otwórz Dysk Google, znajdź folder <strong>„Paper Notes Backups”</strong> i usuń go, a potem opróżnij kosz Dysku. Odinstalowanie aplikacji nie usuwa tych kopii — zostają na Twoim Dysku, dopóki ich nie usuniesz.</li>
                 <li><strong>Dostęp Google:</strong> w ustawieniach konta Google → Bezpieczeństwo → Połączenia z aplikacjami innych firm usuń dostęp dla Paper Notes.</li>
             </ol>
+            <p><strong>Anonimowe statystyki.</strong> <a href="#analytics">Anonimowe statystyki użycia</a> możesz wyłączyć w Ustawieniach → Prywatność. Wysłane już statystyki Aptabase przechowuje do 5 lat i nie można ich usunąć dla konkretnej osoby, ponieważ nie są z nikim powiązane.</p>
             <p>Usuniętych danych nie można przywrócić. Pytania dotyczące usuwania: <a href="mailto:papernote.help@gmail.com">papernote.help@gmail.com</a></p>
 
             <h2>✉️ Skontaktuj się z nami</h2>
@@ -2010,6 +2330,57 @@
          * Пустая дата означает «ещё не вышло» — подпись даты тогда не рисуется.
          */
         const CHANGELOG = [
+            {
+                version: '4.2.0',
+                date: '2026-11-22',
+                items: {
+                    en: [
+                        'You can take a folder out of the main list: “Hide from the main list” in its menu. Its notes and lists stay in the folder, in search and in links, but no longer crowd the main list or the recent widget.',
+                        'View a folder without its subfolders: turn off “Show subfolders” on its card and only the folder’s own notes and lists remain. The choice is remembered for each folder.',
+                        'The app sends anonymous statistics. It shows us what to improve. Turn it off in settings: “Send anonymous statistics”.',
+                    ],
+                    uk: [
+                        'Папку можна прибрати із загального списку: «Приховати із загального списку» в її меню. Записи залишаться в самій папці, у пошуку та у зв’язках, але не мелькатимуть у загальному списку й у віджеті нещодавніх.',
+                        'Папку можна переглядати без підпапок: вимкніть «Показувати підпапки» на її картці, і залишаться лише її власні записи. Вибір запам’ятовується для кожної папки.',
+                        'Застосунок надсилає анонімну статистику. Так зрозуміліше, що покращувати. Вимикається в налаштуваннях: «Надсилати анонімну статистику».',
+                    ],
+                    ru: [
+                        'Папку можно убрать из общего списка: «Скрыть из общего списка» в её меню. Записи останутся в самой папке, в поиске и в связях, но не будут мелькать в общем списке и в виджете недавних.',
+                        'Папку можно смотреть без подпапок: выключите «Показывать подпапки» на её карточке, и останутся только её собственные записи. Выбор запоминается для каждой папки.',
+                        'Приложение отправляет анонимную статистику. Так понятнее, что улучшать. Выключается в настройках: «Отправлять анонимную статистику».',
+                    ],
+                    fr: [
+                        'Un dossier peut être retiré de la liste générale : « Masquer de la liste générale » dans son menu. Ses éléments restent dans le dossier, dans la recherche et dans les liens, mais n’encombrent plus la liste générale ni le widget des récents.',
+                        'Affichez un dossier sans ses sous-dossiers : désactivez « Afficher les sous-dossiers » sur sa carte, seuls ses propres éléments restent. Le choix est mémorisé pour chaque dossier.',
+                        'L’application envoie des statistiques anonymes. Cela nous montre quoi améliorer. À désactiver dans les réglages : « Envoyer des statistiques anonymes ».',
+                    ],
+                    es: [
+                        'Ahora puedes sacar una carpeta de la lista general: «Ocultar de la lista general» en su menú. Sus elementos siguen en la carpeta, en la búsqueda y en los vínculos, pero ya no llenan la lista general ni el widget de recientes.',
+                        'Ve una carpeta sin sus subcarpetas: desactiva «Mostrar subcarpetas» en su tarjeta y quedarán solo sus propios elementos. La elección se recuerda para cada carpeta.',
+                        'La app envía estadísticas anónimas. Así sabemos qué mejorar. Se desactiva en los ajustes: «Enviar estadísticas anónimas».',
+                    ],
+                    fi: [
+                        'Kansion voi poistaa yleisestä listasta: ”Piilota yleisestä listasta” sen valikosta. Merkinnät pysyvät kansiossa, haussa ja linkeissä, mutta eivät enää täytä yleistä listaa eivätkä viimeisimpien widgetiä.',
+                        'Kansiota voi katsoa ilman alikansioita: kytke sen kortista pois ”Näytä alikansiot”, niin näkyvät vain sen omat merkinnät. Valinta muistetaan kansiokohtaisesti.',
+                        'Sovellus lähettää anonyymejä tilastoja. Näin näemme, mitä parantaa. Pois päältä asetuksista: ”Lähetä anonyymejä tilastoja”.',
+                    ],
+                    de: [
+                        'Ein Ordner lässt sich aus der Gesamtliste nehmen: „Aus der Gesamtliste ausblenden“ in seinem Menü. Die Einträge bleiben im Ordner, in der Suche und in Verknüpfungen, tauchen aber nicht mehr in der Gesamtliste und im Widget „Zuletzt“ auf.',
+                        'Ordner ohne Unterordner ansehen: Schalten Sie „Unterordner zeigen“ auf seiner Karte aus, dann bleiben nur seine eigenen Einträge. Die Wahl wird für jeden Ordner gemerkt.',
+                        'Die App sendet anonyme Statistik. So sehen wir, was wir verbessern sollten. Abschalten in den Einstellungen: „Anonyme Statistik senden“.',
+                    ],
+                    pl: [
+                        'Folder można usunąć z listy ogólnej: „Ukryj z listy ogólnej” w jego menu. Wpisy zostają w folderze, w wyszukiwaniu i w powiązaniach, ale nie zaśmiecają już listy ogólnej ani widżetu ostatnich.',
+                        'Folder można przeglądać bez podfolderów: wyłącz „Pokazuj podfoldery” na jego karcie, a zostaną tylko jego własne wpisy. Wybór jest zapamiętywany dla każdego folderu.',
+                        'Aplikacja wysyła anonimowe statystyki. Dzięki temu wiemy, co ulepszać. Wyłączysz to w ustawieniach: „Wysyłaj anonimowe statystyki”.',
+                    ],
+                    it: [
+                        'Una cartella si può togliere dalla lista generale: «Nascondi dalla lista generale» nel suo menu. I suoi elementi restano nella cartella, nella ricerca e nei collegamenti, ma non affollano più la lista generale né il widget dei recenti.',
+                        'Guarda una cartella senza le sottocartelle: disattiva «Mostra sottocartelle» sulla sua scheda e restano solo i suoi elementi. La scelta viene ricordata per ogni cartella.',
+                        'L’app invia statistiche anonime. Così capiamo cosa migliorare. Si disattiva nelle impostazioni: «Invia statistiche anonime».',
+                    ],
+                },
+            },
             {
                 version: '4.1.0',
                 date: '2026-11-13',
@@ -2935,6 +3306,9 @@
             }
         }
 
+        /** Разделы политики, к которым можно прокрутить по хешу; у неанглийских id с суффиксом языка. */
+        const SCROLL_SECTIONS = ['data-deletion', 'analytics'];
+
         /**
          * Адрес вида `#changelog` или `#changelog/ru`. Язык в хеше нужен
          * приложению: оно открывает журнал на том языке, на котором работает.
@@ -2949,12 +3323,14 @@
             }
             showView(view, true);
 
-            // `#data-deletion` (ссылка из Google Play) или `#data-deletion/uk`:
-            // прокрутить к разделу «Удаление данных» на текущем языке.
-            if (parts[0] === 'data-deletion') {
+            // `#data-deletion` (ссылка из Google Play), `#analytics` (ссылка «Подробнее»
+            // из настроек приложения) — можно с языком: `#data-deletion/uk`, `#analytics/uk`.
+            // Прокрутить к разделу на текущем языке; нет такого — к английскому.
+            if (SCROLL_SECTIONS.indexOf(parts[0]) !== -1) {
+                const base = parts[0];
                 const target = document.getElementById(
-                    currentLang === FALLBACK_LANG ? 'data-deletion' : 'data-deletion-' + currentLang
-                ) || document.getElementById('data-deletion');
+                    currentLang === FALLBACK_LANG ? base : base + '-' + currentLang
+                ) || document.getElementById(base);
                 if (target) {
                     target.scrollIntoView();
                 }
@@ -2962,6 +3338,16 @@
         };
 
         window.addEventListener('hashchange', applyHash);
+
+        // Ссылки внутри политики (`#analytics`): повторный щелчок по ссылке с тем же
+        // хешем не вызывает hashchange — прокручиваем сами.
+        document.addEventListener('click', (event) => {
+            const link = event.target.closest ? event.target.closest('a[href^="#"]') : null;
+            if (link && link.getAttribute('href') === window.location.hash) {
+                event.preventDefault();
+                applyHash();
+            }
+        });
 
         switchLanguage(FALLBACK_LANG, true);
         applyHash();
