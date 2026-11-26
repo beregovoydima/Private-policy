@@ -303,7 +303,7 @@
         <div id="policy-view">
         <!-- English Version -->
         <div id="en-content" class="content language-content active">
-            <p><strong>Last Updated:</strong> 22 November 2026</p>
+            <p><strong>Last Updated:</strong> 26 November 2026</p>
 
             <h2>🔒 Introduction</h2>
             <p>Paper Notes ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application.</p>
@@ -323,10 +323,11 @@
             <h2>💳 Optional Subscription</h2>
             <p>Paper Notes may offer a single optional subscription that unlocks selected <strong>new or advanced features</strong>. There are no feature tiers — one subscription unlocks the included extras.</p>
             <ul>
-                <li>Payments are processed by <strong>Google Play Billing</strong> (or the applicable app store). We do <strong>not</strong> receive or store your payment card details.</li>
+                <li>Payments are processed by <strong>Google Play Billing</strong> on Android and by the <strong>Apple App Store</strong> (In-App Purchase) on iPhone. We do <strong>not</strong> receive or store your payment card details.</li>
                 <li>The app may check your subscription status via the store APIs to unlock features. Status may be cached locally on your device.</li>
                 <li>We do not use subscription or purchase data for advertising or behavior tracking. Anonymous usage statistics only record whether a purchase was completed, cancelled or failed — without amounts and without any link to you.</li>
-                <li>You can manage or cancel a subscription in your Google Play (or store) account settings.</li>
+                <li>You can manage or cancel a subscription in your Google Play account settings or, on iPhone, in Settings → [your name] → Subscriptions.</li>
+                <li>Plus bought in one store does not carry over to the other: a purchase on Google Play does not unlock Plus on iPhone, and a purchase in the App Store does not unlock it on Android.</li>
                 <li>Optional one-time donations, if offered, are also processed by the store and do not grant access to personal note content on our servers.</li>
             </ul>
 
@@ -350,10 +351,11 @@
 
             <h3>What We Don't Collect:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>No tracking of you personally</strong>: our only analytics is <a href="#analytics">anonymous usage statistics</a> without any content, and you can turn it off. Besides that, only technical diagnostics from Google’s document scanner, described below</li>
+                <li><span class="emoji">✅</span> <strong>No tracking of you personally</strong>: our only analytics is <a href="#analytics">anonymous usage statistics</a> without any content, and you can turn it off. Besides that, only technical diagnostics from Google’s document scanner (Android only), described below</li>
                 <li><span class="emoji">✅</span> <strong>No advertising networks</strong></li>
                 <li><span class="emoji">✅</span> <strong>No personal data</strong> stored on our servers</li>
                 <li><span class="emoji">✅</span> The developer <strong>never receives your content</strong> — no texts, names, amounts or contacts — and cannot link statistics to you</li>
+                <li><span class="emoji">✅</span> On iPhone, the app does <strong>not</strong> use the advertising identifier (IDFA) and does not track you across other companies’ apps and websites</li>
             </ul>
 
             <h2>💾 Data Storage</h2>
@@ -370,9 +372,10 @@
             <p>Everything you create is stored on your device. It leaves the device only if you turn on backup or sync: then a copy is saved to <strong>your own Google Drive</strong>. Paper Notes has no servers of its own, and your content is not passed to third parties. Apart from that, the app sends <a href="#analytics">anonymous usage statistics</a> without any content (you can turn them off) — see below.</p>
             <p><strong>Images from the internet.</strong> If you paste part of a web page into a note or share it to Paper Notes, the app downloads its images from the original website to your device — when you paste or share them and when you open the note — so they stay visible without internet. The website receives an ordinary request, as when the image is viewed in a browser; no cookies are sent, and the images are not passed on anywhere else.</p>
             <p><strong>Budget.</strong> Amounts, categories, limits and notes you enter in the Budget section are stored on your device and, if you turn on backup or sync, in the copy in your own Google Drive. The developer never receives them: the app does not connect to banks or accounts, and budget data is not passed to anyone.</p>
-            <p><strong>Document scanner and text from photo.</strong> The document scanner is provided by Google Play services (Google ML Kit Document Scanner). The camera images are processed on your device, and the finished pages are saved in your note like any other picture or file (they reach the copy in your Google Drive only if backup or sync is on). To run the scanner, the Google Play services module sends Google technical diagnostics: device information (manufacturer, model, Android version), the app’s package name and version, a per-installation identifier, performance metrics, error codes and event types. Your images and text are not included. Google encrypts this data in transit (HTTPS) and, according to Google, does not transfer it to third parties; it is handled under the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>. Text from photo is recognised entirely on your device, even offline. Recognition models for some languages (German, French, Spanish, Italian, Finnish, Polish) are downloaded once from GitHub the first time you use them; the app sends nothing there except the usual download request.</p>
+            <p><strong>Document scanner and text from photo (Android).</strong> The document scanner is provided by Google Play services (Google ML Kit Document Scanner). The camera images are processed on your device, and the finished pages are saved in your note like any other picture or file (they reach the copy in your Google Drive only if backup or sync is on). To run the scanner, the Google Play services module sends Google technical diagnostics: device information (manufacturer, model, Android version), the app’s package name and version, a per-installation identifier, performance metrics, error codes and event types. Your images and text are not included. Google encrypts this data in transit (HTTPS) and, according to Google, does not transfer it to third parties; it is handled under the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>. Text from photo is recognised entirely on your device, even offline. Recognition models for some languages (German, French, Spanish, Italian, Finnish, Polish) are downloaded once from GitHub the first time you use them; the app sends nothing there except the usual download request.</p>
+            <p><strong>Document scanner and text from photo (iPhone).</strong> On iPhone, the document scanner is Apple’s VisionKit document camera, and text from photo is recognised by Apple’s Vision framework. Both run entirely on your device: nothing is sent to Apple or to the developer, and no recognition models are downloaded (the download from GitHub described above happens only on Android). The finished pages are saved in your note like any other picture or file.</p>
             <p><strong>Note version history.</strong> Earlier versions of a note are kept only on this device. They are not included in the copy in your Google Drive and are not synced to your other devices.</p>
-            <p><strong>PDF and printing.</strong> PDF files are created on your device. When you print, Android sends the document to the print service or printer you choose; that service handles it under its own terms. The app sends nothing anywhere else.</p>
+            <p><strong>PDF and printing.</strong> PDF files are created on your device. When you print, Android sends the document to the print service or printer you choose; on iPhone, the document goes to the AirPrint printer you choose. The print service handles it under its own terms. The app sends nothing anywhere else.</p>
             <p>A copy in your Google Drive can contain:</p>
             <ul>
                 <li>texts of notes, lists, tasks and cards in the “Work” section</li>
@@ -386,11 +389,11 @@
             <ul>
                 <li>✅ All of this is optional: without Google sign-in your content does not leave your device</li>
                 <li>✅ Data is encrypted in transit (HTTPS)</li>
-                <li>✅ No advertising and no crash reporting. Our only analytics is <a href="#analytics">anonymous usage statistics</a> without content, which you can turn off; besides that, only the technical diagnostics of Google’s document scanner described above</li>
+                <li>✅ No advertising and no crash reporting. Our only analytics is <a href="#analytics">anonymous usage statistics</a> without content, which you can turn off; besides that, only the technical diagnostics of Google’s document scanner (Android only) described above</li>
             </ul>
 
             <h2 id="analytics">📈 Anonymous Usage Statistics</h2>
-            <p>To understand which parts of the app are useful and where people get stuck, Paper Notes sends anonymous usage statistics. They never contain the content of your notes or anything you have typed. Statistics are on by default, and you can turn them off at any time.</p>
+            <p>To understand which parts of the app are useful and where people get stuck, Paper Notes sends anonymous usage statistics. They never contain the content of your notes or anything you have typed. Statistics are on by default, and you can turn them off at any time. It works the same way on Android and iPhone.</p>
             <p><strong>Service.</strong> Statistics are collected by <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). The data is processed and stored in the EU (Germany). Aptabase acts as a processor on behalf of the developer; see the <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabase Privacy Policy</a>.</p>
             <h3>What is sent</h3>
             <ul>
@@ -429,22 +432,25 @@
             <h3>🔐 Google Account Access (Optional)</h3>
             <p>Only if you enable Google Drive backup or sync. The app may request access to:</p>
             <ul>
-                <li>Your Google account for sign-in (handled by Google Sign In)</li>
+                <li>Your Google account for sign-in (handled by Google Sign In; on iPhone, the system sign-in window opens)</li>
                 <li>Google Drive access to save and retrieve backup files created by the app</li>
             </ul>
-            <p><strong>Scope:</strong> The app only requests access to files it creates in your Google Drive. It does not access other files in your Drive.</p>
+            <p><strong>Scope:</strong> The app only requests access to files it creates in your Google Drive. It does not access other files in your Drive. The scope is the same on Android and iPhone.</p>
+            
+            <h3>📷 Camera (Optional)</h3>
+            <p>On iPhone, the app asks for access to the camera when you take a photo or scan a document. The camera is used only to take photos for notes, “Work” cards and contacts and to scan documents. You can change this permission at any time in the iPhone Settings.</p>
             
             <h3>📱 Notifications Permission (Optional)</h3>
             <p>Used to send you reminders for calendar events and tasks. Can be disabled at any time in your device settings.</p>
             
             <h3>💾 Storage / Files Access</h3>
-            <p>Used to keep your notes and attachments on your device, and to import or export backup files when you choose. Backups are saved only where you choose — including a location you pick in the system file dialog, such as a USB drive or another folder.</p>
+            <p>Used to keep your notes and attachments on your device, and to import or export backup files when you choose. Backups are saved only where you choose — including a location you pick in the system file dialog, such as a USB drive or another folder. On iPhone, backups are exported and imported through the Files app (the system file picker).</p>
 
             <h3>📤 Content You Share Into the App</h3>
-            <p>When you use Android’s “Share” menu to send something to Paper Notes, the app receives only what you chose to share (text, a link, photos or files) and saves it in a note on your device. It does not read anything else from the other app.</p>
+            <p>When you use Android’s “Share” menu or the iPhone share sheet to send something to Paper Notes, the app receives only what you chose to share (text, a link, photos or files) and saves it in a note on your device. It does not read anything else from the other app. On iPhone, the Paper Notes share extension keeps what you shared in the app’s private storage on your device until you open the app, which then saves it in a note; nothing is sent anywhere.</p>
 
             <h3>👤 Picking a Contact (Optional)</h3>
-            <p>When you add a contact from your phone book, Android’s own contact picker opens and gives the app only the one contact you select: its name, the phone number you chose and its email addresses. The app does not request permission to read your contacts and never sees the rest of your address book. The contact is stored on your device (and in your backups or Google Drive sync, if you use them).</p>
+            <p>When you add a contact from your phone book, Android’s or iPhone’s own contact picker opens and gives the app only the one contact you select: its name, the phone number you chose and its email addresses. The app does not request permission to read your contacts and never sees the rest of your address book. The contact is stored on your device (and in your backups or Google Drive sync, if you use them).</p>
             
             <p><strong>Note:</strong> All permissions are used solely for app functionality. We do not use permissions to collect data for analytics or advertising.</p>
 
@@ -454,15 +460,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (document scanner)</span>
+                <span class="badge">Google ML Kit (document scanner, Android)</span>
+                <span class="badge">Apple App Store (In-App Purchase)</span>
+                <span class="badge">Apple VisionKit / Vision (on device)</span>
                 <span class="badge">Aptabase (anonymous statistics)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Google Services:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Optional. Used when you choose to connect Google for backup or sync. Your Google account information is handled according to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
                 <li><strong>Google Drive API:</strong> Optional. Used for backup and sync of your data to your Google Drive. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
-                <li><strong>Google Play Billing:</strong> Used for optional subscriptions and donations. Payment details are handled by Google according to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We only receive purchase/subscription status needed to unlock features or hide donation prompts.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Used only when you scan a document (Plus). Runs in Google Play services; images are processed on the device. The module sends Google technical diagnostics (device and app information, a per-installation identifier, performance metrics, error codes) — not your images or text. See the <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Play Billing:</strong> Android only. Used for optional subscriptions and donations. Payment details are handled by Google according to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We only receive purchase/subscription status needed to unlock features or hide donation prompts.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Android only. Used only when you scan a document (Plus). Runs in Google Play services; images are processed on the device. The module sends Google technical diagnostics (device and app information, a per-installation identifier, performance metrics, error codes) — not your images or text. See the <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+            </ul>
+            <p><strong>Apple Services (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (In-App Purchase):</strong> Used for the optional subscription on iPhone. Payment details are handled by Apple according to the <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>. We only receive the purchase/subscription status needed to unlock features.</li>
+                <li><strong>Apple VisionKit and Vision:</strong> The document scanner and text from photo on iPhone. They run entirely on your device; nothing is sent to Apple or to the developer.</li>
             </ul>
             <p><strong>Other services:</strong></p>
             <ul>
@@ -512,11 +525,12 @@
             </ul>
 
             <h2 id="data-deletion">🗑️ Data Deletion</h2>
-            <p>This applies to the <strong>Paper Notes</strong> app on Google Play. Your data is stored on your device and, if you turned on backup or sync, in your own Google Drive. We have no servers, so we hold none of your data and there is nothing to delete on our side.</p>
+            <p>This applies to the <strong>Paper Notes</strong> app on Google Play and the App Store. Your data is stored on your device and, if you turned on backup or sync, in your own Google Drive. We have no servers, so we hold none of your data and there is nothing to delete on our side.</p>
             <h3>How to delete your data</h3>
             <ol>
                 <li><strong>A single item:</strong> delete it in the app — it goes to the Trash. Open Trash → “Delete permanently” to remove it straight away; otherwise the Trash clears it automatically after 30 days.</li>
-                <li><strong>All data on your device:</strong> uninstall the app (or clear its storage in Android settings). Everything stored on the device is removed at once.</li>
+                <li><strong>All data on your device (Android):</strong> uninstall the app (or clear its storage in Android settings). Everything stored on the device is removed at once.</li>
+                <li><strong>All data on your device (iPhone):</strong> delete the app — touch and hold its icon → Remove App → Delete App. Everything stored on the device is removed at once.</li>
                 <li><strong>Copies in Google Drive:</strong> open Google Drive, find the folder <strong>“Paper Notes Backups”</strong> and delete it, then empty the Drive bin. Uninstalling the app does not remove these copies — they stay in your Drive until you delete them.</li>
                 <li><strong>Google access:</strong> in your Google account settings → Security → Third-party connections, remove access for Paper Notes.</li>
             </ol>
@@ -549,12 +563,13 @@
                 <li>CCPA (California Consumer Privacy Act) - USA</li>
                 <li>COPPA (Children's Online Privacy Protection Act) - USA</li>
                 <li>Google Play Store Privacy Requirements</li>
+                <li>Apple App Store Review Guidelines (privacy)</li>
             </ul>
         </div>
 
         <!-- Ukrainian Version -->
         <div id="uk-content" class="content language-content">
-            <p><strong>Останнє оновлення:</strong> 22 листопада 2026</p>
+            <p><strong>Останнє оновлення:</strong> 26 листопада 2026</p>
 
             <h2>🔒 Вступ</h2>
             <p>Paper Notes ("ми", "наш" або "додаток") прагне захистити вашу конфіденційність. Ця Політика конфіденційності пояснює, як ми обробляємо вашу інформацію під час використання нашого мобільного додатку.</p>
@@ -574,10 +589,11 @@
             <h2>💳 Опційна підписка</h2>
             <p>Paper Notes може пропонувати одну опційну підписку, яка відкриває вибрані <strong>нові або розширені функції</strong>. Без рівнів тарифів — одна підписка відкриває включені додаткові можливості.</p>
             <ul>
-                <li>Оплата обробляється через <strong>Google Play Billing</strong> (або відповідний магазин додатків). Ми <strong>не</strong> отримуємо і не зберігаємо дані вашої платіжної картки.</li>
+                <li>Оплата обробляється через <strong>Google Play Billing</strong> на Android і через <strong>Apple App Store</strong> (вбудовані покупки) на iPhone. Ми <strong>не</strong> отримуємо і не зберігаємо дані вашої платіжної картки.</li>
                 <li>Додаток може перевіряти статус підписки через API магазину, щоб відкрити функції. Статус може кешуватися локально на вашому пристрої.</li>
                 <li>Ми не використовуємо дані підписки чи покупок для реклами або відстеження поведінки. Анонімна статистика фіксує лише, чи покупку завершено, скасовано або сталася помилка, — без сум і без прив’язки до вас.</li>
-                <li>Керувати або скасувати підписку можна в налаштуваннях облікового запису Google Play (або магазину).</li>
+                <li>Керувати підпискою або скасувати її можна в налаштуваннях облікового запису Google Play, а на iPhone — у «Параметри» → [ваше імʼя] → «Підписки».</li>
+                <li>Plus, придбаний в одному магазині, не переноситься в інший: покупка в Google Play не відкриває Plus на iPhone, а покупка в App Store — на Android.</li>
                 <li>Опційні разові донати, якщо вони доступні, також обробляються магазином і не дають нам доступу до ваших нотаток на наших серверах.</li>
             </ul>
 
@@ -601,10 +617,11 @@
 
             <h3>Що ми не збираємо:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Без стеження за вами особисто</strong>: єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без жодного вмісту, і її можна вимкнути. Крім неї — лише технічна діагностика сканера документів Google, про неї нижче</li>
+                <li><span class="emoji">✅</span> <strong>Без стеження за вами особисто</strong>: єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без жодного вмісту, і її можна вимкнути. Крім неї — лише технічна діагностика сканера документів Google (лише Android), про неї нижче</li>
                 <li><span class="emoji">✅</span> <strong>Без рекламних мереж</strong></li>
                 <li><span class="emoji">✅</span> <strong>Без персональних даних</strong> на наших серверах</li>
                 <li><span class="emoji">✅</span> Розробник <strong>ніколи не отримує ваш вміст</strong> — тексти, назви, суми чи контакти — і не може пов’язати статистику з вами</li>
+                <li><span class="emoji">✅</span> На iPhone застосунок <strong>не</strong> використовує рекламний ідентифікатор (IDFA) і не відстежує вас у застосунках і на сайтах інших компаній</li>
             </ul>
 
             <h2>💾 Зберігання даних</h2>
@@ -621,9 +638,10 @@
             <p>Усе, що ви створюєте, зберігається на вашому пристрої. Дані залишають його лише тоді, коли ви вмикаєте резервне копіювання або синхронізацію: тоді копія зберігається у <strong>вашому власному Google Диску</strong>. У Paper Notes немає власних серверів, і ваш вміст третім особам не передається. Окрім цього, застосунок надсилає <a href="#analytics">анонімну статистику використання</a> без жодного вмісту (її можна вимкнути) — про неї нижче.</p>
             <p><strong>Картинки з інтернету.</strong> Якщо вставити в нотатку частину вебсторінки або поділитися нею з Paper Notes, застосунок завантажує її картинки з вихідного сайту на ваш пристрій — під час вставлення чи надсилання і під час відкриття нотатки, — щоб вони були видні без інтернету. Сайт отримує звичайний запит, як під час перегляду картинки в браузері; файли cookie не надсилаються, і більше картинки нікуди не передаються.</p>
             <p><strong>Бюджет.</strong> Суми, категорії, ліміти й нотатки, які ви вносите в розділі «Бюджет», зберігаються на вашому пристрої, а якщо ввімкнено резервне копіювання чи синхронізацію, — у копії у вашому Google Диску. Розробник їх не отримує: застосунок не підключається до банків і рахунків і нікому не передає дані бюджету.</p>
-            <p><strong>Сканер документів і текст із фото.</strong> Сканер документів працює в сервісах Google Play (Google ML Kit Document Scanner). Знімки обробляються на вашому пристрої, а готові сторінки зберігаються в нотатці як звичайні картинки або файл (у копію у вашому Google Диску вони потрапляють, лише якщо ввімкнено резервне копіювання чи синхронізацію). Для роботи сканера модуль сервісів Google Play передає Google технічну діагностику: відомості про пристрій (виробник, модель, версія Android), назву пакета й версію застосунку, ідентифікатор встановлення, показники продуктивності, коди помилок і типи подій. Ваших знімків і тексту в ній немає. Google шифрує ці дані під час передавання (HTTPS) і, за його словами, не передає їх третім особам; вони обробляються згідно з <a href="https://policies.google.com/privacy" target="_blank">Політикою конфіденційності Google</a>. Текст із фото розпізнається повністю на пристрої, зокрема без інтернету. Моделі розпізнавання для частини мов (німецька, французька, іспанська, італійська, фінська, польська) один раз завантажуються з GitHub під час першого використання; застосунок нічого туди не надсилає, крім звичайного запиту на завантаження.</p>
+            <p><strong>Сканер документів і текст із фото (Android).</strong> Сканер документів працює в сервісах Google Play (Google ML Kit Document Scanner). Знімки обробляються на вашому пристрої, а готові сторінки зберігаються в нотатці як звичайні картинки або файл (у копію у вашому Google Диску вони потрапляють, лише якщо ввімкнено резервне копіювання чи синхронізацію). Для роботи сканера модуль сервісів Google Play передає Google технічну діагностику: відомості про пристрій (виробник, модель, версія Android), назву пакета й версію застосунку, ідентифікатор встановлення, показники продуктивності, коди помилок і типи подій. Ваших знімків і тексту в ній немає. Google шифрує ці дані під час передавання (HTTPS) і, за його словами, не передає їх третім особам; вони обробляються згідно з <a href="https://policies.google.com/privacy" target="_blank">Політикою конфіденційності Google</a>. Текст із фото розпізнається повністю на пристрої, зокрема без інтернету. Моделі розпізнавання для частини мов (німецька, французька, іспанська, італійська, фінська, польська) один раз завантажуються з GitHub під час першого використання; застосунок нічого туди не надсилає, крім звичайного запиту на завантаження.</p>
+            <p><strong>Сканер документів і текст із фото (iPhone).</strong> На iPhone сканер документів — це камера документів Apple VisionKit, а текст із фото розпізнає фреймворк Apple Vision. Обидва працюють повністю на пристрої: нічого не надсилається ні Apple, ні розробнику, і моделі розпізнавання не завантажуються (завантаження з GitHub, описане вище, буває лише на Android). Готові сторінки зберігаються в нотатці як звичайні зображення або файл.</p>
             <p><strong>Історія версій нотатки.</strong> Попередні версії нотатки зберігаються лише на цьому пристрої. Вони не потрапляють до копії на вашому Google Диску й не синхронізуються з іншими пристроями.</p>
-            <p><strong>PDF і друк.</strong> PDF-файли створюються на вашому пристрої. Під час друку Android передає документ службі друку або принтеру, які ви обрали; та служба обробляє його за власними умовами. Більше застосунок нікуди нічого не надсилає.</p>
+            <p><strong>PDF і друк.</strong> PDF-файли створюються на вашому пристрої. Під час друку Android передає документ службі друку або принтеру, які ви обрали, а на iPhone документ надходить на обраний вами принтер AirPrint; служба друку обробляє його за власними умовами. Більше застосунок нікуди нічого не надсилає.</p>
             <p>Копія у вашому Google Диску може містити:</p>
             <ul>
                 <li>тексти нотаток, списків, завдань і карток у розділі «Робота»</li>
@@ -637,11 +655,11 @@
             <ul>
                 <li>✅ Усе це необовʼязково: без входу в Google ваш вміст не залишає пристрій</li>
                 <li>✅ Під час передавання дані шифруються (HTTPS)</li>
-                <li>✅ Немає реклами та звітів про збої. Єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без вмісту, яку можна вимкнути; крім неї — лише технічна діагностика сканера Google, описана вище</li>
+                <li>✅ Немає реклами та звітів про збої. Єдина наша аналітика — <a href="#analytics">анонімна статистика використання</a> без вмісту, яку можна вимкнути; крім неї — лише технічна діагностика сканера Google (лише Android), описана вище</li>
             </ul>
 
             <h2 id="analytics-uk">📈 Анонімна статистика використання</h2>
-            <p>Щоб розуміти, які частини застосунку корисні і де люди застрягають, Paper Notes надсилає анонімну статистику використання. У ній ніколи немає вмісту ваших нотаток чи будь-чого, що ви вводили. Статистика ввімкнена за замовчуванням, і її можна вимкнути будь-коли.</p>
+            <p>Щоб розуміти, які частини застосунку корисні і де люди застрягають, Paper Notes надсилає анонімну статистику використання. У ній ніколи немає вмісту ваших нотаток чи будь-чого, що ви вводили. Статистика ввімкнена за замовчуванням, і її можна вимкнути будь-коли. На Android та iPhone це працює однаково.</p>
             <p><strong>Сервіс.</strong> Статистику збирає <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Дані обробляються й зберігаються в ЄС (Німеччина). Aptabase діє як обробник за дорученням розробника; докладніше — <a href="https://aptabase.com/legal/privacy" target="_blank">Політика конфіденційності Aptabase</a>.</p>
             <h3>Що надсилається</h3>
             <ul>
@@ -680,22 +698,25 @@
             <h3>🔐 Доступ до Google аккаунту (опційно)</h3>
             <p>Лише якщо ви вмикаєте бекап або синхронізацію через Google Drive. Додаток може запитувати доступ до:</p>
             <ul>
-                <li>Вашого Google аккаунту для входу (обробляється Google Sign In)</li>
+                <li>Вашого Google аккаунту для входу (обробляється Google Sign In; на iPhone відкривається системне вікно входу)</li>
                 <li>Google Drive для збереження та отримання резервних файлів, створених додатком</li>
             </ul>
-            <p><strong>Обсяг:</strong> Додаток запитує доступ лише до файлів, які він створює у вашому Google Drive. Він не має доступу до інших файлів у вашому Drive.</p>
+            <p><strong>Обсяг:</strong> Додаток запитує доступ лише до файлів, які він створює у вашому Google Drive. Він не має доступу до інших файлів у вашому Drive. На Android та iPhone обсяг доступу однаковий.</p>
+            
+            <h3>📷 Камера (опційно)</h3>
+            <p>На iPhone застосунок запитує доступ до камери, коли ви робите фото або скануєте документ. Камера використовується лише для фото до нотаток, карток «Роботи» й контактів і для сканування документів. Змінити цей дозвіл можна будь-коли в налаштуваннях iPhone.</p>
             
             <h3>📱 Дозвіл на сповіщення (опційно)</h3>
             <p>Використовується для надсилання нагадувань про події календаря та завдання. Може бути вимкнено в будь-який час у налаштуваннях пристрою.</p>
             
             <h3>💾 Доступ до сховища / файлів</h3>
-            <p>Використовується для зберігання нотаток і вкладень на пристрої, а також для імпорту чи експорту резервних копій, коли ви цього хочете. Резервні копії зберігаються лише туди, куди ви вирішите, — зокрема в місце, яке ви оберете в системному вікні файлів, наприклад на флешку чи в іншу папку.</p>
+            <p>Використовується для зберігання нотаток і вкладень на пристрої, а також для імпорту чи експорту резервних копій, коли ви цього хочете. Резервні копії зберігаються лише туди, куди ви вирішите, — зокрема в місце, яке ви оберете в системному вікні файлів, наприклад на флешку чи в іншу папку. На iPhone резервні копії експортуються та імпортуються через застосунок «Файли» (системне вікно вибору файлів).</p>
 
             <h3>📤 Те, чим ви ділитеся із застосунком</h3>
-            <p>Коли ви через меню Android «Поділитися» надсилаєте щось у Paper Notes, застосунок отримує лише те, чим ви вирішили поділитися (текст, посилання, фото чи файли), і зберігає це в нотатці на вашому пристрої. Нічого іншого з того застосунку він не читає.</p>
+            <p>Коли ви через меню Android «Поділитися» або через вікно «Поділитися» на iPhone надсилаєте щось у Paper Notes, застосунок отримує лише те, чим ви вирішили поділитися (текст, посилання, фото чи файли), і зберігає це в нотатці на вашому пристрої. Нічого іншого з того застосунку він не читає. На iPhone розширення «Поділитися» Paper Notes зберігає надіслане в закритій папці застосунку на пристрої, доки ви не відкриєте застосунок, а потім воно зберігається в нотатці; нікуди нічого не надсилається.</p>
 
             <h3>👤 Вибір контакту (опційно)</h3>
-            <p>Коли ви додаєте контакт із телефонної книги, відкривається системне вікно вибору Android, і воно передає застосунку лише один вибраний вами контакт: імʼя, вибраний номер телефону та адреси електронної пошти цього контакту. Застосунок не запитує дозволу на читання контактів і не бачить решти вашої телефонної книги. Контакт зберігається на вашому пристрої (а також у резервних копіях чи синхронізації з Google Диском, якщо ви ними користуєтеся).</p>
+            <p>Коли ви додаєте контакт із телефонної книги, відкривається системне вікно вибору контакту Android або iPhone, і воно передає застосунку лише один вибраний вами контакт: імʼя, вибраний номер телефону та адреси електронної пошти цього контакту. Застосунок не запитує дозволу на читання контактів і не бачить решти вашої телефонної книги. Контакт зберігається на вашому пристрої (а також у резервних копіях чи синхронізації з Google Диском, якщо ви ними користуєтеся).</p>
             
             <p><strong>Примітка:</strong> Всі дозволи використовуються виключно для функціональності додатку. Ми не використовуємо дозволи для збору даних для аналітики або реклами.</p>
 
@@ -705,15 +726,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (сканер документів)</span>
+                <span class="badge">Google ML Kit (сканер документів, Android)</span>
+                <span class="badge">Apple App Store (вбудовані покупки)</span>
+                <span class="badge">Apple VisionKit / Vision (на пристрої)</span>
                 <span class="badge">Aptabase (анонімна статистика)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Сервіси Google:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Опційно. Використовується, коли ви підключаєте Google для бекапу або синхронізації. Інформація вашого Google аккаунту обробляється відповідно до <a href="https://policies.google.com/privacy" target="_blank">Політики конфіденційності Google</a>.</li>
                 <li><strong>Google Drive API:</strong> Опційно. Використовується для бекапу та синхронізації ваших даних у Google Drive. Підлягає <a href="https://policies.google.com/privacy" target="_blank">Політиці конфіденційності Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> Використовується для опційних підписок і донатів. Платіжні дані обробляє Google відповідно до <a href="https://policies.google.com/privacy" target="_blank">Політики конфіденційності Google</a>. Ми отримуємо лише статус покупки/підписки, потрібний для відкриття функцій або приховування пропозицій донату.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Лише коли ви скануєте документ (Plus). Працює в сервісах Google Play, знімки обробляються на пристрої. Модуль передає Google технічну діагностику (відомості про пристрій і застосунок, ідентифікатор встановлення, показники продуктивності, коди помилок) — без ваших знімків і тексту. Докладніше — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">розкриття даних ML Kit</a> і <a href="https://policies.google.com/privacy" target="_blank">Політика конфіденційності Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> Лише Android. Використовується для опційних підписок і донатів. Платіжні дані обробляє Google відповідно до <a href="https://policies.google.com/privacy" target="_blank">Політики конфіденційності Google</a>. Ми отримуємо лише статус покупки/підписки, потрібний для відкриття функцій або приховування пропозицій донату.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Лише Android. Лише коли ви скануєте документ (Plus). Працює в сервісах Google Play, знімки обробляються на пристрої. Модуль передає Google технічну діагностику (відомості про пристрій і застосунок, ідентифікатор встановлення, показники продуктивності, коди помилок) — без ваших знімків і тексту. Докладніше — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">розкриття даних ML Kit</a> і <a href="https://policies.google.com/privacy" target="_blank">Політика конфіденційності Google</a>.</li>
+            </ul>
+            <p><strong>Сервіси Apple (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (вбудовані покупки):</strong> Використовується для опційної підписки на iPhone. Платіжні дані обробляє Apple згідно з <a href="https://www.apple.com/legal/privacy/" target="_blank">Політикою конфіденційності Apple</a>. Ми отримуємо лише статус покупки/підписки, потрібний для відкриття функцій.</li>
+                <li><strong>Apple VisionKit і Vision:</strong> Сканер документів і текст із фото на iPhone. Працюють повністю на пристрої; нічого не надсилається ні Apple, ні розробнику.</li>
             </ul>
             <p><strong>Інші сервіси:</strong></p>
             <ul>
@@ -763,11 +791,12 @@
             </ul>
 
             <h2 id="data-deletion-uk">🗑️ Видалення даних</h2>
-            <p>Це стосується застосунку <strong>Paper Notes</strong> у Google Play. Ваші дані зберігаються на пристрої, а якщо ви ввімкнули резервне копіювання чи синхронізацію, — ще й у вашому Google Диску. Серверів у нас немає, тож ми не зберігаємо ваших даних і з нашого боку видаляти нічого.</p>
+            <p>Це стосується застосунку <strong>Paper Notes</strong> у Google Play та App Store. Ваші дані зберігаються на пристрої, а якщо ви ввімкнули резервне копіювання чи синхронізацію, — ще й у вашому Google Диску. Серверів у нас немає, тож ми не зберігаємо ваших даних і з нашого боку видаляти нічого.</p>
             <h3>Як видалити дані</h3>
             <ol>
                 <li><strong>Окремий запис:</strong> видаліть його в застосунку — він потрапить у «Кошик». Відкрийте «Кошик» → «Видалити назавжди», щоб прибрати його одразу; інакше кошик очиститься автоматично через 30 днів.</li>
-                <li><strong>Усі дані на пристрої:</strong> видаліть застосунок (або очистіть його сховище в налаштуваннях Android). Усе, що зберігалося на пристрої, зникне одразу.</li>
+                <li><strong>Усі дані на пристрої (Android):</strong> видаліть застосунок (або очистіть його сховище в налаштуваннях Android). Усе, що зберігалося на пристрої, зникне одразу.</li>
+                <li><strong>Усі дані на пристрої (iPhone):</strong> видаліть застосунок — торкніться його значка й утримуйте → «Видалити програму» → «Видалити програму». Усе, що зберігалося на пристрої, зникне одразу.</li>
                 <li><strong>Копії в Google Диску:</strong> відкрийте Google Диск, знайдіть папку <strong>«Paper Notes Backups»</strong> і видаліть її, потім очистіть кошик Диска. Видалення застосунку ці копії не прибирає — вони лишаються у вашому Диску, доки ви їх не видалите.</li>
                 <li><strong>Доступ Google:</strong> у налаштуваннях облікового запису Google → «Безпека» → «Сторонні підключення» скасуйте доступ для Paper Notes.</li>
             </ol>
@@ -800,12 +829,13 @@
                 <li>CCPA (Каліфорнійський закон про конфіденційність споживачів) - США</li>
                 <li>COPPA (Закон про захист конфіденційності дітей в інтернеті) - США</li>
                 <li>Вимоги конфіденційності Google Play Store</li>
+                <li>Правила перевірки App Store (App Store Review Guidelines), розділ про конфіденційність</li>
             </ul>
         </div>
 
         <!-- Russian Version -->
         <div id="ru-content" class="content language-content">
-            <p><strong>Последнее обновление:</strong> 22 ноября 2026</p>
+            <p><strong>Последнее обновление:</strong> 26 ноября 2026</p>
 
             <h2>🔒 Введение</h2>
             <p>Paper Notes ("мы", "наше" или "приложение") стремится защитить вашу конфиденциальность. Эта Политика конфиденциальности объясняет, как мы обрабатываем вашу информацию при использовании нашего мобильного приложения.</p>
@@ -825,10 +855,11 @@
             <h2>💳 Опциональная подписка</h2>
             <p>Paper Notes может предлагать одну опциональную подписку, которая открывает выбранные <strong>новые или расширенные функции</strong>. Без уровней тарифов — одна подписка открывает включённые дополнительные возможности.</p>
             <ul>
-                <li>Оплата обрабатывается через <strong>Google Play Billing</strong> (или соответствующий магазин приложений). Мы <strong>не</strong> получаем и не храним данные вашей платёжной карты.</li>
+                <li>Оплата обрабатывается через <strong>Google Play Billing</strong> на Android и через <strong>Apple App Store</strong> (встроенные покупки) на iPhone. Мы <strong>не</strong> получаем и не храним данные вашей платёжной карты.</li>
                 <li>Приложение может проверять статус подписки через API магазина, чтобы открыть функции. Статус может кэшироваться локально на вашем устройстве.</li>
                 <li>Мы не используем данные подписки или покупок для рекламы или отслеживания поведения. Анонимная статистика отмечает только, завершена ли покупка, отменена или произошла ошибка, — без сумм и без привязки к вам.</li>
-                <li>Управлять или отменить подписку можно в настройках аккаунта Google Play (или магазина).</li>
+                <li>Управлять подпиской или отменить её можно в настройках аккаунта Google Play, а на iPhone — в «Настройки» → [ваше имя] → «Подписки».</li>
+                <li>Plus, купленный в одном магазине, не переносится в другой: покупка в Google Play не открывает Plus на iPhone, а покупка в App Store — на Android.</li>
                 <li>Опциональные разовые донаты, если они доступны, также обрабатываются магазином и не дают нам доступа к вашим заметкам на наших серверах.</li>
             </ul>
 
@@ -852,10 +883,11 @@
 
             <h3>Что мы не собираем:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Без слежки за вами лично</strong>: наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без какого-либо содержимого, и её можно выключить. Кроме неё — только техническая диагностика сканера документов Google, о ней ниже</li>
+                <li><span class="emoji">✅</span> <strong>Без слежки за вами лично</strong>: наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без какого-либо содержимого, и её можно выключить. Кроме неё — только техническая диагностика сканера документов Google (только Android), о ней ниже</li>
                 <li><span class="emoji">✅</span> <strong>Без рекламных сетей</strong></li>
                 <li><span class="emoji">✅</span> <strong>Без персональных данных</strong> на наших серверах</li>
                 <li><span class="emoji">✅</span> Разработчик <strong>никогда не получает ваше содержимое</strong> — тексты, названия, суммы или контакты — и не может связать статистику с вами</li>
+                <li><span class="emoji">✅</span> На iPhone приложение <strong>не</strong> использует рекламный идентификатор (IDFA) и не отслеживает вас в приложениях и на сайтах других компаний</li>
             </ul>
 
             <h2>💾 Хранение данных</h2>
@@ -872,9 +904,10 @@
             <p>Всё, что вы создаёте, хранится на вашем устройстве. Данные покидают его, только если вы включили резервное копирование или синхронизацию: тогда копия сохраняется в <strong>вашем собственном Google Диске</strong>. У Paper Notes нет своих серверов, и ваше содержимое третьим лицам не передаётся. Кроме этого, приложение отправляет <a href="#analytics">анонимную статистику использования</a> без какого-либо содержимого (её можно выключить) — о ней ниже.</p>
             <p><strong>Картинки из интернета.</strong> Если вставить в заметку часть веб-страницы или поделиться ею с Paper Notes, приложение скачивает её картинки с исходного сайта на ваше устройство — при вставке или отправке и при открытии заметки, — чтобы они были видны без интернета. Сайт получает обычный запрос, как при просмотре картинки в браузере; куки не отправляются, и больше картинки никуда не передаются.</p>
             <p><strong>Бюджет.</strong> Суммы, категории, лимиты и заметки, которые вы вносите в разделе «Бюджет», хранятся на вашем устройстве, а если включено резервное копирование или синхронизация, — в копии в вашем Google Диске. Разработчик их не получает: приложение не подключается к банкам и счетам и никому не передаёт данные бюджета.</p>
-            <p><strong>Сканер документов и текст с фото.</strong> Сканер документов работает в сервисах Google Play (Google ML Kit Document Scanner). Снимки обрабатываются на вашем устройстве, а готовые страницы сохраняются в заметке как обычные картинки или файл (в копию в вашем Google Диске они попадают, только если включено резервное копирование или синхронизация). Для работы сканера модуль сервисов Google Play передаёт Google техническую диагностику: сведения об устройстве (производитель, модель, версия Android), имя пакета и версию приложения, идентификатор установки, показатели производительности, коды ошибок и типы событий. Ваших снимков и текста в ней нет. Google шифрует эти данные при передаче (HTTPS) и, по его словам, не передаёт их третьим лицам; они обрабатываются по <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Текст с фото распознаётся полностью на устройстве, в том числе без интернета. Модели распознавания для части языков (немецкий, французский, испанский, итальянский, финский, польский) один раз загружаются с GitHub при первом использовании; приложение ничего туда не отправляет, кроме обычного запроса на загрузку.</p>
+            <p><strong>Сканер документов и текст с фото (Android).</strong> Сканер документов работает в сервисах Google Play (Google ML Kit Document Scanner). Снимки обрабатываются на вашем устройстве, а готовые страницы сохраняются в заметке как обычные картинки или файл (в копию в вашем Google Диске они попадают, только если включено резервное копирование или синхронизация). Для работы сканера модуль сервисов Google Play передаёт Google техническую диагностику: сведения об устройстве (производитель, модель, версия Android), имя пакета и версию приложения, идентификатор установки, показатели производительности, коды ошибок и типы событий. Ваших снимков и текста в ней нет. Google шифрует эти данные при передаче (HTTPS) и, по его словам, не передаёт их третьим лицам; они обрабатываются по <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Текст с фото распознаётся полностью на устройстве, в том числе без интернета. Модели распознавания для части языков (немецкий, французский, испанский, итальянский, финский, польский) один раз загружаются с GitHub при первом использовании; приложение ничего туда не отправляет, кроме обычного запроса на загрузку.</p>
+            <p><strong>Сканер документов и текст с фото (iPhone).</strong> На iPhone сканер документов — это камера документов Apple VisionKit, а текст с фото распознаёт фреймворк Apple Vision. Оба работают полностью на устройстве: ничего не отправляется ни Apple, ни разработчику, и модели распознавания не загружаются (загрузка с GitHub, описанная выше, бывает только на Android). Готовые страницы сохраняются в заметке как обычные картинки или файл.</p>
             <p><strong>История версий заметки.</strong> Прежние версии заметки хранятся только на этом устройстве. Они не попадают в копию на вашем Google Диске и не синхронизируются с другими устройствами.</p>
-            <p><strong>PDF и печать.</strong> PDF-файлы создаются на вашем устройстве. При печати Android передаёт документ выбранной вами службе печати или принтеру; та служба обрабатывает его по своим условиям. Больше приложение никуда ничего не отправляет.</p>
+            <p><strong>PDF и печать.</strong> PDF-файлы создаются на вашем устройстве. При печати Android передаёт документ выбранной вами службе печати или принтеру, а на iPhone документ уходит на выбранный вами принтер AirPrint; служба печати обрабатывает его по своим условиям. Больше приложение никуда ничего не отправляет.</p>
             <p>Копия в вашем Google Диске может содержать:</p>
             <ul>
                 <li>тексты заметок, списков, задач и карточек в разделе «Работа»</li>
@@ -888,11 +921,11 @@
             <ul>
                 <li>✅ Всё это необязательно: без входа в Google ваше содержимое не покидает устройство</li>
                 <li>✅ При передаче данные шифруются (HTTPS)</li>
-                <li>✅ Нет рекламы и отчётов о сбоях. Наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без содержимого, которую можно выключить; кроме неё — только техническая диагностика сканера Google, описанная выше</li>
+                <li>✅ Нет рекламы и отчётов о сбоях. Наша единственная аналитика — <a href="#analytics">анонимная статистика использования</a> без содержимого, которую можно выключить; кроме неё — только техническая диагностика сканера Google (только Android), описанная выше</li>
             </ul>
 
             <h2 id="analytics-ru">📈 Анонимная статистика использования</h2>
-            <p>Чтобы понимать, какие части приложения полезны и где люди застревают, Paper Notes отправляет анонимную статистику использования. В ней никогда нет содержимого ваших заметок и вообще ничего из того, что вы вводили. Статистика включена по умолчанию, и её можно выключить в любой момент.</p>
+            <p>Чтобы понимать, какие части приложения полезны и где люди застревают, Paper Notes отправляет анонимную статистику использования. В ней никогда нет содержимого ваших заметок и вообще ничего из того, что вы вводили. Статистика включена по умолчанию, и её можно выключить в любой момент. На Android и iPhone это работает одинаково.</p>
             <p><strong>Сервис.</strong> Статистику собирает <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Данные обрабатываются и хранятся в ЕС (Германия). Aptabase действует как обработчик по поручению разработчика; подробнее — <a href="https://aptabase.com/legal/privacy" target="_blank">Политика конфиденциальности Aptabase</a>.</p>
             <h3>Что отправляется</h3>
             <ul>
@@ -931,22 +964,25 @@
             <h3>🔐 Доступ к Google аккаунту (опционально)</h3>
             <p>Только если вы включаете бекап или синхронизацию через Google Drive. Приложение может запрашивать доступ к:</p>
             <ul>
-                <li>Вашему Google аккаунту для входа (обрабатывается Google Sign In)</li>
+                <li>Вашему Google аккаунту для входа (обрабатывается Google Sign In; на iPhone открывается системное окно входа)</li>
                 <li>Google Drive для сохранения и получения резервных файлов, созданных приложением</li>
             </ul>
-            <p><strong>Объём:</strong> Приложение запрашивает доступ только к файлам, которые оно создаёт в вашем Google Drive. Оно не имеет доступа к другим файлам в вашем Drive.</p>
+            <p><strong>Объём:</strong> Приложение запрашивает доступ только к файлам, которые оно создаёт в вашем Google Drive. Оно не имеет доступа к другим файлам в вашем Drive. На Android и iPhone объём доступа одинаковый.</p>
+            
+            <h3>📷 Камера (опционально)</h3>
+            <p>На iPhone приложение запрашивает доступ к камере, когда вы делаете фото или сканируете документ. Камера используется только чтобы сфотографировать что-то для заметок, карточек «Работы» и контактов и чтобы сканировать документы. Изменить это разрешение можно в любой момент в настройках iPhone.</p>
             
             <h3>📱 Разрешение на уведомления (опционально)</h3>
             <p>Используется для отправки напоминаний о событиях календаря и задачах. Может быть отключено в любое время в настройках устройства.</p>
             
             <h3>💾 Доступ к хранилищу / файлам</h3>
-            <p>Используется для хранения заметок и вложений на устройстве, а также для импорта или экспорта резервных копий, когда вы этого хотите. Резервные копии сохраняются только туда, куда вы решите, — в том числе в место, выбранное вами в системном окне файлов, например на флешку или в другую папку.</p>
+            <p>Используется для хранения заметок и вложений на устройстве, а также для импорта или экспорта резервных копий, когда вы этого хотите. Резервные копии сохраняются только туда, куда вы решите, — в том числе в место, выбранное вами в системном окне файлов, например на флешку или в другую папку. На iPhone резервные копии экспортируются и импортируются через приложение «Файлы» (системное окно выбора файлов).</p>
 
             <h3>📤 То, чем вы делитесь с приложением</h3>
-            <p>Когда вы через меню Android «Поделиться» отправляете что-то в Paper Notes, приложение получает только то, чем вы решили поделиться (текст, ссылку, фото или файлы), и сохраняет это в заметке на вашем устройстве. Ничего другого из того приложения оно не читает.</p>
+            <p>Когда вы через меню Android «Поделиться» или через окно «Поделиться» на iPhone отправляете что-то в Paper Notes, приложение получает только то, чем вы решили поделиться (текст, ссылку, фото или файлы), и сохраняет это в заметке на вашем устройстве. Ничего другого из того приложения оно не читает. На iPhone расширение «Поделиться» Paper Notes хранит присланное в закрытой папке приложения на устройстве, пока вы не откроете приложение, а затем оно сохраняется в заметке; никуда ничего не отправляется.</p>
 
             <h3>👤 Выбор контакта (опционально)</h3>
-            <p>Когда вы добавляете контакт из телефонной книги, открывается системное окно выбора Android, и оно передаёт приложению только один выбранный вами контакт: имя, выбранный номер телефона и адреса электронной почты этого контакта. Приложение не запрашивает разрешение на чтение контактов и не видит остальную телефонную книгу. Контакт хранится на вашем устройстве (и в резервных копиях или синхронизации с Google Диском, если вы ими пользуетесь).</p>
+            <p>Когда вы добавляете контакт из телефонной книги, открывается системное окно выбора контакта Android или iPhone, и оно передаёт приложению только один выбранный вами контакт: имя, выбранный номер телефона и адреса электронной почты этого контакта. Приложение не запрашивает разрешение на чтение контактов и не видит остальную телефонную книгу. Контакт хранится на вашем устройстве (и в резервных копиях или синхронизации с Google Диском, если вы ими пользуетесь).</p>
             
             <p><strong>Примечание:</strong> Все разрешения используются исключительно для функциональности приложения. Мы не используем разрешения для сбора данных для аналитики или рекламы.</p>
 
@@ -956,15 +992,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (сканер документов)</span>
+                <span class="badge">Google ML Kit (сканер документов, Android)</span>
+                <span class="badge">Apple App Store (встроенные покупки)</span>
+                <span class="badge">Apple VisionKit / Vision (на устройстве)</span>
                 <span class="badge">Aptabase (анонимная статистика)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Сервисы Google:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Опционально. Используется, когда вы подключаете Google для бекапа или синхронизации. Информация вашего Google аккаунта обрабатывается согласно <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>.</li>
                 <li><strong>Google Drive API:</strong> Опционально. Используется для бекапа и синхронизации ваших данных в Google Drive. Подлежит <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> Используется для опциональных подписок и донатов. Платёжные данные обрабатывает Google согласно <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Мы получаем только статус покупки/подписки, нужный для открытия функций или скрытия предложений доната.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Только когда вы сканируете документ (Plus). Работает в сервисах Google Play, снимки обрабатываются на устройстве. Модуль передаёт Google техническую диагностику (сведения об устройстве и приложении, идентификатор установки, показатели производительности, коды ошибок) — без ваших снимков и текста. Подробнее — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">раскрытие данных ML Kit</a> и <a href="https://policies.google.com/privacy" target="_blank">Политика конфиденциальности Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> Только Android. Используется для опциональных подписок и донатов. Платёжные данные обрабатывает Google согласно <a href="https://policies.google.com/privacy" target="_blank">Политике конфиденциальности Google</a>. Мы получаем только статус покупки/подписки, нужный для открытия функций или скрытия предложений доната.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Только Android. Только когда вы сканируете документ (Plus). Работает в сервисах Google Play, снимки обрабатываются на устройстве. Модуль передаёт Google техническую диагностику (сведения об устройстве и приложении, идентификатор установки, показатели производительности, коды ошибок) — без ваших снимков и текста. Подробнее — <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">раскрытие данных ML Kit</a> и <a href="https://policies.google.com/privacy" target="_blank">Политика конфиденциальности Google</a>.</li>
+            </ul>
+            <p><strong>Сервисы Apple (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (встроенные покупки):</strong> Используется для опциональной подписки на iPhone. Платёжные данные обрабатывает Apple согласно <a href="https://www.apple.com/legal/privacy/" target="_blank">Политике конфиденциальности Apple</a>. Мы получаем только статус покупки/подписки, нужный для открытия функций.</li>
+                <li><strong>Apple VisionKit и Vision:</strong> Сканер документов и текст с фото на iPhone. Работают полностью на устройстве; ничего не отправляется ни Apple, ни разработчику.</li>
             </ul>
             <p><strong>Другие сервисы:</strong></p>
             <ul>
@@ -1014,11 +1057,12 @@
             </ul>
 
             <h2 id="data-deletion-ru">🗑️ Удаление данных</h2>
-            <p>Это относится к приложению <strong>Paper Notes</strong> в Google Play. Ваши данные хранятся на устройстве, а если вы включили резервное копирование или синхронизацию, — ещё и в вашем Google Диске. Серверов у нас нет, поэтому мы не храним ваши данные и с нашей стороны удалять нечего.</p>
+            <p>Это относится к приложению <strong>Paper Notes</strong> в Google Play и App Store. Ваши данные хранятся на устройстве, а если вы включили резервное копирование или синхронизацию, — ещё и в вашем Google Диске. Серверов у нас нет, поэтому мы не храним ваши данные и с нашей стороны удалять нечего.</p>
             <h3>Как удалить данные</h3>
             <ol>
                 <li><strong>Отдельная запись:</strong> удалите её в приложении — она попадёт в «Корзину». Откройте «Корзину» → «Удалить навсегда», чтобы убрать её сразу; иначе корзина очистится автоматически через 30 дней.</li>
-                <li><strong>Все данные на устройстве:</strong> удалите приложение (или очистите его хранилище в настройках Android). Всё, что хранилось на устройстве, удаляется сразу.</li>
+                <li><strong>Все данные на устройстве (Android):</strong> удалите приложение (или очистите его хранилище в настройках Android). Всё, что хранилось на устройстве, удаляется сразу.</li>
+                <li><strong>Все данные на устройстве (iPhone):</strong> удалите приложение — коснитесь его значка и удерживайте → «Удалить приложение» → «Удалить приложение». Всё, что хранилось на устройстве, удаляется сразу.</li>
                 <li><strong>Копии в Google Диске:</strong> откройте Google Диск, найдите папку <strong>«Paper Notes Backups»</strong> и удалите её, затем очистите корзину Диска. Удаление приложения эти копии не убирает — они остаются в вашем Диске, пока вы их не удалите.</li>
                 <li><strong>Доступ Google:</strong> в настройках аккаунта Google → «Безопасность» → «Сторонние подключения» отзовите доступ для Paper Notes.</li>
             </ol>
@@ -1051,12 +1095,13 @@
                 <li>CCPA (Калифорнийский закон о конфиденциальности потребителей) - США</li>
                 <li>COPPA (Закон о защите конфиденциальности детей в интернете) - США</li>
                 <li>Требования конфиденциальности Google Play Store</li>
+                <li>Правила проверки App Store (App Store Review Guidelines), раздел о конфиденциальности</li>
             </ul>
         </div>
 
         <!-- French Version -->
         <div id="fr-content" class="content language-content">
-            <p><strong>Dernière mise à jour :</strong> 22 novembre 2026</p>
+            <p><strong>Dernière mise à jour :</strong> 26 novembre 2026</p>
 
             <h2>🔒 Introduction</h2>
             <p>Paper Notes ("nous", "notre" ou "l'application") s'engage à protéger votre vie privée. Cette Politique de confidentialité explique comment nous traitons vos informations lorsque vous utilisez notre application mobile.</p>
@@ -1076,10 +1121,11 @@
             <h2>💳 Abonnement optionnel</h2>
             <p>Paper Notes peut proposer un seul abonnement optionnel qui débloque certaines <strong>nouvelles fonctionnalités ou fonctionnalités avancées</strong>. Pas de niveaux — un abonnement débloque les extras inclus.</p>
             <ul>
-                <li>Les paiements sont traités par <strong>Google Play Billing</strong> (ou le magasin d'applications applicable). Nous ne recevons <strong>pas</strong> et ne stockons pas les détails de votre carte de paiement.</li>
+                <li>Les paiements sont traités par <strong>Google Play Billing</strong> sur Android et par l’<strong>Apple App Store</strong> (achats intégrés) sur iPhone. Nous ne recevons <strong>pas</strong> et ne stockons pas les détails de votre carte de paiement.</li>
                 <li>L'application peut vérifier le statut de votre abonnement via les API du magasin pour débloquer des fonctionnalités. Ce statut peut être mis en cache localement sur votre appareil.</li>
                 <li>Nous n'utilisons pas les données d'abonnement ou d'achat à des fins publicitaires ou de suivi du comportement. Les statistiques d’utilisation anonymes indiquent seulement si un achat a abouti, a été annulé ou a échoué — sans montants et sans lien avec vous.</li>
-                <li>Vous pouvez gérer ou annuler un abonnement dans les paramètres de votre compte Google Play (ou du magasin).</li>
+                <li>Vous pouvez gérer ou annuler un abonnement dans les paramètres de votre compte Google Play ou, sur iPhone, dans Réglages → [votre nom] → Abonnements.</li>
+                <li>Plus acheté dans un magasin ne s’applique pas à l’autre : un achat sur Google Play ne débloque pas Plus sur iPhone, et un achat dans l’App Store ne le débloque pas sur Android.</li>
                 <li>Les dons ponctuels optionnels, s'ils sont proposés, sont également traités par le magasin et ne nous donnent pas accès au contenu de vos notes sur nos serveurs.</li>
             </ul>
 
@@ -1103,10 +1149,11 @@
 
             <h3>Ce que nous ne collectons pas :</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Aucun suivi personnel</strong> : notre seule analyse, ce sont des <a href="#analytics">statistiques d’utilisation anonymes</a> sans aucun contenu, que vous pouvez désactiver. En dehors de cela, seulement les diagnostics techniques du scanner de documents de Google, décrits plus bas</li>
+                <li><span class="emoji">✅</span> <strong>Aucun suivi personnel</strong> : notre seule analyse, ce sont des <a href="#analytics">statistiques d’utilisation anonymes</a> sans aucun contenu, que vous pouvez désactiver. En dehors de cela, seulement les diagnostics techniques du scanner de documents de Google (Android uniquement), décrits plus bas</li>
                 <li><span class="emoji">✅</span> <strong>Aucun réseau publicitaire</strong></li>
                 <li><span class="emoji">✅</span> <strong>Aucune donnée personnelle</strong> stockée sur nos serveurs</li>
                 <li><span class="emoji">✅</span> Le développeur <strong>ne reçoit jamais votre contenu</strong> — ni textes, ni noms, ni montants, ni contacts — et ne peut pas relier les statistiques à vous</li>
+                <li><span class="emoji">✅</span> Sur iPhone, l’application n’utilise <strong>pas</strong> l’identifiant publicitaire (IDFA) et ne vous suit pas dans les applications et sites web d’autres entreprises</li>
             </ul>
 
             <h2>💾 Stockage des données</h2>
@@ -1123,9 +1170,10 @@
             <p>Tout ce que vous créez est stocké sur votre appareil. Les données ne le quittent que si vous activez la sauvegarde ou la synchronisation : une copie est alors enregistrée dans <strong>votre propre Google Drive</strong>. Paper Notes n’a pas de serveurs propres et votre contenu n’est pas transmis à des tiers. Par ailleurs, l’application envoie des <a href="#analytics">statistiques d’utilisation anonymes</a> sans aucun contenu (vous pouvez les désactiver) — voir ci-dessous.</p>
             <p><strong>Images d’internet.</strong> Si vous collez une partie d’une page web dans une note ou la partagez avec Paper Notes, l’application télécharge ses images depuis le site d’origine sur votre appareil — au moment du collage ou du partage et à l’ouverture de la note — pour qu’elles restent visibles sans internet. Le site reçoit une requête ordinaire, comme lorsqu’on affiche l’image dans un navigateur ; aucun cookie n’est envoyé et les images ne sont transmises nulle part ailleurs.</p>
             <p><strong>Budget.</strong> Les montants, catégories, plafonds et notes que vous saisissez dans la section « Budget » sont stockés sur votre appareil et, si la sauvegarde ou la synchronisation est activée, dans la copie de votre propre Google Drive. Le développeur ne les reçoit jamais : l’application ne se connecte à aucune banque ni à aucun compte et ne transmet les données du budget à personne.</p>
-            <p><strong>Scanner de documents et texte de la photo.</strong> Le scanner de documents est fourni par les services Google Play (Google ML Kit Document Scanner). Les prises de vue sont traitées sur votre appareil, et les pages obtenues sont enregistrées dans la note comme des images ou un fichier ordinaires (elles n’entrent dans la copie de votre Google Drive que si la sauvegarde ou la synchronisation est activée). Pour faire fonctionner le scanner, le module des services Google Play envoie à Google des diagnostics techniques : informations sur l’appareil (fabricant, modèle, version d’Android), nom du paquet et version de l’application, un identifiant d’installation, des mesures de performances, des codes d’erreur et des types d’événements. Ils ne contiennent ni vos images ni votre texte. Google chiffre ces données en transit (HTTPS) et, selon Google, ne les transfère pas à des tiers ; elles sont traitées conformément aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>. Le texte de la photo est reconnu entièrement sur votre appareil, même sans Internet. Les modèles de reconnaissance de certaines langues (allemand, français, espagnol, italien, finnois, polonais) sont téléchargés une fois depuis GitHub lors de la première utilisation ; l’application n’y envoie rien d’autre que la requête de téléchargement habituelle.</p>
+            <p><strong>Scanner de documents et texte de la photo (Android).</strong> Le scanner de documents est fourni par les services Google Play (Google ML Kit Document Scanner). Les prises de vue sont traitées sur votre appareil, et les pages obtenues sont enregistrées dans la note comme des images ou un fichier ordinaires (elles n’entrent dans la copie de votre Google Drive que si la sauvegarde ou la synchronisation est activée). Pour faire fonctionner le scanner, le module des services Google Play envoie à Google des diagnostics techniques : informations sur l’appareil (fabricant, modèle, version d’Android), nom du paquet et version de l’application, un identifiant d’installation, des mesures de performances, des codes d’erreur et des types d’événements. Ils ne contiennent ni vos images ni votre texte. Google chiffre ces données en transit (HTTPS) et, selon Google, ne les transfère pas à des tiers ; elles sont traitées conformément aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>. Le texte de la photo est reconnu entièrement sur votre appareil, même sans Internet. Les modèles de reconnaissance de certaines langues (allemand, français, espagnol, italien, finnois, polonais) sont téléchargés une fois depuis GitHub lors de la première utilisation ; l’application n’y envoie rien d’autre que la requête de téléchargement habituelle.</p>
+            <p><strong>Scanner de documents et texte de la photo (iPhone).</strong> Sur iPhone, le scanner de documents est la caméra de documents VisionKit d’Apple, et le texte de la photo est reconnu par le framework Vision d’Apple. Les deux fonctionnent entièrement sur votre appareil : rien n’est envoyé à Apple ni au développeur, et aucun modèle de reconnaissance n’est téléchargé (le téléchargement depuis GitHub décrit ci-dessus n’a lieu que sur Android). Les pages terminées sont enregistrées dans votre note comme n’importe quelle image ou fichier.</p>
             <p><strong>Historique des versions des notes.</strong> Les versions précédentes d’une note sont conservées uniquement sur cet appareil. Elles ne figurent pas dans la copie sur votre Google Drive et ne sont pas synchronisées avec vos autres appareils.</p>
-            <p><strong>PDF et impression.</strong> Les fichiers PDF sont créés sur votre appareil. Lorsque vous imprimez, Android transmet le document au service d’impression ou à l’imprimante que vous choisissez ; ce service le traite selon ses propres conditions. L’app n’envoie rien ailleurs.</p>
+            <p><strong>PDF et impression.</strong> Les fichiers PDF sont créés sur votre appareil. Lorsque vous imprimez, Android transmet le document au service d’impression ou à l’imprimante que vous choisissez ; sur iPhone, le document est envoyé à l’imprimante AirPrint que vous choisissez. Le service d’impression le traite selon ses propres conditions. L’app n’envoie rien ailleurs.</p>
             <p>Une copie dans votre Google Drive peut contenir :</p>
             <ul>
                 <li>le texte des notes, listes, tâches et fiches de la section « Travail »</li>
@@ -1139,11 +1187,11 @@
             <ul>
                 <li>✅ Tout cela est facultatif : sans connexion Google, votre contenu ne quitte pas votre appareil</li>
                 <li>✅ Les données sont chiffrées pendant le transfert (HTTPS)</li>
-                <li>✅ Pas de publicité ni de rapports de plantage. Notre seule analyse : des <a href="#analytics">statistiques d’utilisation anonymes</a> sans contenu, que vous pouvez désactiver ; en dehors de cela, seulement les diagnostics techniques du scanner de Google décrits ci-dessus</li>
+                <li>✅ Pas de publicité ni de rapports de plantage. Notre seule analyse : des <a href="#analytics">statistiques d’utilisation anonymes</a> sans contenu, que vous pouvez désactiver ; en dehors de cela, seulement les diagnostics techniques du scanner de Google (Android uniquement) décrits ci-dessus</li>
             </ul>
 
             <h2 id="analytics-fr">📈 Statistiques d’utilisation anonymes</h2>
-            <p>Pour comprendre quelles parties de l’application sont utiles et où les gens se bloquent, Paper Notes envoie des statistiques d’utilisation anonymes. Elles ne contiennent jamais le contenu de vos notes ni rien de ce que vous avez saisi. Elles sont activées par défaut, et vous pouvez les désactiver à tout moment.</p>
+            <p>Pour comprendre quelles parties de l’application sont utiles et où les gens se bloquent, Paper Notes envoie des statistiques d’utilisation anonymes. Elles ne contiennent jamais le contenu de vos notes ni rien de ce que vous avez saisi. Elles sont activées par défaut, et vous pouvez les désactiver à tout moment. Cela fonctionne de la même façon sur Android et sur iPhone.</p>
             <p><strong>Service.</strong> Les statistiques sont collectées par <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Les données sont traitées et stockées dans l’UE (Allemagne). Aptabase agit en tant que sous-traitant pour le compte du développeur ; voir la <a href="https://aptabase.com/legal/privacy" target="_blank">politique de confidentialité d’Aptabase</a>.</p>
             <h3>Ce qui est envoyé</h3>
             <ul>
@@ -1182,22 +1230,25 @@
             <h3>🔐 Accès au compte Google (optionnel)</h3>
             <p>Uniquement si vous activez la sauvegarde ou la synchronisation Google Drive. L'application peut demander l'accès à :</p>
             <ul>
-                <li>Votre compte Google pour la connexion (géré par Google Sign In)</li>
+                <li>Votre compte Google pour la connexion (géré par Google Sign In ; sur iPhone, la fenêtre de connexion du système s’ouvre)</li>
                 <li>L'accès à Google Drive pour enregistrer et récupérer les fichiers de sauvegarde créés par l'application</li>
             </ul>
-            <p><strong>Portée :</strong> L'application ne demande l'accès qu'aux fichiers qu'elle crée dans votre Google Drive. Elle n'accède pas aux autres fichiers de votre Drive.</p>
+            <p><strong>Portée :</strong> L'application ne demande l'accès qu'aux fichiers qu'elle crée dans votre Google Drive. Elle n'accède pas aux autres fichiers de votre Drive. La portée est la même sur Android et sur iPhone.</p>
+            
+            <h3>📷 Appareil photo (facultatif)</h3>
+            <p>Sur iPhone, l’application demande l’accès à l’appareil photo lorsque vous prenez une photo ou numérisez un document. L’appareil photo sert uniquement à prendre des photos pour les notes, les fiches « Travail » et les contacts, et à numériser des documents. Vous pouvez modifier cette autorisation à tout moment dans les Réglages de l’iPhone.</p>
             
             <h3>📱 Autorisation de notifications (optionnel)</h3>
             <p>Utilisée pour vous envoyer des rappels pour les événements du calendrier et les tâches. Peut être désactivée à tout moment dans les paramètres de votre appareil.</p>
             
             <h3>💾 Accès au stockage / fichiers</h3>
-            <p>Utilisé pour conserver vos notes et pièces jointes sur votre appareil, et pour importer ou exporter des fichiers de sauvegarde lorsque vous le souhaitez. Les sauvegardes sont enregistrées uniquement là où vous le décidez — y compris à un emplacement choisi dans la fenêtre de fichiers du système, comme une clé USB ou un autre dossier.</p>
+            <p>Utilisé pour conserver vos notes et pièces jointes sur votre appareil, et pour importer ou exporter des fichiers de sauvegarde lorsque vous le souhaitez. Les sauvegardes sont enregistrées uniquement là où vous le décidez — y compris à un emplacement choisi dans la fenêtre de fichiers du système, comme une clé USB ou un autre dossier. Sur iPhone, les sauvegardes sont exportées et importées via l’app Fichiers (le sélecteur de fichiers du système).</p>
 
             <h3>📤 Contenu que vous partagez avec l’application</h3>
-            <p>Lorsque vous utilisez le menu « Partager » d’Android pour envoyer quelque chose à Paper Notes, l’application reçoit uniquement ce que vous avez choisi de partager (texte, lien, photos ou fichiers) et l’enregistre dans une note sur votre appareil. Elle ne lit rien d’autre de l’autre application.</p>
+            <p>Lorsque vous utilisez le menu « Partager » d’Android ou la feuille de partage de l’iPhone pour envoyer quelque chose à Paper Notes, l’application reçoit uniquement ce que vous avez choisi de partager (texte, lien, photos ou fichiers) et l’enregistre dans une note sur votre appareil. Elle ne lit rien d’autre de l’autre application. Sur iPhone, l’extension de partage de Paper Notes conserve ce que vous avez partagé dans l’espace privé de l’application sur votre appareil jusqu’à ce que vous ouvriez l’application, qui l’enregistre alors dans une note ; rien n’est envoyé nulle part.</p>
 
             <h3>👤 Choix d’un contact (optionnel)</h3>
-            <p>Lorsque vous ajoutez un contact depuis votre carnet d’adresses, le sélecteur de contacts d’Android s’ouvre et ne transmet à l’application que le contact choisi : son nom, le numéro de téléphone sélectionné et ses adresses e-mail. L’application ne demande pas l’autorisation de lire vos contacts et ne voit jamais le reste de votre carnet. Le contact est stocké sur votre appareil (et dans vos sauvegardes ou la synchronisation Google Drive, si vous les utilisez).</p>
+            <p>Lorsque vous ajoutez un contact depuis votre carnet d’adresses, le sélecteur de contacts d’Android ou de l’iPhone s’ouvre et ne transmet à l’application que le contact choisi : son nom, le numéro de téléphone sélectionné et ses adresses e-mail. L’application ne demande pas l’autorisation de lire vos contacts et ne voit jamais le reste de votre carnet. Le contact est stocké sur votre appareil (et dans vos sauvegardes ou la synchronisation Google Drive, si vous les utilisez).</p>
             
             <p><strong>Note :</strong> Toutes les autorisations sont utilisées uniquement pour la fonctionnalité de l'application. Nous n'utilisons pas les autorisations pour collecter des données à des fins d'analyse ou de publicité.</p>
 
@@ -1207,15 +1258,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (scanner de documents)</span>
+                <span class="badge">Google ML Kit (scanner de documents, Android)</span>
+                <span class="badge">Apple App Store (achats intégrés)</span>
+                <span class="badge">Apple VisionKit / Vision (sur l’appareil)</span>
                 <span class="badge">Aptabase (statistiques anonymes)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Services Google :</strong></p>
             <ul>
                 <li><strong>Google Sign In :</strong> Optionnel. Utilisé lorsque vous choisissez de connecter Google pour la sauvegarde ou la synchronisation. Les informations de votre compte Google sont traitées conformément à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
                 <li><strong>Google Drive API :</strong> Optionnel. Utilisé pour la sauvegarde et la synchronisation de vos données vers votre Google Drive. Soumis à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>.</li>
-                <li><strong>Google Play Billing :</strong> Utilisé pour les abonnements et dons optionnels. Les détails de paiement sont gérés par Google conformément à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>. Nous ne recevons que le statut d'achat/abonnement nécessaire pour débloquer des fonctionnalités ou masquer les invitations au don.</li>
-                <li><strong>Google ML Kit Document Scanner :</strong> Utilisé uniquement lorsque vous numérisez un document (Plus). Fonctionne dans les services Google Play ; les prises de vue sont traitées sur l’appareil. Le module envoie à Google des diagnostics techniques (informations sur l’appareil et l’application, identifiant d’installation, mesures de performances, codes d’erreur), sans vos images ni votre texte. Voir la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgation des données ML Kit</a> et les <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>.</li>
+                <li><strong>Google Play Billing :</strong> Android uniquement. Utilisé pour les abonnements et dons optionnels. Les détails de paiement sont gérés par Google conformément à la <a href="https://policies.google.com/privacy" target="_blank">Politique de confidentialité de Google</a>. Nous ne recevons que le statut d'achat/abonnement nécessaire pour débloquer des fonctionnalités ou masquer les invitations au don.</li>
+                <li><strong>Google ML Kit Document Scanner :</strong> Android uniquement. Utilisé uniquement lorsque vous numérisez un document (Plus). Fonctionne dans les services Google Play ; les prises de vue sont traitées sur l’appareil. Le module envoie à Google des diagnostics techniques (informations sur l’appareil et l’application, identifiant d’installation, mesures de performances, codes d’erreur), sans vos images ni votre texte. Voir la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgation des données ML Kit</a> et les <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité de Google</a>.</li>
+            </ul>
+            <p><strong>Services Apple (iPhone) :</strong></p>
+            <ul>
+                <li><strong>Apple App Store (achats intégrés) :</strong> Utilisé pour l’abonnement optionnel sur iPhone. Les détails de paiement sont gérés par Apple conformément à la <a href="https://www.apple.com/legal/privacy/" target="_blank">Politique de confidentialité d’Apple</a>. Nous recevons uniquement le statut d’achat/d’abonnement nécessaire pour débloquer les fonctions.</li>
+                <li><strong>Apple VisionKit et Vision :</strong> Le scanner de documents et le texte de la photo sur iPhone. Ils fonctionnent entièrement sur votre appareil ; rien n’est envoyé à Apple ni au développeur.</li>
             </ul>
             <p><strong>Autres services :</strong></p>
             <ul>
@@ -1265,11 +1323,12 @@
             </ul>
 
             <h2 id="data-deletion-fr">🗑️ Suppression des données</h2>
-            <p>Ceci concerne l’application <strong>Paper Notes</strong> sur Google Play. Vos données sont stockées sur votre appareil et, si vous avez activé la sauvegarde ou la synchronisation, dans votre propre Google Drive. Nous n’avons pas de serveurs : nous ne conservons aucune de vos données et il n’y a rien à supprimer de notre côté.</p>
+            <p>Ceci concerne l’application <strong>Paper Notes</strong> sur Google Play et l’App Store. Vos données sont stockées sur votre appareil et, si vous avez activé la sauvegarde ou la synchronisation, dans votre propre Google Drive. Nous n’avons pas de serveurs : nous ne conservons aucune de vos données et il n’y a rien à supprimer de notre côté.</p>
             <h3>Comment supprimer vos données</h3>
             <ol>
                 <li><strong>Un élément :</strong> supprimez-le dans l’application, il va dans la « Corbeille ». Ouvrez la Corbeille → « Supprimer définitivement » pour l’effacer tout de suite ; sinon, la Corbeille le supprime automatiquement au bout de 30 jours.</li>
-                <li><strong>Toutes les données de l’appareil :</strong> désinstallez l’application (ou videz son stockage dans les paramètres Android). Tout ce qui était stocké sur l’appareil est supprimé immédiatement.</li>
+                <li><strong>Toutes les données de l’appareil (Android) :</strong> désinstallez l’application (ou videz son stockage dans les paramètres Android). Tout ce qui était stocké sur l’appareil est supprimé immédiatement.</li>
+                <li><strong>Toutes les données de l’appareil (iPhone) :</strong> supprimez l’application — maintenez le doigt sur son icône → « Supprimer l’app » → « Supprimer l’app ». Tout ce qui était stocké sur l’appareil est supprimé immédiatement.</li>
                 <li><strong>Copies dans Google Drive :</strong> ouvrez Google Drive, trouvez le dossier <strong>« Paper Notes Backups »</strong> et supprimez-le, puis videz la corbeille de Drive. La désinstallation ne supprime pas ces copies : elles restent dans votre Drive jusqu’à ce que vous les supprimiez.</li>
                 <li><strong>Accès Google :</strong> dans les paramètres de votre compte Google → Sécurité → Connexions tierces, retirez l’accès de Paper Notes.</li>
             </ol>
@@ -1302,12 +1361,13 @@
                 <li>CCPA (California Consumer Privacy Act) - États-Unis</li>
                 <li>COPPA (Children's Online Privacy Protection Act) - États-Unis</li>
                 <li>Exigences de confidentialité du Google Play Store</li>
+                <li>App Store Review Guidelines d’Apple (confidentialité)</li>
             </ul>
         </div>
 
         <!-- Spanish Version -->
         <div id="es-content" class="content language-content">
-            <p><strong>Última actualización:</strong> 22 de noviembre de 2026</p>
+            <p><strong>Última actualización:</strong> 26 de noviembre de 2026</p>
 
             <h2>🔒 Introducción</h2>
             <p>Paper Notes ("nosotros", "nuestro" o "la aplicación") se compromete a proteger su privacidad. Esta Política de privacidad explica cómo manejamos su información cuando utiliza nuestra aplicación móvil.</p>
@@ -1327,10 +1387,11 @@
             <h2>💳 Suscripción opcional</h2>
             <p>Paper Notes puede ofrecer una sola suscripción opcional que desbloquea determinadas <strong>funciones nuevas o avanzadas</strong>. Sin niveles: una suscripción desbloquea los extras incluidos.</p>
             <ul>
-                <li>Los pagos se procesan mediante <strong>Google Play Billing</strong> (o la tienda de aplicaciones correspondiente). <strong>No</strong> recibimos ni almacenamos los datos de su tarjeta de pago.</li>
+                <li>Los pagos se procesan mediante <strong>Google Play Billing</strong> en Android y mediante el <strong>Apple App Store</strong> (compras dentro de la app) en iPhone. <strong>No</strong> recibimos ni almacenamos los datos de su tarjeta de pago.</li>
                 <li>La aplicación puede comprobar el estado de su suscripción a través de las API de la tienda para desbloquear funciones. El estado puede almacenarse en caché localmente en su dispositivo.</li>
                 <li>No utilizamos datos de suscripción o compra para publicidad o seguimiento del comportamiento. Las estadísticas de uso anónimas solo registran si una compra se completó, se canceló o falló, sin importes y sin vincularse con usted.</li>
-                <li>Puede gestionar o cancelar una suscripción en la configuración de su cuenta de Google Play (o de la tienda).</li>
+                <li>Puede gestionar o cancelar una suscripción en la configuración de su cuenta de Google Play o, en iPhone, en Ajustes → [su nombre] → Suscripciones.</li>
+                <li>Plus comprado en una tienda no se traslada a la otra: una compra en Google Play no desbloquea Plus en iPhone, y una compra en el App Store no lo desbloquea en Android.</li>
                 <li>Las donaciones únicas opcionales, si se ofrecen, también las procesa la tienda y no nos dan acceso al contenido de sus notas en nuestros servidores.</li>
             </ul>
 
@@ -1354,10 +1415,11 @@
 
             <h3>Lo que no recopilamos:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Sin seguimiento personal</strong>: nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin ningún contenido, que puede desactivar. Aparte de eso, solo los diagnósticos técnicos del escáner de documentos de Google, descritos más abajo</li>
+                <li><span class="emoji">✅</span> <strong>Sin seguimiento personal</strong>: nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin ningún contenido, que puede desactivar. Aparte de eso, solo los diagnósticos técnicos del escáner de documentos de Google (solo Android), descritos más abajo</li>
                 <li><span class="emoji">✅</span> <strong>Sin redes publicitarias</strong></li>
                 <li><span class="emoji">✅</span> <strong>Sin datos personales</strong> almacenados en nuestros servidores</li>
                 <li><span class="emoji">✅</span> El desarrollador <strong>nunca recibe su contenido</strong> —ni textos, ni nombres, ni importes, ni contactos— y no puede vincular las estadísticas con usted</li>
+                <li><span class="emoji">✅</span> En iPhone, la app <strong>no</strong> usa el identificador de publicidad (IDFA) ni le hace seguimiento en apps y sitios web de otras empresas</li>
             </ul>
 
             <h2>💾 Almacenamiento de datos</h2>
@@ -1374,9 +1436,10 @@
             <p>Todo lo que crea se guarda en su dispositivo. Los datos solo salen de él si activa la copia de seguridad o la sincronización: entonces se guarda una copia en <strong>su propio Google Drive</strong>. Paper Notes no tiene servidores propios y su contenido no se transmite a terceros. Además, la aplicación envía <a href="#analytics">estadísticas de uso anónimas</a> sin ningún contenido (puede desactivarlas); más información abajo.</p>
             <p><strong>Imágenes de internet.</strong> Si pega en una nota parte de una página web o la comparte con Paper Notes, la app descarga sus imágenes desde el sitio original a su dispositivo —al pegarlas o compartirlas y al abrir la nota— para que se vean sin internet. El sitio recibe una solicitud normal, como cuando la imagen se ve en un navegador; no se envían cookies y las imágenes no se transmiten a ningún otro lugar.</p>
             <p><strong>Presupuesto.</strong> Los importes, categorías, límites y notas que introduce en la sección «Presupuesto» se guardan en su dispositivo y, si activa la copia de seguridad o la sincronización, en la copia de su propio Google Drive. El desarrollador nunca los recibe: la app no se conecta a bancos ni a cuentas y no transmite los datos del presupuesto a nadie.</p>
-            <p><strong>Escáner de documentos y texto de la foto.</strong> El escáner de documentos lo proporcionan los servicios de Google Play (Google ML Kit Document Scanner). Las capturas se procesan en su dispositivo y las páginas resultantes se guardan en la nota como imágenes o un archivo normales (solo entran en la copia de su Google Drive si la copia de seguridad o la sincronización están activadas). Para que el escáner funcione, el módulo de los servicios de Google Play envía a Google diagnósticos técnicos: información del dispositivo (fabricante, modelo, versión de Android), nombre del paquete y versión de la app, un identificador de instalación, métricas de rendimiento, códigos de error y tipos de eventos. No incluyen sus imágenes ni su texto. Google cifra estos datos en tránsito (HTTPS) y, según Google, no los transfiere a terceros; se tratan conforme a la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. El texto de la foto se reconoce íntegramente en su dispositivo, incluso sin internet. Los modelos de reconocimiento de algunos idiomas (alemán, francés, español, italiano, finés, polaco) se descargan una vez desde GitHub la primera vez que se usan; la app no envía allí nada más que la solicitud de descarga habitual.</p>
+            <p><strong>Escáner de documentos y texto de la foto (Android).</strong> El escáner de documentos lo proporcionan los servicios de Google Play (Google ML Kit Document Scanner). Las capturas se procesan en su dispositivo y las páginas resultantes se guardan en la nota como imágenes o un archivo normales (solo entran en la copia de su Google Drive si la copia de seguridad o la sincronización están activadas). Para que el escáner funcione, el módulo de los servicios de Google Play envía a Google diagnósticos técnicos: información del dispositivo (fabricante, modelo, versión de Android), nombre del paquete y versión de la app, un identificador de instalación, métricas de rendimiento, códigos de error y tipos de eventos. No incluyen sus imágenes ni su texto. Google cifra estos datos en tránsito (HTTPS) y, según Google, no los transfiere a terceros; se tratan conforme a la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. El texto de la foto se reconoce íntegramente en su dispositivo, incluso sin internet. Los modelos de reconocimiento de algunos idiomas (alemán, francés, español, italiano, finés, polaco) se descargan una vez desde GitHub la primera vez que se usan; la app no envía allí nada más que la solicitud de descarga habitual.</p>
+            <p><strong>Escáner de documentos y texto de la foto (iPhone).</strong> En iPhone, el escáner de documentos es la cámara de documentos VisionKit de Apple, y el texto de la foto lo reconoce el framework Vision de Apple. Ambos funcionan por completo en su dispositivo: no se envía nada a Apple ni al desarrollador, y no se descarga ningún modelo de reconocimiento (la descarga desde GitHub descrita arriba solo ocurre en Android). Las páginas terminadas se guardan en su nota como cualquier otra imagen o archivo.</p>
             <p><strong>Historial de versiones de las notas.</strong> Las versiones anteriores de una nota se guardan solo en este dispositivo. No se incluyen en la copia de tu Google Drive ni se sincronizan con tus otros dispositivos.</p>
-            <p><strong>PDF e impresión.</strong> Los archivos PDF se crean en tu dispositivo. Al imprimir, Android envía el documento al servicio de impresión o a la impresora que elijas; ese servicio lo trata según sus propias condiciones. La app no envía nada a ningún otro sitio.</p>
+            <p><strong>PDF e impresión.</strong> Los archivos PDF se crean en su dispositivo. Al imprimir, Android envía el documento al servicio de impresión o a la impresora que elija; en iPhone, el documento va a la impresora AirPrint que elija. El servicio de impresión lo trata según sus propias condiciones. La app no envía nada a ningún otro sitio.</p>
             <p>Una copia en su Google Drive puede contener:</p>
             <ul>
                 <li>textos de notas, listas, tareas y tarjetas de la sección «Trabajo»</li>
@@ -1390,11 +1453,11 @@
             <ul>
                 <li>✅ Todo esto es opcional: sin iniciar sesión en Google, su contenido no sale de su dispositivo</li>
                 <li>✅ Los datos se cifran durante la transferencia (HTTPS)</li>
-                <li>✅ Sin publicidad ni informes de fallos. Nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin contenido, que puede desactivar; aparte de eso, solo los diagnósticos técnicos del escáner de Google descritos arriba</li>
+                <li>✅ Sin publicidad ni informes de fallos. Nuestra única analítica son <a href="#analytics">estadísticas de uso anónimas</a> sin contenido, que puede desactivar; aparte de eso, solo los diagnósticos técnicos del escáner de Google (solo Android) descritos arriba</li>
             </ul>
 
             <h2 id="analytics-es">📈 Estadísticas de uso anónimas</h2>
-            <p>Para entender qué partes de la aplicación son útiles y dónde se atasca la gente, Paper Notes envía estadísticas de uso anónimas. Nunca incluyen el contenido de sus notas ni nada de lo que haya escrito. Están activadas de forma predeterminada y puede desactivarlas en cualquier momento.</p>
+            <p>Para entender qué partes de la aplicación son útiles y dónde se atasca la gente, Paper Notes envía estadísticas de uso anónimas. Nunca incluyen el contenido de sus notas ni nada de lo que haya escrito. Están activadas de forma predeterminada y puede desactivarlas en cualquier momento. Funciona igual en Android y en iPhone.</p>
             <p><strong>Servicio.</strong> Las estadísticas las recopila <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Los datos se procesan y almacenan en la UE (Alemania). Aptabase actúa como encargado del tratamiento por cuenta del desarrollador; consulte la <a href="https://aptabase.com/legal/privacy" target="_blank">Política de privacidad de Aptabase</a>.</p>
             <h3>Qué se envía</h3>
             <ul>
@@ -1433,22 +1496,25 @@
             <h3>🔐 Acceso a la cuenta de Google (opcional)</h3>
             <p>Solo si activa la copia de seguridad o sincronización con Google Drive. La aplicación puede solicitar acceso a:</p>
             <ul>
-                <li>Su cuenta de Google para iniciar sesión (manejado por Google Sign In)</li>
+                <li>Su cuenta de Google para iniciar sesión (manejado por Google Sign In; en iPhone se abre la ventana de inicio de sesión del sistema)</li>
                 <li>Acceso a Google Drive para guardar y recuperar archivos de copia de seguridad creados por la aplicación</li>
             </ul>
-            <p><strong>Alcance:</strong> La aplicación solo solicita acceso a los archivos que crea en su Google Drive. No accede a otros archivos en su Drive.</p>
+            <p><strong>Alcance:</strong> La aplicación solo solicita acceso a los archivos que crea en su Google Drive. No accede a otros archivos en su Drive. El alcance es el mismo en Android y en iPhone.</p>
+            
+            <h3>📷 Cámara (opcional)</h3>
+            <p>En iPhone, la app pide acceso a la cámara cuando hace una foto o escanea un documento. La cámara se usa solo para hacer fotos para notas, tarjetas de «Trabajo» y contactos, y para escanear documentos. Puede cambiar este permiso en cualquier momento en los Ajustes del iPhone.</p>
             
             <h3>📱 Permiso de notificaciones (opcional)</h3>
             <p>Se utiliza para enviarle recordatorios de eventos del calendario y tareas. Se puede desactivar en cualquier momento en la configuración de su dispositivo.</p>
             
             <h3>💾 Acceso a almacenamiento / archivos</h3>
-            <p>Se utiliza para mantener sus notas y archivos adjuntos en su dispositivo, y para importar o exportar archivos de copia de seguridad cuando lo elija. Las copias de seguridad se guardan solo donde usted elija, incluida una ubicación que seleccione en el cuadro de archivos del sistema, como una memoria USB u otra carpeta.</p>
+            <p>Se utiliza para mantener sus notas y archivos adjuntos en su dispositivo, y para importar o exportar archivos de copia de seguridad cuando lo elija. Las copias de seguridad se guardan solo donde usted elija, incluida una ubicación que seleccione en el cuadro de archivos del sistema, como una memoria USB u otra carpeta. En iPhone, las copias de seguridad se exportan e importan a través de la app Archivos (el selector de archivos del sistema).</p>
 
             <h3>📤 Contenido que comparte con la app</h3>
-            <p>Cuando usa el menú «Compartir» de Android para enviar algo a Paper Notes, la app recibe solo lo que usted decidió compartir (texto, un enlace, fotos o archivos) y lo guarda en una nota en su dispositivo. No lee nada más de la otra app.</p>
+            <p>Cuando usa el menú «Compartir» de Android o la hoja para compartir del iPhone para enviar algo a Paper Notes, la app recibe solo lo que usted decidió compartir (texto, un enlace, fotos o archivos) y lo guarda en una nota en su dispositivo. No lee nada más de la otra app. En iPhone, la extensión para compartir de Paper Notes guarda lo compartido en el almacenamiento privado de la app en su dispositivo hasta que abre la app, que entonces lo guarda en una nota; no se envía nada a ningún sitio.</p>
 
             <h3>👤 Elegir un contacto (opcional)</h3>
-            <p>Cuando añade un contacto desde la agenda, se abre el selector de contactos de Android, que entrega a la app solo el contacto que usted elige: su nombre, el número de teléfono seleccionado y sus direcciones de correo electrónico. La app no solicita permiso para leer sus contactos y nunca ve el resto de su agenda. El contacto se guarda en su dispositivo (y en sus copias de seguridad o en la sincronización con Google Drive, si las usa).</p>
+            <p>Cuando añade un contacto desde la agenda, se abre el selector de contactos de Android o del iPhone, que entrega a la app solo el contacto que usted elige: su nombre, el número de teléfono seleccionado y sus direcciones de correo electrónico. La app no solicita permiso para leer sus contactos y nunca ve el resto de su agenda. El contacto se guarda en su dispositivo (y en sus copias de seguridad o en la sincronización con Google Drive, si las usa).</p>
             
             <p><strong>Nota:</strong> Todos los permisos se utilizan únicamente para la funcionalidad de la aplicación. No utilizamos permisos para recopilar datos con fines de análisis o publicidad.</p>
 
@@ -1458,15 +1524,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (escáner de documentos)</span>
+                <span class="badge">Google ML Kit (escáner de documentos, Android)</span>
+                <span class="badge">Apple App Store (compras dentro de la app)</span>
+                <span class="badge">Apple VisionKit / Vision (en el dispositivo)</span>
                 <span class="badge">Aptabase (estadísticas anónimas)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Servicios de Google:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Opcional. Se utiliza cuando elige conectar Google para copia de seguridad o sincronización. La información de su cuenta de Google se maneja de acuerdo con la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
                 <li><strong>Google Drive API:</strong> Opcional. Se utiliza para la copia de seguridad y sincronización de sus datos en su Google Drive. Sujeto a la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> Se utiliza para suscripciones y donaciones opcionales. Los datos de pago los gestiona Google según la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. Solo recibimos el estado de compra/suscripción necesario para desbloquear funciones u ocultar invitaciones a donar.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Solo cuando escanea un documento (Plus). Funciona en los servicios de Google Play; las capturas se procesan en el dispositivo. El módulo envía a Google diagnósticos técnicos (información del dispositivo y de la app, identificador de instalación, métricas de rendimiento, códigos de error), sin sus imágenes ni su texto. Consulte la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgación de datos de ML Kit</a> y la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> Solo Android. Se utiliza para suscripciones y donaciones opcionales. Los datos de pago los gestiona Google según la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>. Solo recibimos el estado de compra/suscripción necesario para desbloquear funciones u ocultar invitaciones a donar.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Solo Android. Solo cuando escanea un documento (Plus). Funciona en los servicios de Google Play; las capturas se procesan en el dispositivo. El módulo envía a Google diagnósticos técnicos (información del dispositivo y de la app, identificador de instalación, métricas de rendimiento, códigos de error), sin sus imágenes ni su texto. Consulte la <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">divulgación de datos de ML Kit</a> y la <a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>.</li>
+            </ul>
+            <p><strong>Servicios de Apple (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (compras dentro de la app):</strong> Se utiliza para la suscripción opcional en iPhone. Los datos de pago los gestiona Apple según la <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de privacidad de Apple</a>. Solo recibimos el estado de compra/suscripción necesario para desbloquear funciones.</li>
+                <li><strong>Apple VisionKit y Vision:</strong> El escáner de documentos y el texto de la foto en iPhone. Funcionan por completo en su dispositivo; no se envía nada a Apple ni al desarrollador.</li>
             </ul>
             <p><strong>Otros servicios:</strong></p>
             <ul>
@@ -1516,11 +1589,12 @@
             </ul>
 
             <h2 id="data-deletion-es">🗑️ Eliminación de datos</h2>
-            <p>Esto se aplica a la app <strong>Paper Notes</strong> de Google Play. Sus datos se guardan en su dispositivo y, si activó la copia de seguridad o la sincronización, en su propio Google Drive. No tenemos servidores, así que no conservamos ninguno de sus datos y no hay nada que eliminar por nuestra parte.</p>
+            <p>Esto se aplica a la app <strong>Paper Notes</strong> de Google Play y del App Store. Sus datos se guardan en su dispositivo y, si activó la copia de seguridad o la sincronización, en su propio Google Drive. No tenemos servidores, así que no conservamos ninguno de sus datos y no hay nada que eliminar por nuestra parte.</p>
             <h3>Cómo eliminar sus datos</h3>
             <ol>
                 <li><strong>Un elemento:</strong> elimínelo en la app y pasará a la «Papelera». Abra la Papelera → «Eliminar permanentemente» para borrarlo en el acto; si no, la Papelera lo elimina automáticamente a los 30 días.</li>
-                <li><strong>Todos los datos del dispositivo:</strong> desinstale la app (o borre su almacenamiento en los ajustes de Android). Todo lo guardado en el dispositivo se elimina de inmediato.</li>
+                <li><strong>Todos los datos del dispositivo (Android):</strong> desinstale la app (o borre su almacenamiento en los ajustes de Android). Todo lo guardado en el dispositivo se elimina de inmediato.</li>
+                <li><strong>Todos los datos del dispositivo (iPhone):</strong> elimine la app: mantenga pulsado su icono → «Eliminar app» → «Eliminar app». Todo lo guardado en el dispositivo se elimina de inmediato.</li>
                 <li><strong>Copias en Google Drive:</strong> abra Google Drive, busque la carpeta <strong>«Paper Notes Backups»</strong> y elimínela; después vacíe la papelera de Drive. Desinstalar la app no borra estas copias: permanecen en su Drive hasta que usted las elimine.</li>
                 <li><strong>Acceso de Google:</strong> en la configuración de su cuenta de Google → Seguridad → Conexiones de terceros, quite el acceso de Paper Notes.</li>
             </ol>
@@ -1553,12 +1627,13 @@
                 <li>CCPA (Ley de Privacidad del Consumidor de California) - EE.UU.</li>
                 <li>COPPA (Ley de Protección de la Privacidad Infantil en Internet) - EE.UU.</li>
                 <li>Requisitos de privacidad de Google Play Store</li>
+                <li>Directrices de revisión del App Store de Apple (privacidad)</li>
             </ul>
         </div>
 
         <!-- Finnish Version -->
         <div id="fi-content" class="content language-content">
-            <p><strong>Viimeksi päivitetty:</strong> 22. marraskuuta 2026</p>
+            <p><strong>Viimeksi päivitetty:</strong> 26. marraskuuta 2026</p>
 
             <h2>🔒 Johdanto</h2>
             <p>Paper Notes ("me", "meidän" tai "sovellus") on sitoutunut suojaamaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten käsittelemme tietojasi, kun käytät mobiilisovellustamme.</p>
@@ -1578,10 +1653,11 @@
             <h2>💳 Valinnainen tilaus</h2>
             <p>Paper Notes voi tarjota yhden valinnaisen tilauksen, joka avaa valittuja <strong>uusia tai edistyneitä ominaisuuksia</strong>. Ei tasoja — yksi tilaus avaa mukaan kuuluvat lisät.</p>
             <ul>
-                <li>Maksut käsittelee <strong>Google Play Billing</strong> (tai sovellettava sovelluskauppa). Emme vastaanota emmekä tallenna maksukorttitietojasi.</li>
+                <li>Maksut käsittelee Androidilla <strong>Google Play Billing</strong> ja iPhonella <strong>Apple App Store</strong> (sovelluksen sisäiset ostot). Emme vastaanota emmekä tallenna maksukorttitietojasi.</li>
                 <li>Sovellus voi tarkistaa tilauksen tilan kaupan API:en kautta ominaisuuksien avaamiseksi. Tila voidaan tallentaa välimuistiin paikallisesti laitteellesi.</li>
                 <li>Emme käytä tilaus- tai ostotietoja mainontaan tai käyttäytymisen seurantaan. Anonyymeihin käyttötilastoihin kirjataan vain, onnistuiko osto, peruttiinko se vai tapahtuiko virhe – ilman summia ja ilman yhteyttä sinuun.</li>
-                <li>Voit hallita tai peruuttaa tilauksen Google Play (tai kaupan) -tilisi asetuksissa.</li>
+                <li>Voit hallita tai peruuttaa tilauksen Google Play -tilisi asetuksissa tai iPhonella kohdassa Asetukset → [nimesi] → Tilaukset.</li>
+                <li>Yhdestä kaupasta ostettu Plus ei siirry toiseen: Google Playsta tehty ostos ei avaa Plussaa iPhonella, eikä App Storesta tehty ostos avaa sitä Androidilla.</li>
                 <li>Valinnaiset kertalahjoitukset, jos tarjolla, käsitellään myös kaupan kautta eivätkä anna meille pääsyä muistiinpanoihisi palvelimillamme.</li>
             </ul>
 
@@ -1605,10 +1681,11 @@
 
             <h3>Mitä emme kerää:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Ei sinuun kohdistuvaa seurantaa</strong>: ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman mitään sisältöä, ja voit poistaa ne käytöstä. Sen lisäksi vain Googlen asiakirjaskannerin tekninen diagnostiikka, josta alla</li>
+                <li><span class="emoji">✅</span> <strong>Ei sinuun kohdistuvaa seurantaa</strong>: ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman mitään sisältöä, ja voit poistaa ne käytöstä. Sen lisäksi vain Androidilla Googlen asiakirjaskannerin tekninen diagnostiikka, josta alla</li>
                 <li><span class="emoji">✅</span> <strong>Ei mainosverkostoja</strong></li>
                 <li><span class="emoji">✅</span> <strong>Ei henkilötietoja</strong> palvelimillamme</li>
                 <li><span class="emoji">✅</span> Kehittäjä <strong>ei koskaan saa sisältöäsi</strong> – tekstejä, nimiä, summia tai yhteystietoja – eikä voi yhdistää tilastoja sinuun</li>
+                <li><span class="emoji">✅</span> iPhonella sovellus <strong>ei</strong> käytä mainostunnistetta (IDFA) eikä seuraa sinua muiden yritysten sovelluksissa ja verkkosivustoilla</li>
             </ul>
 
             <h2>💾 Tietojen tallennus</h2>
@@ -1625,9 +1702,10 @@
             <p>Kaikki luomasi tallennetaan laitteellesi. Tiedot lähtevät laitteelta vain, jos otat varmuuskopioinnin tai synkronoinnin käyttöön: silloin kopio tallennetaan <strong>omaan Google Driveesi</strong>. Paper Notesilla ei ole omia palvelimia, eikä sisältöäsi luovuteta kolmansille osapuolille. Lisäksi sovellus lähettää <a href="#analytics">anonyymejä käyttötilastoja</a> ilman mitään sisältöä (voit poistaa ne käytöstä) – niistä alla.</p>
             <p><strong>Kuvat internetistä.</strong> Jos liität muistiinpanoon osan verkkosivusta tai jaat sen Paper Notesiin, sovellus lataa sivun kuvat alkuperäiseltä sivustolta laitteellesi – liitettäessä tai jaettaessa ja muistiinpanoa avattaessa – jotta ne näkyvät ilman internetyhteyttä. Sivusto saa tavallisen pyynnön, kuten kun kuvaa katsotaan selaimessa; evästeitä ei lähetetä, eikä kuvia välitetä minnekään muualle.</p>
             <p><strong>Budjetti.</strong> Budjetti-osioon kirjaamasi summat, luokat, rajat ja muistiinpanot tallennetaan laitteellesi ja, jos varmuuskopiointi tai synkronointi on käytössä, kopioon omassa Google Drivessasi. Kehittäjä ei saa niitä: sovellus ei yhdistä pankkeihin eikä tileihin eikä luovuta budjetin tietoja kenellekään.</p>
-            <p><strong>Asiakirjaskanneri ja teksti kuvasta.</strong> Asiakirjaskannerin tarjoavat Google Play -palvelut (Google ML Kit Document Scanner). Kuvat käsitellään laitteellasi, ja valmiit sivut tallennetaan muistiinpanoon tavallisina kuvina tai tiedostona (Google Driven kopioon ne päätyvät vain, jos varmuuskopiointi tai synkronointi on käytössä). Jotta skanneri toimii, Google Play -palveluiden moduuli lähettää Googlelle teknistä diagnostiikkaa: laitteen tiedot (valmistaja, malli, Android-versio), sovelluksen paketin nimen ja version, asennuskohtaisen tunnisteen, suorituskykymittarit, virhekoodit ja tapahtumatyypit. Kuviasi tai tekstiäsi niissä ei ole. Google salaa nämä tiedot siirron aikana (HTTPS) eikä Googlen mukaan siirrä niitä kolmansille osapuolille; niitä käsitellään <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytännön</a> mukaisesti. Teksti kuvasta tunnistetaan kokonaan laitteellasi, myös ilman internetyhteyttä. Joidenkin kielten (saksa, ranska, espanja, italia, suomi, puola) tunnistusmallit ladataan kerran GitHubista ensimmäisellä käyttökerralla; sovellus ei lähetä sinne mitään muuta kuin tavallisen latauspyynnön.</p>
+            <p><strong>Asiakirjaskanneri ja teksti kuvasta (Android).</strong> Asiakirjaskannerin tarjoavat Google Play -palvelut (Google ML Kit Document Scanner). Kuvat käsitellään laitteellasi, ja valmiit sivut tallennetaan muistiinpanoon tavallisina kuvina tai tiedostona (Google Driven kopioon ne päätyvät vain, jos varmuuskopiointi tai synkronointi on käytössä). Jotta skanneri toimii, Google Play -palveluiden moduuli lähettää Googlelle teknistä diagnostiikkaa: laitteen tiedot (valmistaja, malli, Android-versio), sovelluksen paketin nimen ja version, asennuskohtaisen tunnisteen, suorituskykymittarit, virhekoodit ja tapahtumatyypit. Kuviasi tai tekstiäsi niissä ei ole. Google salaa nämä tiedot siirron aikana (HTTPS) eikä Googlen mukaan siirrä niitä kolmansille osapuolille; niitä käsitellään <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytännön</a> mukaisesti. Teksti kuvasta tunnistetaan kokonaan laitteellasi, myös ilman internetyhteyttä. Joidenkin kielten (saksa, ranska, espanja, italia, suomi, puola) tunnistusmallit ladataan kerran GitHubista ensimmäisellä käyttökerralla; sovellus ei lähetä sinne mitään muuta kuin tavallisen latauspyynnön.</p>
+            <p><strong>Asiakirjaskanneri ja teksti kuvasta (iPhone).</strong> iPhonella asiakirjaskanneri on Applen VisionKit-asiakirjakamera, ja tekstin kuvasta tunnistaa Applen Vision-kehys. Molemmat toimivat kokonaan laitteellasi: mitään ei lähetetä Applelle eikä kehittäjälle, eikä tunnistusmalleja ladata (edellä kuvattu lataus GitHubista tapahtuu vain Androidilla). Valmiit sivut tallennetaan muistiinpanoosi kuten mikä tahansa muu kuva tai tiedosto.</p>
             <p><strong>Muistiinpanojen versiohistoria.</strong> Muistiinpanon aiemmat versiot säilytetään vain tällä laitteella. Ne eivät sisälly Google Driven kopioon eivätkä synkronoidu muille laitteillesi.</p>
-            <p><strong>PDF ja tulostus.</strong> PDF-tiedostot luodaan laitteellasi. Tulostettaessa Android lähettää asiakirjan valitsemallesi tulostuspalvelulle tai tulostimelle, joka käsittelee sen omien ehtojensa mukaan. Sovellus ei lähetä mitään muualle.</p>
+            <p><strong>PDF ja tulostus.</strong> PDF-tiedostot luodaan laitteellasi. Tulostettaessa Android lähettää asiakirjan valitsemallesi tulostuspalvelulle tai tulostimelle; iPhonella asiakirja menee valitsemallesi AirPrint-tulostimelle. Tulostuspalvelu käsittelee sen omien ehtojensa mukaan. Sovellus ei lähetä mitään muualle.</p>
             <p>Google Driven kopio voi sisältää:</p>
             <ul>
                 <li>muistiinpanojen, listojen, tehtävien ja ”Työ”-osion korttien tekstit</li>
@@ -1641,11 +1719,11 @@
             <ul>
                 <li>✅ Kaikki tämä on valinnaista: ilman Google-kirjautumista sisältösi ei lähde laitteelta</li>
                 <li>✅ Tiedot salataan siirron aikana (HTTPS)</li>
-                <li>✅ Ei mainontaa eikä kaatumisraportteja. Ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman sisältöä, ja ne voi poistaa käytöstä; sen lisäksi vain edellä kuvattu Googlen skannerin tekninen diagnostiikka</li>
+                <li>✅ Ei mainontaa eikä kaatumisraportteja. Ainoa oma analytiikkamme on <a href="#analytics">anonyymit käyttötilastot</a> ilman sisältöä, ja ne voi poistaa käytöstä; sen lisäksi vain Androidilla edellä kuvattu Googlen skannerin tekninen diagnostiikka</li>
             </ul>
 
             <h2 id="analytics-fi">📈 Anonyymit käyttötilastot</h2>
-            <p>Jotta ymmärtäisimme, mitkä sovelluksen osat ovat hyödyllisiä ja missä käyttäjät jäävät jumiin, Paper Notes lähettää anonyymejä käyttötilastoja. Niissä ei koskaan ole muistiinpanojesi sisältöä eikä mitään, mitä olet kirjoittanut. Tilastot ovat oletuksena käytössä, ja voit poistaa ne käytöstä milloin tahansa.</p>
+            <p>Jotta ymmärtäisimme, mitkä sovelluksen osat ovat hyödyllisiä ja missä käyttäjät jäävät jumiin, Paper Notes lähettää anonyymejä käyttötilastoja. Niissä ei koskaan ole muistiinpanojesi sisältöä eikä mitään, mitä olet kirjoittanut. Tilastot ovat oletuksena käytössä, ja voit poistaa ne käytöstä milloin tahansa. Tämä toimii samoin Androidilla ja iPhonella.</p>
             <p><strong>Palvelu.</strong> Tilastot kerää <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Tiedot käsitellään ja tallennetaan EU:ssa (Saksassa). Aptabase toimii kehittäjän lukuun henkilötietojen käsittelijänä; katso <a href="https://aptabase.com/legal/privacy" target="_blank">Aptabasen tietosuojakäytäntö</a>.</p>
             <h3>Mitä lähetetään</h3>
             <ul>
@@ -1684,22 +1762,25 @@
             <h3>🔐 Google-tilin käyttö (valinnainen)</h3>
             <p>Vain jos otat Google Drive -varmuuskopion tai -synkronoinnin käyttöön. Sovellus voi pyytää pääsyä:</p>
             <ul>
-                <li>Google-tiliisi kirjautumista varten (Google Sign In)</li>
+                <li>Google-tiliisi kirjautumista varten (Google Sign In; iPhonella avautuu järjestelmän kirjautumisikkuna)</li>
                 <li>Google Driveen sovelluksen luomien varmuuskopiotiedostojen tallentamiseksi ja hakemiseksi</li>
             </ul>
-            <p><strong>Laajuus:</strong> Sovellus pyytää pääsyä vain tiedostoihin, jotka se luo Google Driveesi. Se ei käytä muita Drive-tiedostojasi.</p>
+            <p><strong>Laajuus:</strong> Sovellus pyytää pääsyä vain tiedostoihin, jotka se luo Google Driveesi. Se ei käytä muita Drive-tiedostojasi. Laajuus on sama Androidilla ja iPhonella.</p>
+            
+            <h3>📷 Kamera (valinnainen)</h3>
+            <p>iPhonella sovellus pyytää pääsyä kameraan, kun otat kuvan tai skannaat asiakirjan. Kameraa käytetään vain kuvien ottamiseen muistiinpanoihin, ”Työ”-kortteihin ja yhteystietoihin sekä asiakirjojen skannaamiseen. Voit muuttaa tätä lupaa milloin tahansa iPhonen asetuksista.</p>
             
             <h3>📱 Ilmoitusoikeus (valinnainen)</h3>
             <p>Käytetään lähettämään muistutuksia kalenteritapahtumista ja tehtävistä. Voidaan poistaa käytöstä milloin tahansa laitteen asetuksista.</p>
             
             <h3>💾 Tallennus- / tiedostokäyttö</h3>
-            <p>Käytetään muistiinpanojen ja liitteiden säilyttämiseen laitteellasi sekä varmuuskopioiden tuontiin tai vientiin, kun haluat. Varmuuskopiot tallennetaan vain valitsemaasi paikkaan — myös järjestelmän tiedostoikkunassa valitsemaasi sijaintiin, kuten USB-tikulle tai toiseen kansioon.</p>
+            <p>Käytetään muistiinpanojen ja liitteiden säilyttämiseen laitteellasi sekä varmuuskopioiden tuontiin tai vientiin, kun haluat. Varmuuskopiot tallennetaan vain valitsemaasi paikkaan — myös järjestelmän tiedostoikkunassa valitsemaasi sijaintiin, kuten USB-tikulle tai toiseen kansioon. iPhonella varmuuskopiot viedään ja tuodaan Tiedostot-apin kautta (järjestelmän tiedostovalitsin).</p>
 
             <h3>📤 Sovellukseen jakamasi sisältö</h3>
-            <p>Kun lähetät jotain Paper Notesiin Androidin Jaa-valikon kautta, sovellus saa vain sen, minkä päätit jakaa (tekstin, linkin, kuvia tai tiedostoja), ja tallentaa sen muistiinpanoon laitteellesi. Se ei lue mitään muuta toisesta sovelluksesta.</p>
+            <p>Kun lähetät jotain Paper Notesiin Androidin Jaa-valikon tai iPhonen jakotaulukon kautta, sovellus saa vain sen, minkä päätit jakaa (tekstin, linkin, kuvia tai tiedostoja), ja tallentaa sen muistiinpanoon laitteellesi. Se ei lue mitään muuta toisesta sovelluksesta. iPhonella Paper Notesin jakolaajennus säilyttää jakamasi sisällön sovelluksen yksityisessä tallennustilassa laitteellasi, kunnes avaat sovelluksen, joka tallentaa sen muistiinpanoon; mitään ei lähetetä minnekään.</p>
 
             <h3>👤 Yhteystiedon valinta (valinnainen)</h3>
-            <p>Kun lisäät yhteystiedon puhelinluettelosta, Androidin oma yhteystietojen valitsin avautuu ja antaa sovellukselle vain valitsemasi yhteystiedon: nimen, valitun puhelinnumeron ja yhteystiedon sähköpostiosoitteet. Sovellus ei pyydä oikeutta lukea yhteystietojasi eikä näe muuta puhelinluetteloasi. Yhteystieto tallennetaan laitteellesi (sekä varmuuskopioihin tai Google Drive -synkronointiin, jos käytät niitä).</p>
+            <p>Kun lisäät yhteystiedon puhelinluettelosta, Androidin tai iPhonen oma yhteystietojen valitsin avautuu ja antaa sovellukselle vain valitsemasi yhteystiedon: nimen, valitun puhelinnumeron ja yhteystiedon sähköpostiosoitteet. Sovellus ei pyydä oikeutta lukea yhteystietojasi eikä näe muuta puhelinluetteloasi. Yhteystieto tallennetaan laitteellesi (sekä varmuuskopioihin tai Google Drive -synkronointiin, jos käytät niitä).</p>
             
             <p><strong>Huomautus:</strong> Kaikkia käyttöoikeuksia käytetään vain sovelluksen toiminnallisuuteen. Emme käytä käyttöoikeuksia analytiikkaan tai mainontaan.</p>
 
@@ -1709,15 +1790,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (asiakirjaskanneri)</span>
+                <span class="badge">Google ML Kit (asiakirjaskanneri, Android)</span>
+                <span class="badge">Apple App Store (sovelluksen sisäiset ostot)</span>
+                <span class="badge">Apple VisionKit / Vision (laitteella)</span>
                 <span class="badge">Aptabase (anonyymit tilastot)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Googlen palvelut:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Valinnainen. Käytetään, kun yhdistät Googlen varmuuskopiointia tai synkronointia varten. Google-tilisi tietoja käsitellään <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytännön</a> mukaisesti.</li>
                 <li><strong>Google Drive API:</strong> Valinnainen. Käytetään tietojesi varmuuskopiointiin ja synkronointiin Google Driveesi. <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytäntö</a> koskee.</li>
-                <li><strong>Google Play Billing:</strong> Valinnaiset tilaukset ja lahjoitukset. Maksutiedot käsittelee Google <a href="https://policies.google.com/privacy" target="_blank">tietosuojakäytäntönsä</a> mukaisesti. Saamme vain osto-/tilaustilan, jota tarvitaan ominaisuuksien avaamiseen tai lahjoituskehotteiden piilottamiseen.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Vain kun skannaat asiakirjan (Plus). Toimii Google Play -palveluissa; kuvat käsitellään laitteella. Moduuli lähettää Googlelle teknistä diagnostiikkaa (laitteen ja sovelluksen tiedot, asennuskohtainen tunniste, suorituskykymittarit, virhekoodit) ilman kuviasi tai tekstiäsi. Lisätietoja: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kitin tietojen ilmoitus</a> ja <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytäntö</a>.</li>
+                <li><strong>Google Play Billing:</strong> Vain Android. Valinnaiset tilaukset ja lahjoitukset. Maksutiedot käsittelee Google <a href="https://policies.google.com/privacy" target="_blank">tietosuojakäytäntönsä</a> mukaisesti. Saamme vain osto-/tilaustilan, jota tarvitaan ominaisuuksien avaamiseen tai lahjoituskehotteiden piilottamiseen.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Vain Android. Vain kun skannaat asiakirjan (Plus). Toimii Google Play -palveluissa; kuvat käsitellään laitteella. Moduuli lähettää Googlelle teknistä diagnostiikkaa (laitteen ja sovelluksen tiedot, asennuskohtainen tunniste, suorituskykymittarit, virhekoodit) ilman kuviasi tai tekstiäsi. Lisätietoja: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kitin tietojen ilmoitus</a> ja <a href="https://policies.google.com/privacy" target="_blank">Googlen tietosuojakäytäntö</a>.</li>
+            </ul>
+            <p><strong>Applen palvelut (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (sovelluksen sisäiset ostot):</strong> Valinnainen tilaus iPhonella. Maksutiedot käsittelee Apple <a href="https://www.apple.com/legal/privacy/" target="_blank">Applen tietosuojakäytännön</a> mukaisesti. Saamme vain toimintojen avaamiseen tarvittavan osto-/tilaustilan.</li>
+                <li><strong>Apple VisionKit ja Vision:</strong> Asiakirjaskanneri ja teksti kuvasta iPhonella. Toimivat kokonaan laitteellasi; mitään ei lähetetä Applelle eikä kehittäjälle.</li>
             </ul>
             <p><strong>Muut palvelut:</strong></p>
             <ul>
@@ -1767,11 +1855,12 @@
             </ul>
 
             <h2 id="data-deletion-fi">🗑️ Tietojen poistaminen</h2>
-            <p>Tämä koskee Google Playn <strong>Paper Notes</strong> -sovellusta. Tietosi tallennetaan laitteellesi ja, jos otit varmuuskopioinnin tai synkronoinnin käyttöön, omaan Google Driveesi. Meillä ei ole palvelimia, joten emme säilytä tietojasi eikä meidän päässämme ole mitään poistettavaa.</p>
+            <p>Tämä koskee Google Playn ja App Storen <strong>Paper Notes</strong> -sovellusta. Tietosi tallennetaan laitteellesi ja, jos otit varmuuskopioinnin tai synkronoinnin käyttöön, omaan Google Driveesi. Meillä ei ole palvelimia, joten emme säilytä tietojasi eikä meidän päässämme ole mitään poistettavaa.</p>
             <h3>Näin poistat tietosi</h3>
             <ol>
                 <li><strong>Yksittäinen kohde:</strong> poista se sovelluksessa, jolloin se siirtyy roskakoriin. Avaa Roskakori → ”Poista pysyvästi” poistaaksesi sen heti; muuten roskakori tyhjenee automaattisesti 30 päivän kuluttua.</li>
-                <li><strong>Kaikki laitteen tiedot:</strong> poista sovellus (tai tyhjennä sen tallennustila Androidin asetuksista). Kaikki laitteelle tallennettu poistuu heti.</li>
+                <li><strong>Kaikki laitteen tiedot (Android):</strong> poista sovellus (tai tyhjennä sen tallennustila Androidin asetuksista). Kaikki laitteelle tallennettu poistuu heti.</li>
+                <li><strong>Kaikki laitteen tiedot (iPhone):</strong> poista sovellus – paina sen kuvaketta pitkään → ”Poista appi” → ”Poista appi”. Kaikki laitteelle tallennettu poistuu heti.</li>
                 <li><strong>Kopiot Google Drivessa:</strong> avaa Google Drive, etsi kansio <strong>”Paper Notes Backups”</strong> ja poista se, tyhjennä sitten Driven roskakori. Sovelluksen poistaminen ei poista näitä kopioita – ne säilyvät Drivessasi, kunnes poistat ne.</li>
                 <li><strong>Googlen käyttöoikeus:</strong> Google-tilisi asetuksissa → Tietoturva → Kolmannen osapuolen yhteydet poista Paper Notesin käyttöoikeus.</li>
             </ol>
@@ -1804,12 +1893,13 @@
                 <li>CCPA (Kalifornian kuluttajien yksityisyyslaki) - USA</li>
                 <li>COPPA (Lasten verkkopalveluiden tietosuojalaki) - USA</li>
                 <li>Google Play Storen tietosuojavaatimukset</li>
+                <li>Applen App Store Review Guidelines (yksityisyys)</li>
             </ul>
         </div>
 
         <!-- German Version -->
         <div id="de-content" class="content language-content">
-            <p><strong>Zuletzt aktualisiert:</strong> 22. November 2026</p>
+            <p><strong>Zuletzt aktualisiert:</strong> 26. November 2026</p>
 
             <h2>🔒 Einführung</h2>
             <p>Paper Notes ("wir", "unser" oder "die App") verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir mit Ihren Informationen umgehen, wenn Sie unsere mobile Anwendung nutzen.</p>
@@ -1829,10 +1919,11 @@
             <h2>💳 Optionales Abonnement</h2>
             <p>Paper Notes kann ein einziges optionales Abonnement anbieten, das ausgewählte <strong>neue oder erweiterte Funktionen</strong> freischaltet. Keine Stufen — ein Abonnement schaltet die enthaltenen Extras frei.</p>
             <ul>
-                <li>Zahlungen werden über <strong>Google Play Billing</strong> (oder den jeweiligen App-Store) abgewickelt. Wir erhalten und speichern <strong>keine</strong> Zahlungskartendaten.</li>
+                <li>Zahlungen werden auf Android über <strong>Google Play Billing</strong> und auf dem iPhone über den <strong>Apple App Store</strong> (In-App-Kauf) abgewickelt. Wir erhalten und speichern <strong>keine</strong> Zahlungskartendaten.</li>
                 <li>Die App kann Ihren Abonnementstatus über Store-APIs prüfen, um Funktionen freizuschalten. Der Status kann lokal auf Ihrem Gerät zwischengespeichert werden.</li>
                 <li>Wir verwenden Abonnement- oder Kaufdaten nicht für Werbung oder Verhaltens-Tracking. Die anonyme Nutzungsstatistik vermerkt nur, ob ein Kauf abgeschlossen, abgebrochen oder fehlgeschlagen ist – ohne Beträge und ohne Bezug zu Ihnen.</li>
-                <li>Sie können ein Abonnement in den Einstellungen Ihres Google-Play- (oder Store-) Kontos verwalten oder kündigen.</li>
+                <li>Sie können ein Abonnement in den Einstellungen Ihres Google-Play-Kontos verwalten oder kündigen, auf dem iPhone unter Einstellungen → [Ihr Name] → Abos.</li>
+                <li>Plus, das in einem Store gekauft wurde, gilt nicht im anderen: Ein Kauf bei Google Play schaltet Plus nicht auf dem iPhone frei, ein Kauf im App Store nicht auf Android.</li>
                 <li>Optionale Einmalspenden, falls angeboten, werden ebenfalls über den Store abgewickelt und geben uns keinen Zugriff auf Ihre Notizen auf unseren Servern.</li>
             </ul>
 
@@ -1856,10 +1947,11 @@
 
             <h3>Was wir nicht erfassen:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Kein Tracking Ihrer Person</strong>: Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne jeglichen Inhalt, die Sie ausschalten können. Daneben nur technische Diagnosedaten des Dokumentenscanners von Google, siehe unten</li>
+                <li><span class="emoji">✅</span> <strong>Kein Tracking Ihrer Person</strong>: Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne jeglichen Inhalt, die Sie ausschalten können. Daneben nur technische Diagnosedaten des Dokumentenscanners von Google (nur Android), siehe unten</li>
                 <li><span class="emoji">✅</span> <strong>Keine Werbenetzwerke</strong></li>
                 <li><span class="emoji">✅</span> <strong>Keine persönlichen Daten</strong> auf unseren Servern</li>
                 <li><span class="emoji">✅</span> Der Entwickler <strong>erhält nie Ihre Inhalte</strong> – keine Texte, Namen, Beträge oder Kontakte – und kann die Statistik nicht mit Ihnen verknüpfen</li>
+                <li><span class="emoji">✅</span> Auf dem iPhone verwendet die App die Werbe-ID (IDFA) <strong>nicht</strong> und verfolgt Sie nicht über Apps und Websites anderer Unternehmen hinweg</li>
             </ul>
 
             <h2>💾 Datenspeicherung</h2>
@@ -1876,9 +1968,10 @@
             <p>Alles, was Sie erstellen, wird auf Ihrem Gerät gespeichert. Daten verlassen es nur, wenn Sie Sicherung oder Synchronisierung einschalten: Dann wird eine Kopie in <strong>Ihrem eigenen Google Drive</strong> gespeichert. Paper Notes hat keine eigenen Server, und Ihre Inhalte werden nicht an Dritte weitergegeben. Außerdem sendet die App eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne jeglichen Inhalt (Sie können sie ausschalten) – siehe unten.</p>
             <p><strong>Bilder aus dem Internet.</strong> Wenn Sie einen Teil einer Webseite in eine Notiz einfügen oder mit Paper Notes teilen, lädt die App deren Bilder von der ursprünglichen Website auf Ihr Gerät – beim Einfügen oder Teilen und beim Öffnen der Notiz –, damit sie auch ohne Internet sichtbar bleiben. Die Website erhält eine gewöhnliche Anfrage, wie beim Anzeigen des Bildes im Browser; es werden keine Cookies gesendet, und die Bilder werden nirgendwohin weitergegeben.</p>
             <p><strong>Budget.</strong> Beträge, Kategorien, Limits und Notizen, die Sie im Bereich „Budget“ eintragen, werden auf Ihrem Gerät gespeichert und – wenn Sicherung oder Synchronisierung eingeschaltet ist – in der Kopie in Ihrem eigenen Google Drive. Der Entwickler erhält sie nicht: Die App verbindet sich mit keiner Bank und keinem Konto und gibt Budgetdaten an niemanden weiter.</p>
-            <p><strong>Dokumentenscanner und Text aus Foto.</strong> Der Dokumentenscanner wird von den Google Play-Diensten bereitgestellt (Google ML Kit Document Scanner). Die Aufnahmen werden auf Ihrem Gerät verarbeitet, und die fertigen Seiten werden in der Notiz wie gewöhnliche Bilder oder als Datei gespeichert (in die Kopie in Ihrem Google Drive gelangen sie nur, wenn Sicherung oder Synchronisierung eingeschaltet ist). Damit der Scanner funktioniert, sendet das Modul der Google Play-Dienste technische Diagnosedaten an Google: Geräteinformationen (Hersteller, Modell, Android-Version), Paketname und Version der App, eine Installationskennung, Leistungswerte, Fehlercodes und Ereignistypen. Ihre Bilder und Texte sind nicht enthalten. Google verschlüsselt diese Daten bei der Übertragung (HTTPS) und gibt sie nach eigenen Angaben nicht an Dritte weiter; sie werden gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a> verarbeitet. Text aus Fotos wird vollständig auf Ihrem Gerät erkannt, auch ohne Internet. Erkennungsmodelle für einige Sprachen (Deutsch, Französisch, Spanisch, Italienisch, Finnisch, Polnisch) werden bei der ersten Verwendung einmal von GitHub geladen; die App sendet dorthin nichts außer der üblichen Download-Anfrage.</p>
+            <p><strong>Dokumentenscanner und Text aus Foto (Android).</strong> Der Dokumentenscanner wird von den Google Play-Diensten bereitgestellt (Google ML Kit Document Scanner). Die Aufnahmen werden auf Ihrem Gerät verarbeitet, und die fertigen Seiten werden in der Notiz wie gewöhnliche Bilder oder als Datei gespeichert (in die Kopie in Ihrem Google Drive gelangen sie nur, wenn Sicherung oder Synchronisierung eingeschaltet ist). Damit der Scanner funktioniert, sendet das Modul der Google Play-Dienste technische Diagnosedaten an Google: Geräteinformationen (Hersteller, Modell, Android-Version), Paketname und Version der App, eine Installationskennung, Leistungswerte, Fehlercodes und Ereignistypen. Ihre Bilder und Texte sind nicht enthalten. Google verschlüsselt diese Daten bei der Übertragung (HTTPS) und gibt sie nach eigenen Angaben nicht an Dritte weiter; sie werden gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a> verarbeitet. Text aus Fotos wird vollständig auf Ihrem Gerät erkannt, auch ohne Internet. Erkennungsmodelle für einige Sprachen (Deutsch, Französisch, Spanisch, Italienisch, Finnisch, Polnisch) werden bei der ersten Verwendung einmal von GitHub geladen; die App sendet dorthin nichts außer der üblichen Download-Anfrage.</p>
+            <p><strong>Dokumentenscanner und Text aus Foto (iPhone).</strong> Auf dem iPhone ist der Dokumentenscanner die Dokumentenkamera von Apple VisionKit, und Text aus Foto wird vom Apple-Framework Vision erkannt. Beide laufen vollständig auf Ihrem Gerät: Nichts wird an Apple oder den Entwickler gesendet, und es werden keine Erkennungsmodelle heruntergeladen (der oben beschriebene Download von GitHub erfolgt nur auf Android). Die fertigen Seiten werden wie jedes andere Bild oder jede andere Datei in Ihrer Notiz gespeichert.</p>
             <p><strong>Versionsverlauf von Notizen.</strong> Frühere Versionen einer Notiz werden nur auf diesem Gerät gespeichert. Sie sind nicht in der Kopie in Ihrem Google Drive enthalten und werden nicht mit Ihren anderen Geräten synchronisiert.</p>
-            <p><strong>PDF und Drucken.</strong> PDF-Dateien werden auf Ihrem Gerät erstellt. Beim Drucken übergibt Android das Dokument an den von Ihnen gewählten Druckdienst oder Drucker; dieser verarbeitet es nach seinen eigenen Bedingungen. Die App sendet nichts an andere Stellen.</p>
+            <p><strong>PDF und Drucken.</strong> PDF-Dateien werden auf Ihrem Gerät erstellt. Beim Drucken übergibt Android das Dokument an den von Ihnen gewählten Druckdienst oder Drucker; auf dem iPhone geht das Dokument an den von Ihnen gewählten AirPrint-Drucker. Der Druckdienst verarbeitet es nach seinen eigenen Bedingungen. Die App sendet nichts an andere Stellen.</p>
             <p>Eine Kopie in Ihrem Google Drive kann enthalten:</p>
             <ul>
                 <li>Texte von Notizen, Listen, Aufgaben und Karten im Bereich „Arbeit“</li>
@@ -1892,11 +1985,11 @@
             <ul>
                 <li>✅ All das ist optional: Ohne Google-Anmeldung verlassen Ihre Inhalte Ihr Gerät nicht</li>
                 <li>✅ Daten werden bei der Übertragung verschlüsselt (HTTPS)</li>
-                <li>✅ Keine Werbung und keine Absturzberichte. Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne Inhalte, die Sie ausschalten können; daneben nur die oben beschriebenen technischen Diagnosedaten des Google-Scanners</li>
+                <li>✅ Keine Werbung und keine Absturzberichte. Unsere einzige Analyse ist eine <a href="#analytics">anonyme Nutzungsstatistik</a> ohne Inhalte, die Sie ausschalten können; daneben nur die oben beschriebenen technischen Diagnosedaten des Google-Scanners (nur Android)</li>
             </ul>
 
             <h2 id="analytics-de">📈 Anonyme Nutzungsstatistik</h2>
-            <p>Um zu verstehen, welche Teile der App nützlich sind und wo Menschen hängen bleiben, sendet Paper Notes eine anonyme Nutzungsstatistik. Sie enthält nie den Inhalt Ihrer Notizen oder irgendetwas, das Sie eingegeben haben. Die Statistik ist standardmäßig eingeschaltet, und Sie können sie jederzeit ausschalten.</p>
+            <p>Um zu verstehen, welche Teile der App nützlich sind und wo Menschen hängen bleiben, sendet Paper Notes eine anonyme Nutzungsstatistik. Sie enthält nie den Inhalt Ihrer Notizen oder irgendetwas, das Sie eingegeben haben. Die Statistik ist standardmäßig eingeschaltet, und Sie können sie jederzeit ausschalten. Das funktioniert auf Android und dem iPhone gleich.</p>
             <p><strong>Dienst.</strong> Die Statistik wird von <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>) erfasst. Die Daten werden in der EU (Deutschland) verarbeitet und gespeichert. Aptabase handelt als Auftragsverarbeiter im Auftrag des Entwicklers; siehe die <a href="https://aptabase.com/legal/privacy" target="_blank">Datenschutzerklärung von Aptabase</a>.</p>
             <h3>Was gesendet wird</h3>
             <ul>
@@ -1935,22 +2028,25 @@
             <h3>🔐 Google-Kontozugriff (optional)</h3>
             <p>Nur wenn Sie Google-Drive-Backup oder -Synchronisierung aktivieren. Die App kann Zugriff anfordern auf:</p>
             <ul>
-                <li>Ihr Google-Konto zur Anmeldung (über Google Sign In)</li>
+                <li>Ihr Google-Konto zur Anmeldung (über Google Sign In; auf dem iPhone öffnet sich das Anmeldefenster des Systems)</li>
                 <li>Google Drive zum Speichern und Abrufen von Backup-Dateien, die die App erstellt</li>
             </ul>
-            <p><strong>Umfang:</strong> Die App fordert nur Zugriff auf Dateien an, die sie in Ihrem Google Drive erstellt. Sie greift nicht auf andere Dateien in Ihrem Drive zu.</p>
+            <p><strong>Umfang:</strong> Die App fordert nur Zugriff auf Dateien an, die sie in Ihrem Google Drive erstellt. Sie greift nicht auf andere Dateien in Ihrem Drive zu. Der Umfang ist auf Android und dem iPhone gleich.</p>
+            
+            <h3>📷 Kamera (optional)</h3>
+            <p>Auf dem iPhone fragt die App nach Zugriff auf die Kamera, wenn Sie ein Foto aufnehmen oder ein Dokument scannen. Die Kamera wird nur verwendet, um Fotos für Notizen, „Arbeit“-Karten und Kontakte aufzunehmen und Dokumente zu scannen. Sie können diese Berechtigung jederzeit in den iPhone-Einstellungen ändern.</p>
             
             <h3>📱 Benachrichtigungsberechtigung (optional)</h3>
             <p>Wird verwendet, um Ihnen Erinnerungen für Kalenderereignisse und Aufgaben zu senden. Kann jederzeit in den Geräteeinstellungen deaktiviert werden.</p>
             
             <h3>💾 Speicher- / Dateizugriff</h3>
-            <p>Wird verwendet, um Ihre Notizen und Anhänge auf Ihrem Gerät zu speichern sowie Backup-Dateien zu importieren oder zu exportieren, wenn Sie dies wünschen. Sicherungen werden nur dort gespeichert, wo Sie es wählen — auch an einem Ort, den Sie im Dateidialog des Systems auswählen, etwa auf einem USB-Stick oder in einem anderen Ordner.</p>
+            <p>Wird verwendet, um Ihre Notizen und Anhänge auf Ihrem Gerät zu speichern sowie Backup-Dateien zu importieren oder zu exportieren, wenn Sie dies wünschen. Sicherungen werden nur dort gespeichert, wo Sie es wählen — auch an einem Ort, den Sie im Dateidialog des Systems auswählen, etwa auf einem USB-Stick oder in einem anderen Ordner. Auf dem iPhone werden Sicherungen über die App „Dateien“ (die Dateiauswahl des Systems) exportiert und importiert.</p>
 
             <h3>📤 Inhalte, die Sie mit der App teilen</h3>
-            <p>Wenn Sie über das Android-Menü „Teilen“ etwas an Paper Notes senden, erhält die App nur das, was Sie teilen möchten (Text, einen Link, Fotos oder Dateien), und speichert es in einer Notiz auf Ihrem Gerät. Sie liest nichts anderes aus der anderen App.</p>
+            <p>Wenn Sie über das Android-Menü „Teilen“ oder das Teilen-Menü des iPhone etwas an Paper Notes senden, erhält die App nur das, was Sie teilen möchten (Text, einen Link, Fotos oder Dateien), und speichert es in einer Notiz auf Ihrem Gerät. Sie liest nichts anderes aus der anderen App. Auf dem iPhone bewahrt die Teilen-Erweiterung von Paper Notes das Geteilte im privaten Speicher der App auf Ihrem Gerät auf, bis Sie die App öffnen, die es dann in einer Notiz speichert; nichts wird irgendwohin gesendet.</p>
 
             <h3>👤 Kontakt auswählen (optional)</h3>
-            <p>Wenn Sie einen Kontakt aus dem Telefonbuch hinzufügen, öffnet sich die Kontaktauswahl von Android und gibt der App nur den einen gewählten Kontakt weiter: Name, die ausgewählte Telefonnummer und die E-Mail-Adressen des Kontakts. Die App fordert keine Berechtigung zum Lesen Ihrer Kontakte an und sieht den Rest Ihres Telefonbuchs nie. Der Kontakt wird auf Ihrem Gerät gespeichert (und in Ihren Sicherungen oder der Google-Drive-Synchronisierung, wenn Sie diese nutzen).</p>
+            <p>Wenn Sie einen Kontakt aus dem Telefonbuch hinzufügen, öffnet sich die Kontaktauswahl von Android bzw. iPhone und gibt der App nur den einen gewählten Kontakt weiter: Name, die ausgewählte Telefonnummer und die E-Mail-Adressen des Kontakts. Die App fordert keine Berechtigung zum Lesen Ihrer Kontakte an und sieht den Rest Ihres Telefonbuchs nie. Der Kontakt wird auf Ihrem Gerät gespeichert (und in Ihren Sicherungen oder der Google-Drive-Synchronisierung, wenn Sie diese nutzen).</p>
             
             <p><strong>Hinweis:</strong> Alle Berechtigungen werden ausschließlich für die App-Funktionalität verwendet. Wir nutzen keine Berechtigungen zur Datenerfassung für Analysen oder Werbung.</p>
 
@@ -1960,15 +2056,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (Dokumentenscanner)</span>
+                <span class="badge">Google ML Kit (Dokumentenscanner, Android)</span>
+                <span class="badge">Apple App Store (In-App-Kauf)</span>
+                <span class="badge">Apple VisionKit / Vision (auf dem Gerät)</span>
                 <span class="badge">Aptabase (anonyme Statistik)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Google-Dienste:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Optional. Wird verwendet, wenn Sie Google für Backup oder Synchronisierung verbinden. Informationen zu Ihrem Google-Konto werden gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a> verarbeitet.</li>
                 <li><strong>Google Drive API:</strong> Optional. Wird für Backup und Synchronisierung Ihrer Daten in Ihr Google Drive verwendet. Unterliegt der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> Optionale Abonnements und Spenden. Zahlungsdaten werden von Google gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a> verarbeitet. Wir erhalten nur den Kauf-/Abonnementstatus, der zum Freischalten von Funktionen oder zum Ausblenden von Spendenhinweisen nötig ist.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Nur wenn Sie ein Dokument scannen (Plus). Läuft in den Google Play-Diensten; Aufnahmen werden auf dem Gerät verarbeitet. Das Modul sendet technische Diagnosedaten an Google (Geräte- und App-Informationen, Installationskennung, Leistungswerte, Fehlercodes) – ohne Ihre Bilder und Texte. Siehe <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit-Datenoffenlegung</a> und <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> Nur Android. Optionale Abonnements und Spenden. Zahlungsdaten werden von Google gemäß der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinie von Google</a> verarbeitet. Wir erhalten nur den Kauf-/Abonnementstatus, der zum Freischalten von Funktionen oder zum Ausblenden von Spendenhinweisen nötig ist.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Nur Android. Nur wenn Sie ein Dokument scannen (Plus). Läuft in den Google Play-Diensten; Aufnahmen werden auf dem Gerät verarbeitet. Das Modul sendet technische Diagnosedaten an Google (Geräte- und App-Informationen, Installationskennung, Leistungswerte, Fehlercodes) – ohne Ihre Bilder und Texte. Siehe <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ML Kit-Datenoffenlegung</a> und <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.</li>
+            </ul>
+            <p><strong>Apple-Dienste (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (In-App-Kauf):</strong> Für das optionale Abonnement auf dem iPhone. Zahlungsdaten werden von Apple gemäß der <a href="https://www.apple.com/legal/privacy/" target="_blank">Datenschutzrichtlinie von Apple</a> verarbeitet. Wir erhalten nur den Kauf-/Abo-Status, der zum Freischalten von Funktionen nötig ist.</li>
+                <li><strong>Apple VisionKit und Vision:</strong> Dokumentenscanner und Text aus Foto auf dem iPhone. Laufen vollständig auf Ihrem Gerät; nichts wird an Apple oder den Entwickler gesendet.</li>
             </ul>
             <p><strong>Weitere Dienste:</strong></p>
             <ul>
@@ -2018,11 +2121,12 @@
             </ul>
 
             <h2 id="data-deletion-de">🗑️ Datenlöschung</h2>
-            <p>Dies gilt für die App <strong>Paper Notes</strong> bei Google Play. Ihre Daten liegen auf Ihrem Gerät und, wenn Sie Sicherung oder Synchronisierung eingeschaltet haben, in Ihrem eigenen Google Drive. Wir haben keine Server, speichern also keine Ihrer Daten, und auf unserer Seite gibt es nichts zu löschen.</p>
+            <p>Dies gilt für die App <strong>Paper Notes</strong> bei Google Play und im App Store. Ihre Daten liegen auf Ihrem Gerät und, wenn Sie Sicherung oder Synchronisierung eingeschaltet haben, in Ihrem eigenen Google Drive. Wir haben keine Server, speichern also keine Ihrer Daten, und auf unserer Seite gibt es nichts zu löschen.</p>
             <h3>So löschen Sie Ihre Daten</h3>
             <ol>
                 <li><strong>Ein einzelner Eintrag:</strong> Löschen Sie ihn in der App – er landet im „Papierkorb“. Öffnen Sie den Papierkorb → „Endgültig löschen“, um ihn sofort zu entfernen; sonst leert sich der Papierkorb nach 30 Tagen automatisch.</li>
-                <li><strong>Alle Daten auf dem Gerät:</strong> Deinstallieren Sie die App (oder löschen Sie ihren Speicher in den Android-Einstellungen). Alles auf dem Gerät Gespeicherte wird sofort entfernt.</li>
+                <li><strong>Alle Daten auf dem Gerät (Android):</strong> Deinstallieren Sie die App (oder löschen Sie ihren Speicher in den Android-Einstellungen). Alles auf dem Gerät Gespeicherte wird sofort entfernt.</li>
+                <li><strong>Alle Daten auf dem Gerät (iPhone):</strong> Löschen Sie die App – Symbol gedrückt halten → „App entfernen“ → „App löschen“. Alles auf dem Gerät Gespeicherte wird sofort entfernt.</li>
                 <li><strong>Kopien in Google Drive:</strong> Öffnen Sie Google Drive, suchen Sie den Ordner <strong>„Paper Notes Backups“</strong>, löschen Sie ihn und leeren Sie anschließend den Drive-Papierkorb. Das Deinstallieren der App entfernt diese Kopien nicht – sie bleiben in Ihrem Drive, bis Sie sie löschen.</li>
                 <li><strong>Google-Zugriff:</strong> In den Einstellungen Ihres Google-Kontos → Sicherheit → Verbindungen mit Drittanbietern den Zugriff für Paper Notes entfernen.</li>
             </ol>
@@ -2055,12 +2159,13 @@
                 <li>CCPA (California Consumer Privacy Act) - USA</li>
                 <li>COPPA (Children's Online Privacy Protection Act) - USA</li>
                 <li>Google Play Store Datenschutzanforderungen</li>
+                <li>Apple App Store Review Guidelines (Datenschutz)</li>
             </ul>
         </div>
 
         <!-- Polish Version -->
         <div id="pl-content" class="content language-content">
-            <p><strong>Ostatnia aktualizacja:</strong> 22 listopada 2026</p>
+            <p><strong>Ostatnia aktualizacja:</strong> 26 listopada 2026</p>
 
             <h2>🔒 Wprowadzenie</h2>
             <p>Paper Notes ("my", "nasz" lub "aplikacja") zobowiązuje się chronić Twoją prywatność. Niniejsza Polityka prywatności wyjaśnia, jak przetwarzamy Twoje informacje podczas korzystania z naszej aplikacji mobilnej.</p>
@@ -2080,10 +2185,11 @@
             <h2>💳 Opcjonalna subskrypcja</h2>
             <p>Paper Notes może oferować jedną opcjonalną subskrypcję, która odblokowuje wybrane <strong>nowe lub zaawansowane funkcje</strong>. Bez poziomów — jedna subskrypcja odblokowuje dołączone dodatki.</p>
             <ul>
-                <li>Płatności są przetwarzane przez <strong>Google Play Billing</strong> (lub odpowiedni sklep z aplikacjami). <strong>Nie</strong> otrzymujemy ani nie przechowujemy danych Twojej karty płatniczej.</li>
+                <li>Płatności są przetwarzane przez <strong>Google Play Billing</strong> na Androidzie i przez <strong>Apple App Store</strong> (zakupy w aplikacji) na iPhonie. <strong>Nie</strong> otrzymujemy ani nie przechowujemy danych Twojej karty płatniczej.</li>
                 <li>Aplikacja może sprawdzać status subskrypcji przez API sklepu, aby odblokować funkcje. Status może być buforowany lokalnie na Twoim urządzeniu.</li>
                 <li>Nie używamy danych subskrypcji ani zakupów do reklam ani śledzenia zachowania. Anonimowe statystyki użycia odnotowują tylko, czy zakup się udał, został anulowany, czy wystąpił błąd — bez kwot i bez powiązania z Tobą.</li>
-                <li>Możesz zarządzać subskrypcją lub ją anulować w ustawieniach konta Google Play (lub sklepu).</li>
+                <li>Możesz zarządzać subskrypcją lub ją anulować w ustawieniach konta Google Play, a na iPhonie — w Ustawienia → [Twoje imię i nazwisko] → Subskrypcje.</li>
+                <li>Plus kupiony w jednym sklepie nie przechodzi do drugiego: zakup w Google Play nie odblokowuje Plus na iPhonie, a zakup w App Store — na Androidzie.</li>
                 <li>Opcjonalne jednorazowe donacje, jeśli są dostępne, również są przetwarzane przez sklep i nie dają nam dostępu do treści Twoich notatek na naszych serwerach.</li>
             </ul>
 
@@ -2107,10 +2213,11 @@
 
             <h3>Czego nie zbieramy:</h3>
             <ul>
-                <li><span class="emoji">✅</span> <strong>Bez śledzenia Ciebie</strong>: nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez żadnych treści, które możesz wyłączyć. Poza tym tylko techniczna diagnostyka skanera dokumentów Google, opisana niżej</li>
+                <li><span class="emoji">✅</span> <strong>Bez śledzenia Ciebie</strong>: nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez żadnych treści, które możesz wyłączyć. Poza tym tylko techniczna diagnostyka skanera dokumentów Google (tylko Android), opisana niżej</li>
                 <li><span class="emoji">✅</span> <strong>Bez sieci reklamowych</strong></li>
                 <li><span class="emoji">✅</span> <strong>Bez danych osobowych</strong> na naszych serwerach</li>
                 <li><span class="emoji">✅</span> Deweloper <strong>nigdy nie otrzymuje Twoich treści</strong> — tekstów, nazw, kwot ani kontaktów — i nie może powiązać statystyk z Tobą</li>
+                <li><span class="emoji">✅</span> Na iPhonie aplikacja <strong>nie</strong> używa identyfikatora reklamowego (IDFA) i nie śledzi Cię w aplikacjach i witrynach innych firm</li>
             </ul>
 
             <h2>💾 Przechowywanie danych</h2>
@@ -2127,9 +2234,10 @@
             <p>Wszystko, co tworzysz, jest przechowywane na Twoim urządzeniu. Dane opuszczają je tylko wtedy, gdy włączysz kopię zapasową lub synchronizację: wtedy kopia trafia na <strong>Twój własny Dysk Google</strong>. Paper Notes nie ma własnych serwerów i nie przekazuje Twoich treści podmiotom trzecim. Poza tym aplikacja wysyła <a href="#analytics">anonimowe statystyki użycia</a> bez żadnych treści (możesz je wyłączyć) — więcej niżej.</p>
             <p><strong>Obrazy z internetu.</strong> Jeśli wkleisz do notatki fragment strony internetowej lub udostępnisz go w Paper Notes, aplikacja pobiera jego obrazy z oryginalnej witryny na Twoje urządzenie — przy wklejaniu lub udostępnianiu i przy otwieraniu notatki — aby były widoczne bez internetu. Witryna otrzymuje zwykłe zapytanie, jak przy wyświetlaniu obrazu w przeglądarce; pliki cookie nie są wysyłane, a obrazy nie są nigdzie dalej przekazywane.</p>
             <p><strong>Budżet.</strong> Kwoty, kategorie, limity i notatki, które wpisujesz w sekcji „Budżet”, są przechowywane na Twoim urządzeniu, a jeśli włączysz kopię zapasową lub synchronizację — w kopii na Twoim Dysku Google. Deweloper ich nie otrzymuje: aplikacja nie łączy się z bankami ani kontami i nikomu nie przekazuje danych budżetu.</p>
-            <p><strong>Skaner dokumentów i tekst ze zdjęcia.</strong> Skaner dokumentów działa w Usługach Google Play (Google ML Kit Document Scanner). Zdjęcia są przetwarzane na Twoim urządzeniu, a gotowe strony zapisują się w notatce jak zwykłe obrazy lub plik (do kopii na Twoim Dysku Google trafiają tylko wtedy, gdy włączona jest kopia zapasowa lub synchronizacja). Aby skaner działał, moduł Usług Google Play przesyła do Google techniczną diagnostykę: informacje o urządzeniu (producent, model, wersja Androida), nazwę pakietu i wersję aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów i typy zdarzeń. Nie ma w niej Twoich zdjęć ani tekstu. Google szyfruje te dane podczas przesyłania (HTTPS) i, według Google, nie przekazuje ich stronom trzecim; są przetwarzane zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Tekst ze zdjęcia jest rozpoznawany w całości na Twoim urządzeniu, także bez internetu. Modele rozpoznawania dla części języków (niemiecki, francuski, hiszpański, włoski, fiński, polski) są pobierane jednorazowo z GitHuba przy pierwszym użyciu; aplikacja nie wysyła tam nic poza zwykłym żądaniem pobrania.</p>
+            <p><strong>Skaner dokumentów i tekst ze zdjęcia (Android).</strong> Skaner dokumentów działa w Usługach Google Play (Google ML Kit Document Scanner). Zdjęcia są przetwarzane na Twoim urządzeniu, a gotowe strony zapisują się w notatce jak zwykłe obrazy lub plik (do kopii na Twoim Dysku Google trafiają tylko wtedy, gdy włączona jest kopia zapasowa lub synchronizacja). Aby skaner działał, moduł Usług Google Play przesyła do Google techniczną diagnostykę: informacje o urządzeniu (producent, model, wersja Androida), nazwę pakietu i wersję aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów i typy zdarzeń. Nie ma w niej Twoich zdjęć ani tekstu. Google szyfruje te dane podczas przesyłania (HTTPS) i, według Google, nie przekazuje ich stronom trzecim; są przetwarzane zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Tekst ze zdjęcia jest rozpoznawany w całości na Twoim urządzeniu, także bez internetu. Modele rozpoznawania dla części języków (niemiecki, francuski, hiszpański, włoski, fiński, polski) są pobierane jednorazowo z GitHuba przy pierwszym użyciu; aplikacja nie wysyła tam nic poza zwykłym żądaniem pobrania.</p>
+            <p><strong>Skaner dokumentów i tekst ze zdjęcia (iPhone).</strong> Na iPhonie skanerem dokumentów jest aparat do dokumentów Apple VisionKit, a tekst ze zdjęcia rozpoznaje framework Apple Vision. Oba działają w całości na Twoim urządzeniu: nic nie jest wysyłane do Apple ani do dewelopera i nie są pobierane żadne modele rozpoznawania (opisane wyżej pobieranie z GitHub dotyczy tylko Androida). Gotowe strony są zapisywane w notatce jak każdy inny obraz lub plik.</p>
             <p><strong>Historia wersji notatek.</strong> Wcześniejsze wersje notatki są przechowywane tylko na tym urządzeniu. Nie trafiają do kopii na Twoim Dysku Google i nie są synchronizowane z innymi urządzeniami.</p>
-            <p><strong>PDF i druk.</strong> Pliki PDF powstają na Twoim urządzeniu. Podczas drukowania Android przekazuje dokument wybranej przez Ciebie usłudze drukowania lub drukarce; ta usługa przetwarza go na własnych zasadach. Aplikacja nie wysyła niczego nigdzie indziej.</p>
+            <p><strong>PDF i druk.</strong> Pliki PDF powstają na Twoim urządzeniu. Podczas drukowania Android przekazuje dokument wybranej przez Ciebie usłudze drukowania lub drukarce, a na iPhonie dokument trafia do wybranej przez Ciebie drukarki AirPrint; usługa drukowania przetwarza go na własnych zasadach. Aplikacja nie wysyła niczego nigdzie indziej.</p>
             <p>Kopia na Twoim Dysku Google może zawierać:</p>
             <ul>
                 <li>teksty notatek, list, zadań i kart w sekcji „Praca”</li>
@@ -2143,11 +2251,11 @@
             <ul>
                 <li>✅ Wszystko to jest opcjonalne: bez logowania do Google Twoje treści nie opuszczają urządzenia</li>
                 <li>✅ Dane są szyfrowane podczas przesyłania (HTTPS)</li>
-                <li>✅ Brak reklam i raportów o awariach. Nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez treści, które możesz wyłączyć; poza tym tylko opisana wyżej techniczna diagnostyka skanera Google</li>
+                <li>✅ Brak reklam i raportów o awariach. Nasza jedyna analityka to <a href="#analytics">anonimowe statystyki użycia</a> bez treści, które możesz wyłączyć; poza tym tylko opisana wyżej techniczna diagnostyka skanera Google (tylko Android)</li>
             </ul>
 
             <h2 id="analytics-pl">📈 Anonimowe statystyki użycia</h2>
-            <p>Aby zrozumieć, które części aplikacji są przydatne i gdzie użytkownicy się zatrzymują, Paper Notes wysyła anonimowe statystyki użycia. Nigdy nie zawierają treści Twoich notatek ani niczego, co wpisałeś. Statystyki są domyślnie włączone i możesz je wyłączyć w każdej chwili.</p>
+            <p>Aby zrozumieć, które części aplikacji są przydatne i gdzie użytkownicy się zatrzymują, Paper Notes wysyła anonimowe statystyki użycia. Nigdy nie zawierają treści Twoich notatek ani niczego, co wpisałeś. Statystyki są domyślnie włączone i możesz je wyłączyć w każdej chwili. Działa to tak samo na Androidzie i iPhonie.</p>
             <p><strong>Usługa.</strong> Statystyki zbiera <strong>Aptabase</strong> (<a href="https://aptabase.com" target="_blank">aptabase.com</a>). Dane są przetwarzane i przechowywane w UE (Niemcy). Aptabase działa jako podmiot przetwarzający w imieniu dewelopera; zobacz <a href="https://aptabase.com/legal/privacy" target="_blank">Politykę prywatności Aptabase</a>.</p>
             <h3>Co jest wysyłane</h3>
             <ul>
@@ -2186,22 +2294,25 @@
             <h3>🔐 Dostęp do konta Google (opcjonalny)</h3>
             <p>Tylko jeśli włączysz kopię zapasową lub synchronizację Google Drive. Aplikacja może prosić o dostęp do:</p>
             <ul>
-                <li>Twojego konta Google do logowania (Google Sign In)</li>
+                <li>Twojego konta Google do logowania (Google Sign In; na iPhonie otwiera się systemowe okno logowania)</li>
                 <li>Google Drive do zapisywania i pobierania plików kopii zapasowych tworzonych przez aplikację</li>
             </ul>
-            <p><strong>Zakres:</strong> Aplikacja prosi tylko o dostęp do plików, które sama tworzy na Twoim Google Drive. Nie ma dostępu do innych plików na Drive.</p>
+            <p><strong>Zakres:</strong> Aplikacja prosi tylko o dostęp do plików, które sama tworzy na Twoim Google Drive. Nie ma dostępu do innych plików na Drive. Zakres jest taki sam na Androidzie i iPhonie.</p>
+            
+            <h3>📷 Aparat (opcjonalnie)</h3>
+            <p>Na iPhonie aplikacja prosi o dostęp do aparatu, gdy robisz zdjęcie lub skanujesz dokument. Aparat służy tylko do robienia zdjęć do notatek, kart „Pracy” i kontaktów oraz do skanowania dokumentów. To uprawnienie możesz w każdej chwili zmienić w Ustawieniach iPhone’a.</p>
             
             <h3>📱 Uprawnienie do powiadomień (opcjonalne)</h3>
             <p>Używane do wysyłania przypomnień o wydarzeniach kalendarzowych i zadaniach. Można wyłączyć w dowolnym momencie w ustawieniach urządzenia.</p>
             
             <h3>💾 Dostęp do pamięci / plików</h3>
-            <p>Używane do przechowywania notatek i załączników na urządzeniu oraz do importu lub eksportu plików kopii zapasowych, gdy tego chcesz. Kopie zapasowe są zapisywane tylko tam, gdzie zdecydujesz — także w miejscu wybranym w systemowym oknie plików, na przykład na pendrivie lub w innym folderze.</p>
+            <p>Używane do przechowywania notatek i załączników na urządzeniu oraz do importu lub eksportu plików kopii zapasowych, gdy tego chcesz. Kopie zapasowe są zapisywane tylko tam, gdzie zdecydujesz — także w miejscu wybranym w systemowym oknie plików, na przykład na pendrivie lub w innym folderze. Na iPhonie kopie zapasowe są eksportowane i importowane przez aplikację Pliki (systemowe okno wyboru plików).</p>
 
             <h3>📤 Treści udostępniane aplikacji</h3>
-            <p>Gdy przez menu Androida „Udostępnij” wysyłasz coś do Paper Notes, aplikacja otrzymuje tylko to, co postanowiłeś udostępnić (tekst, link, zdjęcia lub pliki), i zapisuje to w notatce na Twoim urządzeniu. Nie odczytuje niczego innego z tamtej aplikacji.</p>
+            <p>Gdy przez menu Androida „Udostępnij” lub arkusz udostępniania na iPhonie wysyłasz coś do Paper Notes, aplikacja otrzymuje tylko to, co postanowiłeś udostępnić (tekst, link, zdjęcia lub pliki), i zapisuje to w notatce na Twoim urządzeniu. Nie odczytuje niczego innego z tamtej aplikacji. Na iPhonie rozszerzenie udostępniania Paper Notes przechowuje udostępnione treści w prywatnym miejscu aplikacji na urządzeniu, dopóki nie otworzysz aplikacji, która zapisuje je wtedy w notatce; nic nie jest nigdzie wysyłane.</p>
 
             <h3>👤 Wybór kontaktu (opcjonalnie)</h3>
-            <p>Gdy dodajesz kontakt z książki telefonicznej, otwiera się systemowe okno wyboru Androida, które przekazuje aplikacji tylko jeden wybrany kontakt: imię i nazwisko, wybrany numer telefonu oraz adresy e-mail tego kontaktu. Aplikacja nie prosi o uprawnienie do odczytu kontaktów i nie widzi reszty Twojej książki telefonicznej. Kontakt jest przechowywany na Twoim urządzeniu (oraz w kopiach zapasowych lub synchronizacji z Dyskiem Google, jeśli z nich korzystasz).</p>
+            <p>Gdy dodajesz kontakt z książki telefonicznej, otwiera się systemowe okno wyboru kontaktu Androida lub iPhone’a, które przekazuje aplikacji tylko jeden wybrany kontakt: imię i nazwisko, wybrany numer telefonu oraz adresy e-mail tego kontaktu. Aplikacja nie prosi o uprawnienie do odczytu kontaktów i nie widzi reszty Twojej książki telefonicznej. Kontakt jest przechowywany na Twoim urządzeniu (oraz w kopiach zapasowych lub synchronizacji z Dyskiem Google, jeśli z nich korzystasz).</p>
             
             <p><strong>Uwaga:</strong> Wszystkie uprawnienia są używane wyłącznie do funkcjonalności aplikacji. Nie używamy uprawnień do zbierania danych na potrzeby analityki lub reklam.</p>
 
@@ -2211,15 +2322,22 @@
                 <span class="badge">Google Sign In</span>
                 <span class="badge">Google Drive API</span>
                 <span class="badge">Google Play Billing</span>
-                <span class="badge">Google ML Kit (skaner dokumentów)</span>
+                <span class="badge">Google ML Kit (skaner dokumentów, Android)</span>
+                <span class="badge">Apple App Store (zakupy w aplikacji)</span>
+                <span class="badge">Apple VisionKit / Vision (na urządzeniu)</span>
                 <span class="badge">Aptabase (anonimowe statystyki)</span>
             </div>
             <p style="margin-top: 15px;"><strong>Usługi Google:</strong></p>
             <ul>
                 <li><strong>Google Sign In:</strong> Opcjonalny. Używany, gdy łączysz Google w celu kopii zapasowej lub synchronizacji. Informacje o Twoim koncie Google są przetwarzane zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>.</li>
                 <li><strong>Google Drive API:</strong> Opcjonalny. Używany do kopii zapasowej i synchronizacji danych na Twoim Google Drive. Podlega <a href="https://policies.google.com/privacy" target="_blank">Polityce prywatności Google</a>.</li>
-                <li><strong>Google Play Billing:</strong> Opcjonalne subskrypcje i donacje. Dane płatności obsługuje Google zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Otrzymujemy tylko status zakupu/subskrypcji potrzebny do odblokowania funkcji lub ukrycia propozycji donacji.</li>
-                <li><strong>Google ML Kit Document Scanner:</strong> Tylko gdy skanujesz dokument (Plus). Działa w Usługach Google Play; zdjęcia są przetwarzane na urządzeniu. Moduł przesyła do Google techniczną diagnostykę (informacje o urządzeniu i aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów) — bez Twoich zdjęć i tekstu. Więcej: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ujawnianie danych ML Kit</a> i <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności Google</a>.</li>
+                <li><strong>Google Play Billing:</strong> Tylko Android. Opcjonalne subskrypcje i donacje. Dane płatności obsługuje Google zgodnie z <a href="https://policies.google.com/privacy" target="_blank">Polityką prywatności Google</a>. Otrzymujemy tylko status zakupu/subskrypcji potrzebny do odblokowania funkcji lub ukrycia propozycji donacji.</li>
+                <li><strong>Google ML Kit Document Scanner:</strong> Tylko Android. Tylko gdy skanujesz dokument (Plus). Działa w Usługach Google Play; zdjęcia są przetwarzane na urządzeniu. Moduł przesyła do Google techniczną diagnostykę (informacje o urządzeniu i aplikacji, identyfikator instalacji, wskaźniki wydajności, kody błędów) — bez Twoich zdjęć i tekstu. Więcej: <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank">ujawnianie danych ML Kit</a> i <a href="https://policies.google.com/privacy" target="_blank">Polityka prywatności Google</a>.</li>
+            </ul>
+            <p><strong>Usługi Apple (iPhone):</strong></p>
+            <ul>
+                <li><strong>Apple App Store (zakupy w aplikacji):</strong> Opcjonalna subskrypcja na iPhonie. Dane płatności obsługuje Apple zgodnie z <a href="https://www.apple.com/legal/privacy/" target="_blank">Polityką prywatności Apple</a>. Otrzymujemy tylko status zakupu/subskrypcji potrzebny do odblokowania funkcji.</li>
+                <li><strong>Apple VisionKit i Vision:</strong> Skaner dokumentów i tekst ze zdjęcia na iPhonie. Działają w całości na Twoim urządzeniu; nic nie jest wysyłane do Apple ani do dewelopera.</li>
             </ul>
             <p><strong>Inne usługi:</strong></p>
             <ul>
@@ -2269,11 +2387,12 @@
             </ul>
 
             <h2 id="data-deletion-pl">🗑️ Usuwanie danych</h2>
-            <p>Dotyczy aplikacji <strong>Paper Notes</strong> w Google Play. Twoje dane są przechowywane na urządzeniu, a jeśli włączyłeś kopię zapasową lub synchronizację — także na Twoim Dysku Google. Nie mamy serwerów, więc nie przechowujemy Twoich danych i po naszej stronie nie ma czego usuwać.</p>
+            <p>Dotyczy aplikacji <strong>Paper Notes</strong> w Google Play i App Store. Twoje dane są przechowywane na urządzeniu, a jeśli włączyłeś kopię zapasową lub synchronizację — także na Twoim Dysku Google. Nie mamy serwerów, więc nie przechowujemy Twoich danych i po naszej stronie nie ma czego usuwać.</p>
             <h3>Jak usunąć dane</h3>
             <ol>
                 <li><strong>Pojedynczy element:</strong> usuń go w aplikacji — trafi do „Kosza”. Otwórz Kosz → „Usuń na zawsze”, aby usunąć go od razu; w przeciwnym razie kosz opróżni się automatycznie po 30 dniach.</li>
-                <li><strong>Wszystkie dane na urządzeniu:</strong> odinstaluj aplikację (lub wyczyść jej pamięć w ustawieniach Androida). Wszystko, co było zapisane na urządzeniu, zostanie usunięte od razu.</li>
+                <li><strong>Wszystkie dane na urządzeniu (Android):</strong> odinstaluj aplikację (lub wyczyść jej pamięć w ustawieniach Androida). Wszystko, co było zapisane na urządzeniu, zostanie usunięte od razu.</li>
+                <li><strong>Wszystkie dane na urządzeniu (iPhone):</strong> usuń aplikację — przytrzymaj jej ikonę → „Usuń aplikację” → „Usuń aplikację”. Wszystko, co było zapisane na urządzeniu, zostanie usunięte od razu.</li>
                 <li><strong>Kopie na Dysku Google:</strong> otwórz Dysk Google, znajdź folder <strong>„Paper Notes Backups”</strong> i usuń go, a potem opróżnij kosz Dysku. Odinstalowanie aplikacji nie usuwa tych kopii — zostają na Twoim Dysku, dopóki ich nie usuniesz.</li>
                 <li><strong>Dostęp Google:</strong> w ustawieniach konta Google → Bezpieczeństwo → Połączenia z aplikacjami innych firm usuń dostęp dla Paper Notes.</li>
             </ol>
@@ -2306,6 +2425,7 @@
                 <li>CCPA (Kalifornijska ustawa o ochronie prywatności konsumentów) - USA</li>
                 <li>COPPA (Ustawa o ochronie prywatności dzieci w Internecie) - USA</li>
                 <li>Wymagania dotyczące prywatności w Google Play Store</li>
+                <li>Wytyczne Apple App Store Review Guidelines (prywatność)</li>
             </ul>
         </div>
 
